@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Initiate Project</Title>
+  <Type>Section</Type>
+  <Concept Guid="e4c0cb7f-8e0c-4c9b-bba3-3d82ead54396">./tpc/e4c0cb7f-8e0c-4c9b-bba3-3d82ead54396/Parts/index.html</Concept>
+  <Template>85c651a5-069d-419e-a943-9f923cdfa097</Template>
+</Description>

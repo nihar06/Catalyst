@@ -1,0 +1,402 @@
+﻿/*--- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. --- */
+
+/*************  Override Jquery UI Slider attributes  *********************/
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default
+{
+	border: none;
+	background: none;
+}
+
+.ui-widget-header
+{
+	border: none;
+	background: none;
+}
+
+/************* END Override Jquery UI Slider attributes  *********************/
+
+.NavbarWrapper
+{
+	z-index: 99;
+	display: none;
+}
+
+.navbaranim
+{
+	-webkit-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+
+.NavbarOuter
+{
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 87px;
+	z-index: 99;
+}
+
+.small .NavbarOuter
+{
+	height: 27px;
+}
+
+.NavbarMain
+{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 1536px;
+	height: 87px;
+	background-color: #a1a1a0;
+	z-index: 99;
+}
+
+.small .NavbarMain
+{
+	height: 27px;
+}
+
+.prevbutton
+{
+	float: left;
+}
+
+.small .prevbutton:hover
+{
+	background-color: #cacac9;
+}
+
+.pauseresumebutton
+{
+	float: left;
+}
+
+.small .pauseresumebutton:hover
+{
+	background-color: #cacac9;
+}
+
+.nextbutton
+{
+	float: left;
+}
+
+.small .nextbutton:hover
+{
+	background-color: #cacac9;
+}
+
+.refreshbutton
+{
+	float: left;
+}
+
+.small .refreshbutton:hover
+{
+	background-color: #cacac9;
+}
+
+.menubutton
+{
+	float: right;
+	position: relative;
+}
+
+.small .menubutton:hover
+{
+	background-color: #cacac9;
+}
+
+.prefsbutton
+{
+	float: right;
+}
+
+.small .prefsbutton:hover
+{
+	background-color: #cacac9;
+}
+
+.NavbarMain .timerdisplay
+{
+	width: 170px;
+	float: right;
+	text-align: center;
+	font-family: Arial;
+	font-size: 30px;
+	padding-top: 24px;
+	color: #ccccca;
+	height: 87px;
+	cursor: default;
+}
+
+.small .timerdisplay
+{
+	width: 80px;
+	height: 27px;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.timerdisplay .currenttime
+{
+	margin-left: 15px;
+	color: white;
+}
+
+.small .timerdisplay .currenttime
+{
+	margin-left: 5px;
+}
+
+.timerdisplay .endtime
+{
+	margin-right: 15px;
+}
+
+.small .timerdisplay .endtime
+{
+	margin-right: 5px;
+}
+
+.timerleft
+{
+	float: right;
+}
+
+.volumebutton
+{
+	float: right;
+	position: relative;
+}
+
+.small .volumebutton:hover
+{
+	background-color: #cacac9;
+}
+
+.slidercontainer
+{
+	position: absolute;
+	left: 508px;
+	right: 348px;
+	top: 0px;
+	height: 87px;
+	background-repeat: repeat-x;
+}
+
+.small .slidercontainer
+{
+	height: 27px;
+	text-align: left;
+}
+
+.volumeslider
+{
+	position: absolute;
+	z-index: 99;
+	background-color: #a1a1a0;
+	height: 9px;
+	left: 7px;
+	top: 7px;
+	width: 56px;
+	overflow: visible;
+}
+
+.timeslider
+{
+	position: absolute;
+	z-index: 99;
+	background-color: #c6c5c4;
+	height: 35px;
+	overflow: visible;
+	border: 1px solid #626261;
+}
+
+.small .timeslider
+{
+	height: 12px;
+	top: 8px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+}
+
+.small .volumeslidercontainer
+{
+	position: absolute;
+	top: -22px;
+	height: 22px;
+	width: 70px;
+	left: -7px;
+	background-color: gray;
+}
+
+.menucontainer
+{
+	display: none;
+	position: absolute;
+	width: 350px;
+	right: 15px;
+	background-color: #f9f7f6;
+	text-align: left;
+	color: Black;
+	font-family: Arial;
+	font-size: 32px;
+	border: 1px solid #6a6a69;
+	padding: 0px;
+	margin: 0px;
+}
+
+	.menucontainer ul
+	{
+		margin: 0px;
+		padding: 5px 0 5px 0;
+	}
+
+	.menucontainer li
+	{
+		margin: 0px;
+		padding: 4px 4px 4px 25px;
+		cursor: pointer;
+		list-style-type: none;
+	}
+
+	.menucontainer .menuimage
+	{
+		/*-webkit-transform: scale(2);*/
+		position: relative;
+		float: left;
+		margin-top:4px;
+	}
+
+	.menucontainer .menutext
+	{
+		margin-left: 25px;
+	}
+
+.small .menucontainer
+{
+	width: 190px;
+	right: 5px;
+	font-size: 14px;
+}
+
+	.small .menucontainer li
+	{
+		padding: 2px 2px 2px 12px;
+	}
+
+	.small .menucontainer .menuimage
+	{
+		/*-webkit-transform: scale(1);*/
+		margin: 0;
+	}
+
+	.small .menucontainer .menutext
+	{
+		margin-left: 10px;
+	}
+
+.menupointer
+{
+	position: absolute;
+	right: 25px;
+	bottom: -16px;
+	overflow: hidden;
+	-webkit-transform: scale(2);
+}
+
+.small .menupointer
+{
+	right: 5px;
+	bottom: -11px;
+	-webkit-transform: scale(1);
+}
+
+.timeslider.ui-slider-horizontal .ui-slider-handle
+{
+	margin-left: -22px;
+	top: -15px;
+}
+
+.small .timeslider .ui-slider-handle
+{
+	margin-left: -10px;
+	top: -4px;
+}
+
+.volumeslider .ui-slider-handle
+{
+	overflow: hidden;
+}
+
+.small .volumeslider .ui-slider-handle
+{
+	margin-left: -7px;
+	top: -2px;
+}
+
+/*slider bar button spec, note that it uses fix sizing and offset (45x45px, 15px offset)!!*/
+.sliderpointer
+{
+	background-size: contain;
+}
+
+.timeslider .ui-slider-handle
+{
+	width: 45px;
+	height: 45px;
+	overflow: hidden;
+	position: absolute;
+	border-style: none;
+}
+
+.small .timeslider .ui-slider-handle
+{
+	width: 20px;
+	height: 20px;
+}
+
+.small .volumeslider .ui-slider-handle
+{
+	width: 13px;
+	height: 13px;
+}
+
+.timeslider .ui-slider-range-min
+{
+	background-size: contain;
+	background-color: #335f9b;
+}
+
+.small .timeslider .ui-slider-range-min
+{
+	height: 10px;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.small .volumeslider .ui-slider-range-min
+{
+	overflow: hidden;
+	background-color: #335f9b;
+}
+
+/*disble corner radius*/
+.ui-corner-all, .ui-corner-top, .ui-corner-left, .ui-corner-tl
+{
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+/*disable handle border on desktop*/
+.ui-slider a
+{
+	outline: none;
+	ie-dummy: expression(this.hideFocus=true);
+}

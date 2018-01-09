@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<script type="text/javascript">
+	function Loaded() {
+		var ss = document.location.hash.substring(1);
+		strArgs = ss.split("&");
+		if (strArgs.length == 0 || strArgs[0] == "") {
+			ss = document.location.search.substring(1);
+			strArgs = ss.split("&");
+		}
+		for (var i = 0; i < strArgs.length; i++) {
+			strArg = (strArgs[i]);
+			if (strArg == 'callback') {
+				try {
+					parent.EmptyHtmlLoaded();
+				}
+				catch (e) { };
+			}
+		}
+	}
+	</script>
+
+</head>
+<body bgcolor="white" onload="Loaded();">
+</body>
+</html>

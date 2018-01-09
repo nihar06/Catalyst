@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link type="text/css" rel="stylesheet" href="../css/jquery-ui.min.css" />
+	<link type="text/css" rel="stylesheet" href="../css/player.css" />
+	<link type="text/css" rel="stylesheet" href="../css/skin.css" />
+	<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="../config.js"></script>
+	<script type="text/javascript" src="../kpsettings.js"></script>
+	<script type="text/javascript" src="../js/resource.js"></script>
+	<script type="text/javascript" src="../js/_preferences.js"></script>
+</head>
+<body onkeydown="keyPressHandler(event)" class="windowsBgColor" style="margin: 0px" onunload="window_onunload2()">
+	<div id="prefTabs">
+		<script type="text/javascript">
+			var fPlayerPath = "../";
+		</script>
+		<div id="fplayer" style="display: none;">
+			;
+		</div>
+		<ul id="tabNames">
+			<li><a href="#prefTab" id="prefTabButton" class="tabButton"></a></li>
+			<li id="profileTabId" style="display: none;"><a href="#profileTab" id="profileTabButton" class="tabButton"></a></li>
+		</ul>
+		<div id="prefTab" class="textWindows PrefBody">
+			<div id="prefmain">
+				<form name="prefform" action="" class="prefform">
+					<div id="MarqueeColor">
+						<span class="InstructText"></span>
+						<div>
+						</div>
+						<input type="button" name="ChangeColor" class="InstructTextButtonIE" onclick="return ChangeColor_onclick()" />
+					</div>
+					<div id="PlayAudio" class="pref_line">
+						<label for="PlayAudioSelect" class="InstructText"></label>
+						<select id="PlayAudioSelect" name="PlayAudio" class="InstructText" onchange="return PlayAudio_onchange()">
+							<option value="none" selected="selected" />
+							<option value="demo" />
+							<option value="all" />
+						</select>
+					</div>
+					<div class="ffdisable" id="FlashText">
+						<span class="InstructText"></span>
+					</div>
+					<div class="pref_line">
+						<input type="checkbox" id="LeadInSelect" name="LeadInSelect" onclick="return LeadInSelect_onclick()" /><label
+							for="LeadInSelect" class="InstructText"></label>
+					</div>
+					<div class="pref_line">
+						<input type="checkbox" id="TryItEnableSkipping" onclick="return TryItEnableSkipping_onclick()"
+							name="TryItEnableSkipping" /><label for="TryItEnableSkipping" class="InstructText"></label>
+					</div>
+					<div class="ffdisable hidebyseeit pref_line">
+						<span id="keyCombinationsInDoIt" class="InstructText"></span>
+					</div>
+					<div class="ffdisable hidebyseeit pref_line">
+						<select id="HotKeyCtrl" name="HotKeyCtrl" class="InstructText smallerText" onchange="return HotKey_Ctrl_onchange()">
+							<option value="L" selected="selected"></option>
+							<option value="R"></option>
+							<option value="N"></option>
+						</select>
+						<span class="InstructText">&nbsp;&nbsp;+&nbsp;</span>
+						<select id="HotKeyShift" name="HotKeyShift" class="InstructText smallerText" onchange="return HotKey_Shift_onchange()">
+							<option value="L"></option>
+							<option value="R"></option>
+							<option value="N" selected="selected"></option>
+						</select>
+						<span class="InstructText">&nbsp;&nbsp;+&nbsp;</span>
+						<select id="HotKeyAlt" name="HotKeyAlt" class="InstructText smallerText" onchange="return HotKey_Alt_onchange()">
+							<option value="L" selected="selected"></option>
+							<option value="R"></option>
+							<option value="N"></option>
+						</select>
+					</div>
+					<div class="ffdisable hidebyseeit pref_line">
+						<span class="InstructText"><span id="note1"></span><span id="note2"></span></span>
+					</div>
+					<div class="hidebyseeit pref_line">
+						<label for="DefPlayMode" id="DefPlayModeLabel" class="InstructText"></label>
+						<select id="DefPlayMode" name="DefPlayMode" class="InstructText smallerText" onchange="return DefPlayMode_onchange();">
+							<option value="S" selected="selected"></option>
+							<option value="T"></option>
+							<option value="K"></option>
+							<option value="D" class="ffdisable"></option>
+						</select>
+					</div>
+					<div class="hidebyseeit pref_line">
+						<span id="DefPlayModeLabel2" class="InstructText"></span>
+					</div>
+					<div class="pref_line">
+						<input type="checkbox" id="ShowDiag" name="ShowDiag" onclick="return ShowDiag_onclick()" /><label
+							for="ShowDiag" class="InstructText"></label>
+					</div>
+					<div class="pref_line pref_button_line">
+						<input type="button" name="ResetDefaults" class="InstructTextButtonIE" onclick="return ResetDefaults_onclick()" />
+					</div>
+				</form>
+			</div>
+			<div class="pref_ctrl_buttons pref_button_line">
+				<form name="controlform" action="">
+					<div>
+						<input class="InstructTextButtonIE" type="button" name="OK" value="" onclick="return OK_onclick()" />
+						<input class="InstructTextButtonIE" type="button" name="Cancel" value="" onclick="return Cancel_onclick()" />
+						<input class="InstructTextButtonIE" disabled="disabled" type="button" name="Apply"
+							value="" onclick="return Apply_onclick()" />
+						<input class="InstructTextButtonIE" type="button" name="Help" value="" onclick="return onHelp('');" />
+					</div>
+				</form>
+			</div>
+			<iframe name="preftrp" id="preftrp" src="./../html/transparent.html" allowtransparency="true"
+				style="display: none; left: 0px; width: 100%; position: absolute; top: 0px; height: 100%"
+				frameborder="0"></iframe>
+			<iframe name="prefcolor" id="prefcolor" src="./../html/colortable.html" frameborder="1" scrolling="no"
+				marginwidth="2" marginheight="2" style="display: none; left: 177px; width: 100px; position: absolute; top: 48px; height: 105px"></iframe>
+		</div>
+		<div id="profileTab" class="textWindows PrefBody">
+			<iframe name="profileFrame" id="profileFrame" src="./../html/empty.html" scrolling="auto"
+				style="display: inline; width: 100%; height: 100%;" frameborder="0"></iframe>
+		</div>
+	</div>
+</body>
+</html>

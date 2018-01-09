@@ -1,0 +1,15 @@
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:11:53:46 -0400] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-6 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:11:53:46 -0400] "GET /publicationBeta/ HTTP/1.1" 302 - http-bio-8080-exec-6 46
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:11:53:46 -0400] "GET /publicationBeta/login HTTP/1.1" 200 7705 http-bio-8080-exec-6 25
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:11:53:52 -0400] "POST /publicationBeta/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-6 3679
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:11:53:52 -0400] "GET /publicationBeta/ HTTP/1.1" 200 8537 http-bio-8080-exec-6 277
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:19 -0400] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:19 -0400] "GET /publicationBeta/ HTTP/1.1" 302 - http-bio-8080-exec-1 42
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:20 -0400] "GET /publicationBeta/login HTTP/1.1" 200 7705 http-bio-8080-exec-1 31
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:21 -0400] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:55 -0400] "POST /publicationBeta/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-1 3631
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:13:55 -0400] "GET /publicationBeta/ HTTP/1.1" 200 8535 http-bio-8080-exec-2 259
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:17:02 -0400] "GET /publicationBeta/ HTTP/1.1" 200 8535 http-bio-8080-exec-10 12
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:17:49 -0400] "GET /publicationBeta/ HTTP/1.1" 200 8533 http-bio-8080-exec-10 264
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:59:43 -0400] "GET /publicationBeta/manager/uploadContent HTTP/1.1" 200 7355 http-bio-8080-exec-9 84
+0:0:0:0:0:0:0:1 - - [28/Sep/2017:12:59:58 -0400] "POST /publicationBeta/manager/uploadContent HTTP/1.1" 200 6 http-bio-8080-exec-9 4769

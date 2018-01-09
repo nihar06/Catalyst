@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+    <title>IAS Information</title>
+
+    <style type="text/css">
+        * 
+        {
+            font-family:"Arial", sans-serif; 
+            font-size:10pt;
+        }
+        
+        h1 
+        {
+            margin:0px;
+            margin-top:1.2em;
+            margin-bottom:1em;
+	        font-size:14pt;
+	        color:#365F91;
+        }
+        
+        td
+        {
+            vertical-align:top;
+            padding:1px 5px 1px 5px;
+            border:solid windowtext 1px;
+        }
+        
+        p
+	    {
+	        margin:0px;
+	    }
+        
+        .IASTableHeader
+        {
+            background:#D9D9D9;
+            border:solid windowtext 1px;
+            font-weight: bold;
+        }
+        
+        .ApplicationCol
+        {
+            width:200px;
+        }
+        
+        .URLCol
+        {
+        }
+
+        input.url
+        {
+            width: 600px;
+            border: none;
+	    outline: none !important;
+	    padding: 0;
+	    margin: 0;
+        }
+
+    </style>
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="kpsettings.js"></script>
+    <script type="text/javascript" src="js/resource.js"></script>
+    
+
+    <script type="text/javascript">
+        function OnLoad() {
+            $(document).ready(jQueryReady);
+        }
+
+        function HtmlEscape(html) {
+            return html.replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+        }
+
+        function CreateLink(url) {
+            url = HtmlEscape(url);
+            return '<a href="' + url + '">' + url + '</a>';
+        }
+
+        function CreateUrlInput(value) {
+            return '<input class="url" type="text" value="' + HtmlEscape(value) + '" readonly="readonly" />';
+        }
+
+        function SelectInputContent(input) {
+            var value = input.value;
+            if (input.setSelectionRange) {
+                input.setSelectionRange(0, value.length);
+            }
+            else if (input.createTextRange) {
+                var range = input.createTextRange();
+                range.collapse(true);
+                range.moveEnd('character', value.length);
+                range.moveStart('character', 0);
+                range.select();
+            }
+        }
+
+        var _iasInfo = null;
+
+        var upk = upk || {};
+
+        upk.IAS = (function () {
+            var _this = {};
+
+            var _IASINFOJSON = "./iasinfo.json.js";
+
+            function OnLoadData(data) {
+                _iasInfo = data;
+            }
+
+            _this.Initialize = function (callback) {
+
+                // add code to chain load IAS configuration file if needed  
+                $.getJSON(_IASINFOJSON, function (data) {
+                    OnLoadData(data);
+                    if (callback)
+                        callback();
+                }).error(function () {
+                    console.log("Initialize: load error: " + _IASINFOJSON);
+                });
+
+                _this.GetHintList = function (Kpath_launch) {
+                    if (_iasInfo == null) {
+                        console.log("GetHintList called with no iasinfo");
+                        return null;
+                    }
+
+                    /* declare an empty json structure */
+                    var retlist = {};
+
+                    var baseUrl;
+                    if (/^http[s]?:$/.test(window.location.protocol) && !/^(?:\[0:0:0:0:0:0:0:1\]|\[::1\]|127\.0\.0\.1|localhost)(?:\:\d+)?$/.test(window.location.host)) {
+                        baseUrl = window.location.href.replace(/\/[^\?\/]+(?:\?.*)?$/, '/');
+                    }
+                    else if (_iasInfo.DeploymentUrl) {
+                        baseUrl = _iasInfo.DeploymentUrl;
+                        if (!/\/$/.test(baseUrl))
+                            baseUrl += '/';
+                    }
+
+                    $.each(_iasInfo.Applications || {}, function (key, entry) {
+                        if (entry.Gateway) {
+                            var name = key.replace(/\..*$/, '').toLowerCase();
+                            if (window['R_iasinfo_app_' + name])
+                                name = window['R_iasinfo_app_' + name];
+                            else name = entry.Name;
+
+                            if (!retlist[name]) {
+                                var gateway;
+                                var validGatewayUrl = true;
+                                if (entry.ServerConfigOnly) {
+                                    gateway = window['R_iasinfo_serverconfigonly'] || '';
+                                }
+                                else {
+                                    gateway = (baseUrl ? baseUrl : "http://<server>/<directory>/") + entry.Gateway;
+                                    validGatewayUrl = !!baseUrl;
+                                }
+                                retlist[name] = {
+                                    Name: name,
+                                    Keys: [key],
+                                    Gateway: gateway,
+                                    ValidGatewayURL: validGatewayUrl
+                                };
+                            }
+                            else retlist[name].Keys.push(key);
+                        }
+                    });
+
+                    return retlist;
+                }
+            }
+
+            return _this;
+        })();
+
+        function UpdateTableEntry(entry, templateline) {
+            var $item = templateline.clone().appendTo('.IASTable');
+            var gateway = CreateUrlInput(entry.Gateway);
+            var app = "<p>" + entry.Name + "</p>";
+            if (entry.Keys && entry.Keys.length > 1 || (entry.Keys.length > 0 && entry.Keys[0].indexOf("APP.")==0)) {
+                var apps = [];
+                $.each(entry.Keys, function(_, appId) {
+                    apps.push('<i>' + HtmlEscape(appId) + '</i>');
+                });
+                app += '<p>' + apps.join('<br />') + '</p>';
+            }
+            $(".ApplicationCol", $item).html(app);
+            $(".URLCol", $item).html("<p>" + gateway + "</p>");
+        }
+
+        function LoadTable() {
+            $("*[id^='R_iasinfo_']").each(function () {
+                var id = $(this).attr("id");
+                if (id && window[id] && !window[id].tagName)
+                    $(this).html('' + window[id]);
+                else console.log('Variable not defined: ' + id);
+            });
+
+            var templateline = $(".IASEntry").clone();
+            $(".IASEntry").remove();
+
+            var _Kpath_launch = window['Kpath_launch'] || 0;
+            var _Kpath_IAS_Help_URL = window['Kpath_IAS_Help_URL'] || '';
+
+            var hintlist = upk.IAS.GetHintList(_Kpath_launch);
+
+            var linkCount = 0;
+            var hasInvalidLink = 0;
+
+            $.each(hintlist, function (key, entry) {
+                ++linkCount;
+                if (!entry.ValidGatewayURL)
+                    hasInvalidLink = 1;
+                UpdateTableEntry(entry, templateline);
+            });
+
+            if (hasInvalidLink)
+                $('#R_iasinfo_p5').show();
+
+            if (linkCount)
+                $('#GatewaySection').show();
+            else $('#R_iasinfo_noappsforhint').show();
+
+            if (_iasInfo.CddPublicUrl) {
+                $('#CddLink').html(CreateUrlInput(_iasInfo.CddPublicUrl));
+                $('#CddSection').show();
+            }
+
+            /* If we're running under KCenter, we can make the IAS Help link live */
+            if (_Kpath_IAS_Help_URL) {
+                $(".InAppLink").html("<a href='" + _Kpath_IAS_Help_URL + "'>" + $(".InAppLink").html() + "</a>");
+            }
+
+            $('input.url').on('focus', function() {
+                var that = this;
+                setTimeout(function(){SelectInputContent(that)}, 1);
+            });
+        }
+
+        function jQueryReady() {
+            upk.IAS.Initialize(LoadTable);
+        }
+
+    </script>
+</head>
+<body onload="OnLoad();">
+
+<h1 id="R_iasinfo_h1"></h1>
+
+<p id="R_iasinfo_p1"></p>
+
+<ol>
+<li id="R_iasinfo_li1"></li>
+<li id="R_iasinfo_li2"></li>
+<li id="R_iasinfo_li3"></li>
+</ol>
+
+<div id="GatewaySection" style="display:none">
+<p><span id="R_iasinfo_p2"></span> <span id="R_iasinfo_p3"></span></p>
+<br />
+<table class="IASTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;">
+ <tr class="IASTableHeader">
+  <td class="ApplicationCol"><p id="R_iasinfo_tdp1"></p></td>
+
+  <td class="URLCol"><p id="R_iasinfo_tdp2"></p></td>
+ </tr>
+
+ <tr class="IASEntry">
+  <td class="ApplicationCol"><p>Place Holder</p></td>
+  <td class="URLCol"><p class="IASURL">Place Holder</p></td>
+ </tr>
+
+</table>
+<p id="R_iasinfo_p5" style="display:none"></p>
+</div>
+<p id="R_iasinfo_noappsforhint" style="display:none"></p>
+<br />
+
+<div id="CddSection" style="display:none">
+<br />
+<p id="R_iasinfo_p4"></p>
+<p id="CddLink"></p>
+</div>
+
+</body>
+</html>

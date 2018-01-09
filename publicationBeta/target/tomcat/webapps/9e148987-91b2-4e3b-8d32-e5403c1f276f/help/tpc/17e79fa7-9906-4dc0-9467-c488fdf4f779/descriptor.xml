@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Use Print It! Mode</Title>
+  <Type>Section</Type>
+  <Concept Guid="2405cd95-808a-428e-9d18-310f9864e3ed">./tpc/2405cd95-808a-428e-9d18-310f9864e3ed/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

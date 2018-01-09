@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<!-- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. -->
+<!-- Version 12.1.0.0 -->
+<html>
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        /* <!-- Version 9 --> */
+
+html, body, #content {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+#content {
+	overflow: hidden;
+}
+
+body, ul {
+	padding: 0;
+	margin: 0;
+}
+
+.tabs {
+	font-family: Arial,sans-serif;
+	font-size: 11pt;
+	background: #94B8E9;
+	list-style: none;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;  
+	user-select: none;
+}
+
+.tabs :focus, #header:focus, #content:focus {
+	outline: none !important;
+}
+
+.tabs a, .tabs a:visited, .tabs span {
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0 15px 0 15px;
+	line-height: 32px;
+	cursor: pointer;
+	color: #333;
+	text-decoration: none;
+}
+
+.tabs li {
+	list-style: none;
+	position: relative;
+	display: block;
+	float: left;
+	margin-top: -1px;
+	border-top: solid 1px #2765BB;
+	border-right: solid 1px #2765BB;
+	background: #CDE2FD;
+}
+
+.tabs ul {
+	z-index: 1;
+	height: auto;
+	float: none;
+	background: #FFF;
+	position: absolute;
+	display: none;
+	left: -1px;
+	border: solid 1px #548DDB;
+	border-top: none;
+	padding: 5px 0 5px 0;
+	font-size: 90%;
+	box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+}
+
+.tabs ul a, .tabs ul a:visited {
+	color: #000;
+}
+
+.tabs ul a {
+	display: block;
+}
+
+.tabs ul li {
+	float: none;
+	border-right: none;
+	background: #FFF;
+	margin-top: 0;
+	border-top: none;
+}
+
+.tabs ul li a {
+	line-height: 28px;
+}
+
+.tabs .selected {
+	background: #FFF;
+}
+
+.tabs li:hover {
+	color: #000;
+	background: #E5F0FE;
+}
+
+.tabs li:hover.selected {
+	background: #FFF;
+}
+
+.tabs li:hover a {
+	color: #000;
+}
+
+.tabs li:hover ul, .tabs li.focused ul {
+	display: block;
+}
+
+.tabs ul li:hover {
+	background: #CDE2FD;
+}
+
+.tabs li.focused, .tabs ul li.focused {
+	background: #FCE8CD;
+}
+
+.tabs:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.tabs .rightTab {
+	float: right;
+	border-left: solid 1px #2765BB;
+	border-right: none;
+}
+
+.tabs .rightTab ul {
+	left: auto;
+	border-right: none;
+	right: 0;
+}
+
+.tabs .dropDown > span {
+    padding-right: 0px;
+}
+
+.tabs .dropDown > span:after {
+    content: "▼";
+    display: inline-block;
+    border-left: solid 1px #94B8E9;
+    margin-left: 10px;
+    padding: 1px 2px;
+	line-height: 30px;
+    color: #2765BB;
+}
+
+.frame {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+    </style>
+</head>
+<body>
+    <script type="text/javascript" src="hint_gateway.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/skin.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	a
+	{
+		text-decoration: underline;
+	}
+	a:link
+	{
+		color: #00F;
+	}
+	a:active
+	{
+		color: #00F;
+	}
+	a:visited
+	{
+		color: #00F;
+	}
+	a:hover
+	{
+		color: #00F;
+	}
+</style>
+
+<script type="text/javascript">
+	function setContent(s) {
+		var d = document.getElementById("content");
+		d.style.width = "auto";
+		d.style.height = "auto";
+		d.innerHTML = s;
+		setTimeout("a()", 1);
+	}
+	function a() {
+		var d = document.getElementById("content");
+		parent.jumpinCorrection(d.offsetWidth, d.offsetHeight);
+	}
+	function PlayTopic(m, f) {
+		if (parent.PlayTopic)
+			parent.PlayTopic(m, f);
+	}
+	function JumpIn_Show(s, m) {
+		if (parent.JumpIn_Show)
+			parent.JumpIn_Show(s, m);
+	}
+	function J_close() {
+		setTimeout("JumpIn_Show(null,null);", 1);
+	}
+</script>
+</head>
+<body onmouseup="J_close()" class="textWindows">
+	<div id="content" class="textWindows">
+	</div>
+</body>
+</html>

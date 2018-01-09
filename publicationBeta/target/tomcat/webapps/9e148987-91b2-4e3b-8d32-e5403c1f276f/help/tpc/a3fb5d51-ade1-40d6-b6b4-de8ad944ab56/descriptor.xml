@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Additional Features</Title>
+  <Type>Section</Type>
+  <Concept Guid="96b984f7-f709-4c37-a4fe-b6ae8c095c2f">./tpc/96b984f7-f709-4c37-a4fe-b6ae8c095c2f/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

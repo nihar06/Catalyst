@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<!--<html xmlns="http://www.w3.org/1999/xhtml">-->
+<html>
+<head>
+	<title>Test It! Steps to recreate</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<script type="text/javascript" src="../js/jquery.min.js"> </script>
+	<script type="text/javascript" src="../js/resource.js"> </script>
+	<style type="text/css">
+		body
+		{
+			margin:0;
+			height: 100%;
+			width:100%;
+			overflow:hidden;
+		}
+		html
+		{
+			height: 100%;
+		}
+		
+		textarea
+		{
+			resize: none;
+			overflow:auto;
+		}
+		.container
+		{
+			position:absolute;
+			top: 15px;
+			bottom: 15px;
+			right: 15px;
+			left: 15px;
+		}
+		#strbox
+		{
+			width: 100%;
+			height: 100%;
+		}
+		.buttoncell
+		{
+			height: 32px;
+			margin-top: 10px;
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
+		#tacontainer
+		{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 50px;
+		}
+	</style>
+	<script type="text/javascript">
+		var embedded = false;
+		var strWin = { 
+			fillText : function (text) {
+				$("#strbox").val(text);
+			}
+		}
+
+		function window_onload() {
+			$("#closebutton").text(R_bubble_closeondemand);
+			document.title = R_mode_testit + " - " + R_testit_str;
+			if (!opener && parent) {
+				opener = parent;
+				embedded = true;
+			}
+			if (opener) {
+				if (opener.fillSTRBox) {
+					opener.fillSTRBox(strWin);
+				}
+			}
+			$(document).keydown(function (e) {
+				// ESCAPE key pressed
+				if (e.keyCode == 27) {
+					e.preventDefault();
+					e.stopPropagation();
+					closeDialog();
+				}
+			});
+			$("#strbox").focus();
+		}
+
+		function closeDialog() {
+			if (embedded) {
+				if (opener && opener.removeEmbeddedDialog)
+					opener.removeEmbeddedDialog();
+			}
+			else
+				opener.closeSTR();
+		}
+
+		function window_onunload() {
+			try {
+				if (opener) {
+					if (opener.OnClosingChildWindow)
+						opener.OnClosingChildWindow();
+				}
+			}
+			catch (e) { };
+		}
+	</script>
+</head>
+<body onload="window_onload()" onunload="window_onunload()">
+	<div class="container">
+		<div id="tacontainer">
+			<textarea id="strbox" rows="12" cols="52">STR</textarea>
+		</div>
+		<div style="">
+			<div class="buttoncell">
+				<button id="closebutton" onclick="closeDialog()"></button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

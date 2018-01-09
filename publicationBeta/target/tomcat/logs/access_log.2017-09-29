@@ -1,0 +1,14 @@
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:40 -0400] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:40 -0400] "GET /publicationBeta/ HTTP/1.1" 302 - http-bio-8080-exec-7 60
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:41 -0400] "GET /publicationBeta/login HTTP/1.1" 200 7705 http-bio-8080-exec-8 209
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:42 -0400] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-9 0
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:52 -0400] "POST /publicationBeta/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-10 3611
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:41:52 -0400] "GET /publicationBeta/ HTTP/1.1" 200 8533 http-bio-8080-exec-10 21
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:42:00 -0400] "GET /publicationBeta/manager/uploadContent HTTP/1.1" 404 1025 http-bio-8080-exec-10 11
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:42:25 -0400] "GET /publicationBeta/manager/importContent HTTP/1.1" 200 7355 http-bio-8080-exec-10 43
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:42:39 -0400] "POST /publicationBeta/manager/uploadContent HTTP/1.1" 404 1025 http-bio-8080-exec-10 4316
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:49:40 -0400] "GET /publicationBeta/resources/popper/popper.js.map HTTP/1.1" 404 949 http-bio-8080-exec-3 18
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:50:26 -0400] "GET /publicationBeta/manager/importContent HTTP/1.1" 200 7355 http-bio-8080-exec-3 1223
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:50:26 -0400] "GET /publicationBeta/resources/popper/popper.js.map HTTP/1.1" 404 949 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:10:51:16 -0400] "POST /publicationBeta/manager/importContent HTTP/1.1" 200 6 http-bio-8080-exec-3 39983
+0:0:0:0:0:0:0:1 - - [29/Sep/2017:12:19:34 -0400] "GET /data/toc.html?keep-alive-timer HTTP/1.1" 404 - http-bio-8080-exec-5 0

@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Untitled Page</title>
+    
+    <script type="text/javascript">
+    function loadIt(iframe) {
+        var target = document.getElementById("target");
+        target.innerHTML = iframe.contentWindow.document.body.innerHTML;
+    }
+</script>
+
+</head>
+<body>
+
+ <div id="target"></div>
+<iframe id="attribution"
+    src="../../../attribution/player3rdparty.html"
+    width="100%"
+    height="0"
+    scrolling="no"
+    frameborder="0"
+    style="display:none"
+    onload="loadIt(this)"/>
+   
+
+</body>
+</html>

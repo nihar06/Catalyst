@@ -1,0 +1,58 @@
+﻿<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+
+<HTML xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:tmpl="urn:template-v1" xmlns:odext="urn:odext">
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Do It!</title>
+</HEAD>
+<body>
+<script language="Javascript">
+
+					window.notsupp_baseurl = "../../../";
+					
+</script>
+<script src="../../../js/resource.js" language="Javascript"> </script>
+<script src="../../../js/_topicg.js" language="Javascript"> </script>
+<script>
+					try {
+					function IsWindowPositioningRestricted() {
+					var p = createPopup();
+					p.show(screenLeft, screenTop - 1, 1, 1);
+					var r = p.document.parentWindow.screenTop == screenTop - 1;
+					p.hide();
+					return !r;
+					}
+
+					if (IsWindowPositioningRestricted()) {
+					startFFVersion();
+					window.close();
+					}
+					else {
+					var loc = "topicgc.html"
+					var param = "&popup=true"
+					if (document.location.hash == "") {
+					if (document.location.search == "") {
+					param = "?popup=true"
+					}
+					window.navigate(loc + document.location.search + param)
+					}
+					else {
+					window.navigate(loc + document.location.hash + param)
+					}
+					}
+					} catch (e) {
+					startFFVersion();
+					window.close();
+					}
+
+					function startFFVersion() {
+					if (document.location.hash == "") {
+					window.opener.OpenDoItNonStayOnTop(document.location.search)
+					}
+					else {
+					window.opener.OpenDoItNonStayOnTop(document.location.hash)
+					}
+					}
+				</script></body></HTML>

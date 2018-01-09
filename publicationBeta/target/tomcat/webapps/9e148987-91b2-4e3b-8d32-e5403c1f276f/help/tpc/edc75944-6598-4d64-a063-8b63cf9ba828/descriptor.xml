@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>View the Outline</Title>
+  <Type>Section</Type>
+  <Concept Guid="3e2206e8-7522-48da-8b88-e5646b77bfda">./tpc/3e2206e8-7522-48da-8b88-e5646b77bfda/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

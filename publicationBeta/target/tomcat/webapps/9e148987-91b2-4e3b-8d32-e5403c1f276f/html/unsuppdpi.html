@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript" src="../js/resource.js"></script>
+	<script type="text/javascript" src="../js/_unsuppdpi.js"></script>
+	<script type="text/javascript">
+
+		function Init() {
+			var url = ParseUrl();
+			document.title = R_unsupported_dpi_title;
+			document.getElementById("p1").innerHTML = R_unsupported_dpi_1;
+			document.getElementById("p2").innerHTML = formatStr(R_unsupported_dpi_2, '<a href="' + url + '">', '</a>');
+		}
+
+		function ParseUrl() {
+			var ss = document.location.hash.substring(1);
+			if (ss.length == 0) {
+				ss = document.location.search.substring(1);
+			};
+			return encodeURI(Escape.MyUnEscape(ss));
+		}
+
+		function formatStr(s) {
+			var args = arguments;
+			for (var i = 1; i < args.length; i++) {
+				var arg = "{" + (i - 1) + "}";
+				var k = s.indexOf(arg);
+				if (k >= 0)
+					s = s.substr(0, k) + args[i] + s.substr(k + arg.length);
+			}
+			return s;
+		}
+	
+	</script>
+</head>
+<body onload="Init();">
+	<p id="p1" style="text-align: center; margin-top: 50px;">
+	</p>
+	<p id="p2" style="text-align: center; margin-top: 30px;">
+	</p>
+</body>
+</html>

@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>View Remediation</Title>
+  <Type>Section</Type>
+  <Concept Guid="256c2718-ce3a-4253-b233-4d080576f5cb">./tpc/256c2718-ce3a-4253-b233-4d080576f5cb/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

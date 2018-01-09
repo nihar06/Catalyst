@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Debug</title>
+</head>
+<body bgcolor='#ddddff' onunload='NotifyParent()' onload='Init()'>
+<style type="text/css">
+	body {font-family:Tahoma, Arial; font-size:8pt; color:#000033; padding:0px; margin:0px;}
+	th   {font-family:Tahoma, Arial; font-size:9pt; color:#333366; padding:4px 5px 4px 8px; background-color:#ffaa33; font-weight:bold; text-align:left;}
+	td   {font-family:Tahoma, Arial; font-size:8pt; color:#000033; padding:5px 5px 3px 8px; border-bottom:1px solid #bbbbff;}
+</style>
+
+<div id='controlbar' style='background-color:#99AAFF; padding:2px 3px 2px 8px; margin:1px 2px; text-align:middle;'>
+    Sort: 
+    <select id='Sorting' onchange='SortingChanged()'>
+        <option value=0>oldest first</option>
+        <option value=1>newest first</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Maximum number of items:
+    <select id='TraceLength'  onchange='LengthChanged()'>
+        <option value=20>20</option>
+        <option value=50>50</option>
+        <option value=100>100</option>
+        <option value=200>200</option>
+        <option value=0>&infin;</option>
+    </select>
+</div>
+
+<div id='tracelist'></div>
+
+<script type="text/javascript">
+    var traceLog = null;
+    if (window.opener) {
+        try {
+            traceLog = window.opener.lmslog;
+        } catch (e) {
+            document.getElementById("tracelist").innerHTML = "<p style='font-size:10pt; font-weight:bold; color:red; margin:20px;'>Unable to connect to the opener window.</p>";
+        }
+    }
+    var pInterval = null;
+    var cookieJar = new CookieHandler();
+    var traceIndex = 4;
+    var traceLength = 80;
+    var sortOrder = 0;
+    var forceUpdate = true;
+
+    function Init() {
+        // Check cookies for preferences
+        if (cookieJar.getCookie("sort") != null) {
+            sortOrder = cookieJar.getCookie("sort");
+        }
+        document.getElementById("Sorting").selectedIndex = sortOrder;
+
+        if (cookieJar.getCookie("length") != null) {
+            traceIndex = cookieJar.getCookie("length");
+        }
+        document.getElementById("TraceLength").selectedIndex = traceIndex;
+        traceLength = document.getElementById("TraceLength").options[traceIndex].value;
+
+        // Start polling the trace log
+        if (traceLog) {
+            pInterval = window.setInterval(UpdateTraceStack, 100);
+        }
+    }
+
+    function SortingChanged() {
+        sortOrder = document.getElementById("Sorting").selectedIndex;
+        cookieJar.setCookie("sort", sortOrder, 2678400); //Store for 1 month
+        forceUpdate = true;
+    }
+
+    function LengthChanged() {
+        traceIndex = document.getElementById("TraceLength").selectedIndex;
+        traceLength = document.getElementById("TraceLength").options[traceIndex].value;
+        cookieJar.setCookie("length", traceIndex, 2678400); //Store for 1 month
+        forceUpdate = true;
+    }
+
+    function UpdateTraceStack() {
+        try {
+            if (traceLog.changed || forceUpdate) {
+                forceUpdate = false;
+                document.getElementById("tracelist").innerHTML = traceLog.writeLog(sortOrder, traceLength);
+            }
+        } catch (e) {
+            // Apparently the window.opener can no longer be reached, so quit polling
+            if (!window.opener) {
+                window.clearInterval(pInterval);
+            }
+        }
+    }
+
+    function NotifyParent() {
+        try {
+            traceLog.traceWindow = null;
+        } catch (e) { }
+    }
+
+    function CookieHandler() {
+
+        this.setCookie = function(name, value, seconds) {
+
+            if (typeof (seconds) != 'undefined') {
+                var date = new Date();
+                date.setTime(date.getTime() + (seconds * 1000));
+                var expires = "; expires=" + date.toGMTString();
+            }
+            else {
+                var expires = "";
+            }
+
+            document.cookie = name + "=" + value + expires + "; path=/";
+        }
+
+        this.getCookie = function(name) {
+
+        	name = name + "=";
+        	var carray = document.cookie.split(';');
+
+        	for (var i = 0, il = carray.length; i < il; i++) {
+        		var c = carray[i];
+        		while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+        		if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        	}
+
+        	return null;
+        }
+
+    }
+</script>
+</body>
+</html>

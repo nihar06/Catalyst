@@ -1,0 +1,126 @@
+.KBACE-hrmenu {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	display: block;
+	padding: 5px 0px 0px 0px;
+	border-top: #848e9a solid 2px;
+}
+
+/* general ul style */
+.KBACE-hrmenu ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.KBACE-hrsub-inner {
+	border: 1px solid #ffffff;
+	background: #012939;
+}
+
+/* first level ul style */
+.KBACE-hrmenu>ul, .KBACE-hrmenu .KBACE-hrsub-inner {
+	margin: 0 auto;
+	display: table;
+	font-size: 18px;
+}
+
+.KBACE-hrmenu>ul>li {
+	display: inline-block;
+	padding: 0px 5px 0px 0px;
+}
+
+.KBACE-hrmenu>ul>li>a {
+	padding: 0px 10px 5px 10px;
+	color: #ffffff;
+	display: inline-block;
+}
+
+.KBACE-hrmenu>ul>li>a:hover {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.KBACE-hrmenu>ul>li.KBACE-hropen a, .KBACE-hrmenu>ul>li.KBACE-hropen>a:hover
+	{
+	text-decoration: none;
+	color: white;
+}
+
+/* sub-menu */
+.KBACE-hrmenu .KBACE-hrsub {
+	display: none;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: 10;
+}
+
+.KBACE-hropen .KBACE-hrsub {
+	display: block;
+}
+
+.KBACE-hrmenu .KBACE-hrsub-inner>div {
+	float: left;
+	padding: 0 2em 0;
+	text-align: left;
+}
+
+.KBACE-hrmenu .KBACE-hrsub-inner:before, .KBACE-hrmenu .KBACE-hrsub-inner:after
+	{
+	content: " ";
+	display: table;
+}
+
+.KBACE-hrmenu .KBACE-hrsub-inner:after {
+	clear: both;
+}
+
+.KBACE-hrmenu .KBACE-hrsub-inner>div a {
+	line-height: 2em;
+}
+
+.KBACE-hrsub h5 {
+	color: #afdefa;
+	padding: 5px 0 0px;
+	margin: 0;
+}
+
+@media screen and (max-width: 766px) {
+	.submenu-col {
+		width: 100%;
+	}
+	.KBACE-hrmenu {
+		border: none;
+		display: none;
+	}
+	.KBACE-hrmenu>ul, .KBACE-hrmenu .KBACE-hrsub-inner {
+		text-align: left;
+		width: 100%;
+		padding: 0;
+	}
+	.KBACE-hrmenu .KBACE-hrsub-inner {
+		border: none;
+	}
+	.KBACE-hrmenu>ul>li {
+		display: block;
+	}
+	.KBACE-hrmenu>ul>li>a {
+		display: inline-block;
+		padding: 0px;
+	}
+	.KBACE-hrmenu .KBACE-hrsub {
+		position: relative;
+	}
+	.KBACE-hrsub h5 {
+		padding-top: 0.6em;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.KBACE-hrmenu .KBACE-hrsub-inner>div {
+		width: 100%;
+		float: none;
+	}
+}

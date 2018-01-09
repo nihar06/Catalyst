@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<!-- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="upk-cdd" content="1.0" />
+    <title>*SmartHelp Subscription Page*</title>
+    <style type="text/css">
+        * 
+        {
+            margin:0;
+            padding:0;
+        }
+        html, body {
+            margin: 0;
+            padding: 2px;
+            padding-top: 10px;
+            font-family: Arial, Helvetica, Tahoma, sans-serif;
+            font-size: 12px;
+            text-align: center;
+        }
+        #message
+        {
+            font-size: 14px;  
+            font-weight: bold; 
+            margin-bottom:4px;
+        }
+        #link
+        {
+            height:50px;
+            padding:5px;
+            line-height: 50px
+        }
+        #link a
+        {
+              font-weight: bold;
+              text-decoration: none;
+              color: #6c93cf;
+        }
+        #link a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <script id="cdd" type="text/javascript">
+        var cdd = {"Type":"player","CddVersion":"1.0","LastPublishDate":"2017-10-26 10:53:11","Guid":"9e148987-91b2-4e3b-8d32-e5403c1f276f","CddDefaultLanguage":"en","Title":"Catalyst ERP Cloud - Project Portfolio Management","Enabled":true};
+    </script>
+    <script type="text/javascript">
+        var langs = {
+	"cs" :
+		{
+			"CDD_TITLE" : "Odběr aplikace SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Aplikace SmartHelp - přihlášení k odběru nepovoleno",
+			"CDD_NO_SH" : "Aplikace SmartHelp nebyla ve vašem systému zjištěna.",
+			"CDD_GET_SH" : "Informace o aplikaci SmartHelp a pokyny k instalaci najdte na {{Instalační stránce}}.",
+			"CDD_DISABLED" : "Tento obsah nepodporuje odběr aplikace SmartHelp. Další informace vám poskytne správce systému."
+		},
+	"da" :
+		{
+			"CDD_TITLE" : "Smarthjælp-abonnement",
+			"CDD_TITLE_PREVENTED" : "Smarthjælp-abonnement forhindret",
+			"CDD_NO_SH" : "Smarthjælp blev ikke fundet på dit system.",
+			"CDD_GET_SH" : "Du finder oplysninger om Smarthjælp og instruktioner om installation på {{installationssiden}}",
+			"CDD_DISABLED" : "Dette indhold understøtter ikke Smarthjælp-abonnement. Kontakt systemadministratoren for at få flere oplysninger."
+		},
+	"de" :
+		{
+			"CDD_TITLE" : "SmartHelp-Abonnement",
+			"CDD_TITLE_PREVENTED" : "SmartHelp-Abonnement nicht möglich",
+			"CDD_NO_SH" : "SmartHelp wurde auf Ihrem System nicht gefunden.",
+			"CDD_GET_SH" : "Informationen über SmartHelp und Installationsanweisungen finden Sie auf der {{Installationsseite}}",
+			"CDD_DISABLED" : "Dieser Inhalt unterstützt kein SmartHelp-Abonnement. Weitere Informationen erhalten Sie von Ihrem Systemadministrator."
+		},
+	"en" :
+		{
+			"CDD_TITLE" : "SmartHelp Subscription",
+			"CDD_TITLE_PREVENTED" : "SmartHelp Subscription Prevented",
+			"CDD_NO_SH" : "SmartHelp was not detected on your system.",
+			"CDD_GET_SH" : "Information about SmartHelp and Installation Instructions can be found on the {{Installation Page}}",
+			"CDD_DISABLED" : "This content does not support SmartHelp subscription. Contact your system administrator for more information."
+		},
+	"es-mx" :
+		{
+			"CDD_TITLE" : "Suscripción de Ayuda Inteligente",
+			"CDD_TITLE_PREVENTED" : "Se impidió la suscripción de Ayuda Inteligente",
+			"CDD_NO_SH" : "No se detectó Ayuda Inteligente en su sistema.",
+			"CDD_GET_SH" : "Puede encontrar información sobre Ayuda Inteligente y las instrucciones de instalación en {{página de instalación}}",
+			"CDD_DISABLED" : "Este contenido no soporta la suscripción de Ayuda Inteligente. Póngase en contacto con el administrador del sistema para obtener más información."
+		},
+	"es" :
+		{
+			"CDD_TITLE" : "Suscripción a Ayuda Inteligente",
+			"CDD_TITLE_PREVENTED" : "Se ha impedido la suscripción a Ayuda Inteligente",
+			"CDD_NO_SH" : "No se ha detectado Ayuda Inteligente en el sistema.",
+			"CDD_GET_SH" : "Puede consultar más información sobre Ayuda Inteligente y las instrucciones de instalación en {{página de instalación}}.",
+			"CDD_DISABLED" : "Este contenido no admite la suscripción a Ayuda Inteligente. Para más información, póngase en contacto con el administrador del sistema."
+		},
+	"fi" :
+		{
+			"CDD_TITLE" : "SmartHelp-tilaus",
+			"CDD_TITLE_PREVENTED" : "SmartHelp-tilaus estetty",
+			"CDD_NO_SH" : "SmartHelp-apuohjelmaa ei tunnistettu järjestelmästä.",
+			"CDD_GET_SH" : "SmartHelp-apuohjelman tiedot ja asennustiedot ovat kohdassa {{Asennussivu}}",
+			"CDD_DISABLED" : "Tämä sisältö ei tue SmartHelp-tilausta. Pyydä lisätietoja järjestelmän pääkäyttäjältä."
+		},
+	"fr-ca" :
+		{
+			"CDD_TITLE" : "Abonnement à SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Abonnement à SmartHelp non autorisé",
+			"CDD_NO_SH" : "SmartHelp est introuvable dans votre système.",
+			"CDD_GET_SH" : "Des informations sur SmartHelp et les directives d'installation sont accessibles à la {{page d'installation}}",
+			"CDD_DISABLED" : "L'abonnement à SmartHelp n'est pas pris en charge pour ce contenu. Communiquez avec l'administrateur de système pour obtenir des informations supplémentaires."
+		},
+	"fr" :
+		{
+			"CDD_TITLE" : "Abonnement SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Abonnement SmartHelp empêché",
+			"CDD_NO_SH" : "SmartHelp n'a pas été détecté sur votre système.",
+			"CDD_GET_SH" : "Vous trouverez des informations sur SmartHelp et les instructions d'installation sur la {{Page d'installation}}",
+			"CDD_DISABLED" : "Ce contenu ne prend pas en charge l'abonnement à SmartHelp. Pour plus d'informations, contactez l'administrateur système."
+		},
+	"hu" :
+		{
+			"CDD_TITLE" : "SmartHelp-feliratkozás",
+			"CDD_TITLE_PREVENTED" : "A SmartHelp-feliratkozás megakadályozva",
+			"CDD_NO_SH" : "A SmartHelp nem észlelhető a rendszerben.",
+			"CDD_GET_SH" : "A SmartHelp bővítménnyel kapcsolatos információk és telepítési utasítások a {{telepítési lapon}} találhatók.",
+			"CDD_DISABLED" : "Ez a tartalom nem támogatja a SmartHelp-feliratkozást. További tudnivalókért forduljon a rendszergazdához."
+		},
+	"it" :
+		{
+			"CDD_TITLE" : "Iscrizione SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Iscrizione SmartHelp non consentita",
+			"CDD_NO_SH" : "SmartHelp non rilevato nel sistema.",
+			"CDD_GET_SH" : "Le informazioni su SmartHelp e le istruzioni di installazione sono disponibili sulla {{pagina d'installazione}}",
+			"CDD_DISABLED" : "Questo contenuto non supporta iscrizioni a SmartHelp. Per ulteriori informazioni, contattare l'amministratore del sistema."
+		},
+	"ja" :
+		{
+			"CDD_TITLE" : "SmartHelpのサブスクリプション",
+			"CDD_TITLE_PREVENTED" : "SmartHelpのサブスクリプション禁止",
+			"CDD_NO_SH" : "SmartHelpがシステムで検出されませんでした。",
+			"CDD_GET_SH" : "SmartHelpに関する情報およびインストール手順は{{インストール・ページ}}に説明されています",
+			"CDD_DISABLED" : "このコンテンツではSmartHelpのサブスクリプションはサポートされていません。詳細は、システム管理者に連絡してください。"
+		},
+	"ko" :
+		{
+			"CDD_TITLE" : "SmartHelp 가입",
+			"CDD_TITLE_PREVENTED" : "SmartHelp 가입이 금지됨",
+			"CDD_NO_SH" : "시스템에서 SmartHelp를 찾지 못했습니다.",
+			"CDD_GET_SH" : "SmartHelp에 대한 정보 및 설치 지침은 {{설치 페이지}}에 나와 있습니다.",
+			"CDD_DISABLED" : "이 콘텐츠는 SmartHelp 가입을 지원하지 않습니다. 자세한 내용은 시스템 관리자에게 문의하십시오."
+		},
+	"nl" :
+		{
+			"CDD_TITLE" : "SmartHelp-abonnement",
+			"CDD_TITLE_PREVENTED" : "SmartHelp-abonnement is voorkomen",
+			"CDD_NO_SH" : "SmartHelp is niet gevonden in uw systeem.",
+			"CDD_GET_SH" : "Informatie over SmartHelp en installatie-instructies kunt u vinden op de {{installatiepagina}}.",
+			"CDD_DISABLED" : "Deze inhoud ondersteunt SmartHelp-abonnement niet. Neem contact op met de systeembeheerder voor meer informatie."
+		},
+	"no" :
+		{
+			"CDD_TITLE" : "Smarthjelp-abonnement",
+			"CDD_TITLE_PREVENTED" : "Smarthjelp-abonnement forhindret",
+			"CDD_NO_SH" : "Fant ikke Smarthjelp på dette systemet.",
+			"CDD_GET_SH" : "Du finner opplysninger om Smarthjelp og installasjonsinstruksjoner på {{installasjonssiden}}",
+			"CDD_DISABLED" : "Dette innholdet støtter ikke Smarthjelp-abonnement. Kontakt systemansvarlig for å få flere opplysninger."
+		},
+	"pl" :
+		{
+			"CDD_TITLE" : "Subskrypcja SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Uniemożliwienie subskrypcji SmartHelp",
+			"CDD_NO_SH" : "W systemie użytkownika nie wykryto funkcji SmartHelp.",
+			"CDD_GET_SH" : "Informacje o funkcji SmartHelp, wraz z instrukcjami dotyczącymi instalacji, są dostępne na {{stronie instalacyjnej}}",
+			"CDD_DISABLED" : "Ta zawartość nie obsługuje subskrypcji SmartHelp. Aby uzyskać więcej informacji, należy skontaktować się z administratorem systemu."
+		},
+	"pt" :
+		{
+			"CDD_TITLE" : "Inscrição no SmartHelp",
+			"CDD_TITLE_PREVENTED" : "Inscrição no SmartHelp Evitada",
+			"CDD_NO_SH" : "O SmartHelp não foi detectado em seu sistema.",
+			"CDD_GET_SH" : "Informações sobre Instruções de Instalação e do SmartHelp podem ser encontradas na {{Página de Instalação}}",
+			"CDD_DISABLED" : "Este conteúdo não suporta inscrição do SmartHelp. Entre em contato com o administrador do sistema para obter mais informações."
+		},
+	"ru" :
+		{
+			"CDD_TITLE" : "SmartHelp: подписка",
+			"CDD_TITLE_PREVENTED" : "SmartHelp: подписка запрещена",
+			"CDD_NO_SH" : "В системе не обнаружен модуль SmartHelp.",
+			"CDD_GET_SH" : "Сведения о SmartHelp и инструкции по установке см.на {{странице установки}}",
+			"CDD_DISABLED" : "Этот контент не поддерживает подписку для SmartHelp. Для получения дополнительных сведений обратитесь к системному администратору."
+		},
+	"sv" :
+		{
+			"CDD_TITLE" : "Prenumeration på smart hjälp",
+			"CDD_TITLE_PREVENTED" : "Prenumeration på smart hjälp har förhindrats",
+			"CDD_NO_SH" : "Smart hjälp hittades inte i systemet.",
+			"CDD_GET_SH" : "Information om smart hjälp och installationsinstruktioner kan du hitta på {{sidan Installation}}",
+			"CDD_DISABLED" : "Det här innehållet stöder inte prenumeration på smart hjälp. Kontakta systemadministratören för mer information."
+		},
+	"tr" :
+		{
+			"CDD_TITLE" : "SmartHelp Aboneliği",
+			"CDD_TITLE_PREVENTED" : "SmartHelp Aboneliği Engellendi",
+			"CDD_NO_SH" : "Sisteminizde SmartHelp algılanamadı.",
+			"CDD_GET_SH" : "SmartHelp hakkındaki bilgilere ve Yükleme Talimatına {{Yükleme Sayfası}} üzerinden erişilebilir.",
+			"CDD_DISABLED" : "Bu içerik SmartHelp aboneliğini desteklemiyor. Daha fazla bilgi için sistem yöneticinize başvurun."
+		},
+	"zh-chs" :
+		{
+			"CDD_TITLE" : "SmartHelp 订阅",
+			"CDD_TITLE_PREVENTED" : "SmartHelp 订阅被阻止",
+			"CDD_NO_SH" : "在您的系统上未检测到 SmartHelp。",
+			"CDD_GET_SH" : "可在 {{安装页面}} 上找到有关 SmartHelp 的信息以及安装说明",
+			"CDD_DISABLED" : "此内容不支持 SmartHelp 订阅。有关详细信息，请与系统管理员联系。"
+		},
+	"zh-cht" :
+		{
+			"CDD_TITLE" : "SmartHelp 訂閱",
+			"CDD_TITLE_PREVENTED" : "已防止 SmartHelp 訂閱",
+			"CDD_NO_SH" : "未在您的系統上偵測到 SmartHelp",
+			"CDD_GET_SH" : "SmartHelp 的相關資訊與安裝指示可在 {{安裝作業頁面}} 上取得。",
+			"CDD_DISABLED" : "此內容不支援 SmartHelp 訂閱。請聯絡系統管理員以取得更多資訊。"
+		}
+}
+;
+    </script>
+    <script type="text/javascript">
+        //<![CDATA[
+        function InitCddPage(){if(window.SHInstalled!=undefined)if(window.SHInstalled==true)return;var a=cdd.CddDefaultLanguage||"en";document.title=langs[a].CDD_TITLE;if(cdd.Enabled===null||typeof cdd.Enabled==="undefined")cdd.Enabled=true;if(cdd.Enabled===false){document.getElementById("message").innerHTML=langs[a].CDD_DISABLED;document.title=langs[a].CDD_TITLE_PREVENTED}else{document.getElementById("message").innerHTML=langs[a].CDD_NO_SH;if(cdd.SHInstallLocation){a=langs[a].CDD_GET_SH.replace(/{{(.*)}}/g,
+function(c,b){return'<a href="'+EscapeAttribute(cdd.SHInstallLocation)+'">'+b+"</a>"});document.getElementById("link").innerHTML=a}}}function EscapeAttribute(a){return String(a).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;")}function UPK_GetNamespace(){return"upk-cdd;"+(cdd.CddVersion||"1.0")};
+
+        //]]></script>
+  </head>
+  <body onload="InitCddPage();">
+    <noscript>Your browser does not support JavaScript!</noscript>
+    <div id="message"></div>
+    <div id="link"></div>
+  </body>
+</html>

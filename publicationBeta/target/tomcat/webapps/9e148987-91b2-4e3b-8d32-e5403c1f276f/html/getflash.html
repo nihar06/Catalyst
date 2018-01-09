@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<script type="text/javascript" src="../config.js"></script>
+	<script type="text/javascript" src="../js/resource.js"></script>
+	<script type="text/javascript" src="../js/_getflash.js"></script>
+	<style type="text/css">
+		*
+		{
+			padding: 0px;
+			margin: 0px;
+		}
+		body
+		{
+			font-family: Arial, Sans-Serif;
+			font-size: 15px;
+			text-align: center;
+		}
+		div
+		{
+			margin-top: 90px;
+			line-height: 40px;
+		}
+	</style>
+	<script type="text/javascript">
+
+		var backUrl = "";
+		var newWindow = false;
+
+		function formatStr(s) {
+			var args = arguments;
+			for (var i = 1; i < args.length; i++) {
+				var arg = "{" + (i - 1) + "}";
+				var k = s.indexOf(arg);
+				if (k >= 0)
+					s = s.substr(0, k) + args[i] + s.substr(k + arg.length);
+			}
+			return s;
+		}
+
+		function StartBack() {
+			alert(R_flash_message_text);
+			UserPrefs.LoadCookie();
+			UserPrefs.PlayAudio = 'none';
+			UserPrefs.StoreCookie();
+			var a = Escape.MyUnEscape(backUrl);
+			if (a.length > 0) {
+				var url = "";
+				var params = "";
+				var u = a.split('?');
+				if (u.length == 1) {
+					url = u[0];
+					params = "nosound";
+				}
+				else {
+					url = u[0];
+					params = u[1];
+					if (params.substr(0, 3) == 'su=') {
+						params += "/0026nosound";
+					}
+					else {
+						params += "&nosound";
+					}
+				}
+				var d = a.indexOf('topicgc.html');
+				if (d < 0)
+					d = a.indexOf('topicgcx.html');
+				if (d > 0) {
+					LaunchDoIt(url.substr(0, d), params);
+					this.close();
+					return;
+				}
+				var b = url + "?" + params;
+				if (newWindow == true)
+					window.open(b);
+				else
+					this.location.replace(b);
+			}
+		}
+
+		function Init() {
+			ParseArg();
+			var s = formatStr(R_flash3, "<br/>",
+			'<a target="_blank" href="http://get.adobe.com/flashplayer/">',
+			"</a>",
+			"<br/>",
+			"<br/>",
+			"<br/>",
+			'<a href="javascript:StartBack()">',
+			"</a>");
+			document.getElementById("content").innerHTML = s;
+		}
+
+		function ParseArg() {
+			var strArgs;
+			var strArg;
+			var ss = document.location.hash.substring(1);
+			strArgs = ss.split("&");
+			if (strArgs.length == 0 || strArgs[0] == "") {
+				ss = document.location.search.substring(1);
+				strArgs = ss.split("&");
+			};
+			for (var i = 0; i < strArgs.length; i++) {
+				strArg = (strArgs[i]);
+				if (strArg.substr(0, 4).toLowerCase() == "url=") {
+					backUrl = strArg.substr(4);
+					var sarg = Escape.MyUnEscape(backUrl);
+					if (sarg.indexOf("keep-alive-timer") >= 0)
+						KeepAlive_Init("../");
+				}
+				if (strArg.substr(0, 9).toLowerCase() == "newwindow") {
+					newWindow = true;
+				}
+			}
+		}
+
+	</script>
+</head>
+<body onload="Init()">
+	<div id="content">
+	</div>
+</body>
+</html>

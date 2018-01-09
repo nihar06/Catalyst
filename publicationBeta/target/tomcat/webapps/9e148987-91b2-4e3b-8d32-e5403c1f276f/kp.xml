@@ -1,0 +1,469 @@
+﻿<KPExport sw_version="12.1" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:odext="urn:odext" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1"><Outline Title="Catalyst ERP Cloud - Project Portfolio Management" Guid="9e148987-91b2-4e3b-8d32-e5403c1f276f" ConceptRef="index.html#Guid=9e148987-91b2-4e3b-8d32-e5403c1f276f&amp;ConceptOnly"><Section Title="Initiate Project" Guid="36239f29-bd59-4783-8904-4affd0534c3f" ConceptRef="index.html#Guid=36239f29-bd59-4783-8904-4affd0534c3f&amp;ConceptOnly"><Topic Title="Creating a Billable Project from Template" Guid="6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4" ConceptRef="index.html#Guid=6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Capital Project from Template" Guid="dd1ff582-9429-4266-8bb8-4e2d7d4dddad" ConceptRef="index.html#Guid=dd1ff582-9429-4266-8bb8-4e2d7d4dddad&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=dd1ff582-9429-4266-8bb8-4e2d7d4dddad&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=dd1ff582-9429-4266-8bb8-4e2d7d4dddad&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=dd1ff582-9429-4266-8bb8-4e2d7d4dddad&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Billable Capital Project from Template" Guid="9c0a1c5a-d7e7-4152-ab93-9f28867c0a03" ConceptRef="index.html#Guid=9c0a1c5a-d7e7-4152-ab93-9f28867c0a03&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=9c0a1c5a-d7e7-4152-ab93-9f28867c0a03&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=9c0a1c5a-d7e7-4152-ab93-9f28867c0a03&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=9c0a1c5a-d7e7-4152-ab93-9f28867c0a03&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Overhead Project from Template" Guid="3106e452-f1e3-4e00-9615-e6300d46343a" ConceptRef="index.html#Guid=3106e452-f1e3-4e00-9615-e6300d46343a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=3106e452-f1e3-4e00-9615-e6300d46343a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=3106e452-f1e3-4e00-9615-e6300d46343a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=3106e452-f1e3-4e00-9615-e6300d46343a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Project from Another Project" Guid="cf291c0f-3fea-4d5c-8128-1bf7d99577f4" ConceptRef="index.html#Guid=cf291c0f-3fea-4d5c-8128-1bf7d99577f4&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=cf291c0f-3fea-4d5c-8128-1bf7d99577f4&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=cf291c0f-3fea-4d5c-8128-1bf7d99577f4&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=cf291c0f-3fea-4d5c-8128-1bf7d99577f4&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Manage Financial Project Settings" Guid="8e785733-be21-41cc-99fa-a90768e6fc09" ConceptRef="index.html#Guid=8e785733-be21-41cc-99fa-a90768e6fc09&amp;ConceptOnly"><Topic Title="Editing a Project Start Date and Project Finish Date" Guid="0db78f8b-b142-4cc7-ad56-94b0a9172987" ConceptRef="index.html#Guid=0db78f8b-b142-4cc7-ad56-94b0a9172987&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=0db78f8b-b142-4cc7-ad56-94b0a9172987&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=0db78f8b-b142-4cc7-ad56-94b0a9172987&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=0db78f8b-b142-4cc7-ad56-94b0a9172987&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Cascading Project Dates" Guid="86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087" ConceptRef="index.html#Guid=86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Editing a Classification" Guid="d6acfba4-d839-46f9-8b1d-e6f24ddf4a62" ConceptRef="index.html#Guid=d6acfba4-d839-46f9-8b1d-e6f24ddf4a62&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=d6acfba4-d839-46f9-8b1d-e6f24ddf4a62&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=d6acfba4-d839-46f9-8b1d-e6f24ddf4a62&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=d6acfba4-d839-46f9-8b1d-e6f24ddf4a62&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Adding an Attachment" Guid="2cf09155-8162-46f3-bdf4-2a3bd631c89a" ConceptRef="index.html#Guid=2cf09155-8162-46f3-bdf4-2a3bd631c89a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=2cf09155-8162-46f3-bdf4-2a3bd631c89a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=2cf09155-8162-46f3-bdf4-2a3bd631c89a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=2cf09155-8162-46f3-bdf4-2a3bd631c89a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Adding Team Members" Guid="a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a" ConceptRef="index.html#Guid=a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Adding Customers" Guid="dce5aca4-5e26-4286-a480-f9144620f727" ConceptRef="index.html#Guid=dce5aca4-5e26-4286-a480-f9144620f727&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=dce5aca4-5e26-4286-a480-f9144620f727&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=dce5aca4-5e26-4286-a480-f9144620f727&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=dce5aca4-5e26-4286-a480-f9144620f727&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Adding Partner Organization" Guid="6035fe8a-dc65-49ee-958f-de33ad2cb6fb" ConceptRef="index.html#Guid=6035fe8a-dc65-49ee-958f-de33ad2cb6fb&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6035fe8a-dc65-49ee-958f-de33ad2cb6fb&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6035fe8a-dc65-49ee-958f-de33ad2cb6fb&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6035fe8a-dc65-49ee-958f-de33ad2cb6fb&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Adding Supplier Organization" Guid="81cf8d1b-5369-433d-bff0-645e8dea02f4" ConceptRef="index.html#Guid=81cf8d1b-5369-433d-bff0-645e8dea02f4&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=81cf8d1b-5369-433d-bff0-645e8dea02f4&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=81cf8d1b-5369-433d-bff0-645e8dea02f4&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=81cf8d1b-5369-433d-bff0-645e8dea02f4&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Editing a Project Plan Type" Guid="2c02806a-fc6a-4f02-ae24-c458e584cfb5" ConceptRef="index.html#Guid=2c02806a-fc6a-4f02-ae24-c458e584cfb5&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=2c02806a-fc6a-4f02-ae24-c458e584cfb5&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=2c02806a-fc6a-4f02-ae24-c458e584cfb5&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=2c02806a-fc6a-4f02-ae24-c458e584cfb5&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Editing Project Level Transaction Controls" Guid="496804a6-6e9b-45f5-acdc-d32a8f85cd21" ConceptRef="index.html#Guid=496804a6-6e9b-45f5-acdc-d32a8f85cd21&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=496804a6-6e9b-45f5-acdc-d32a8f85cd21&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=496804a6-6e9b-45f5-acdc-d32a8f85cd21&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=496804a6-6e9b-45f5-acdc-d32a8f85cd21&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Editing Task Level Transaction Controls" Guid="6fe857f5-659f-45fb-a6e4-f87a5c7302bd" ConceptRef="index.html#Guid=6fe857f5-659f-45fb-a6e4-f87a5c7302bd&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6fe857f5-659f-45fb-a6e4-f87a5c7302bd&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6fe857f5-659f-45fb-a6e4-f87a5c7302bd&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6fe857f5-659f-45fb-a6e4-f87a5c7302bd&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Changing a Project Status Without Approvals" Guid="2b3aa00e-b858-4185-a16b-c0b05129d481" ConceptRef="index.html#Guid=2b3aa00e-b858-4185-a16b-c0b05129d481&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=2b3aa00e-b858-4185-a16b-c0b05129d481&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=2b3aa00e-b858-4185-a16b-c0b05129d481&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=2b3aa00e-b858-4185-a16b-c0b05129d481&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Plan and Execute" Guid="741771e6-8578-4bab-8186-b77859109f9f" ConceptRef="index.html#Guid=741771e6-8578-4bab-8186-b77859109f9f&amp;ConceptOnly"><Topic Title="Maintaining a Project Plan" Guid="3a58fc32-badb-45f0-9c67-f2467d708163" ConceptRef="index.html#Guid=3a58fc32-badb-45f0-9c67-f2467d708163&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=3a58fc32-badb-45f0-9c67-f2467d708163&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=3a58fc32-badb-45f0-9c67-f2467d708163&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=3a58fc32-badb-45f0-9c67-f2467d708163&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Control" Guid="95ffa4ea-89f7-44fb-a814-cdd60451ae52" ConceptRef="index.html#Guid=95ffa4ea-89f7-44fb-a814-cdd60451ae52&amp;ConceptOnly"><Topic Title="Creating a Cost Budget - Manually create budget lines" Guid="d1e92018-4cc6-4cf7-9673-f6fced0ee5da" ConceptRef="index.html#Guid=d1e92018-4cc6-4cf7-9673-f6fced0ee5da&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=d1e92018-4cc6-4cf7-9673-f6fced0ee5da&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=d1e92018-4cc6-4cf7-9673-f6fced0ee5da&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=d1e92018-4cc6-4cf7-9673-f6fced0ee5da&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost Budget - Copy from Another Source" Guid="5b9eb052-4d24-41df-ae81-11a5c6e0a6e3" ConceptRef="index.html#Guid=5b9eb052-4d24-41df-ae81-11a5c6e0a6e3&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=5b9eb052-4d24-41df-ae81-11a5c6e0a6e3&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=5b9eb052-4d24-41df-ae81-11a5c6e0a6e3&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=5b9eb052-4d24-41df-ae81-11a5c6e0a6e3&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost Budget - Generate from Another Source" Guid="1fb0ae6f-0d83-4311-8b4e-a672c5661a8c" ConceptRef="index.html#Guid=1fb0ae6f-0d83-4311-8b4e-a672c5661a8c&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=1fb0ae6f-0d83-4311-8b4e-a672c5661a8c&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=1fb0ae6f-0d83-4311-8b4e-a672c5661a8c&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=1fb0ae6f-0d83-4311-8b4e-a672c5661a8c&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Approving a Budget" Guid="6153aa75-219b-44a7-9713-5f1fbcf3ff09" ConceptRef="index.html#Guid=6153aa75-219b-44a7-9713-5f1fbcf3ff09&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6153aa75-219b-44a7-9713-5f1fbcf3ff09&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6153aa75-219b-44a7-9713-5f1fbcf3ff09&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6153aa75-219b-44a7-9713-5f1fbcf3ff09&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Revenue Budget - Manually Create Budget Lines" Guid="7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e" ConceptRef="index.html#Guid=7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Revenue Budget - Copy from Another Source" Guid="30172be7-3b04-400d-a05f-bc0ee2794e9a" ConceptRef="index.html#Guid=30172be7-3b04-400d-a05f-bc0ee2794e9a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=30172be7-3b04-400d-a05f-bc0ee2794e9a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=30172be7-3b04-400d-a05f-bc0ee2794e9a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=30172be7-3b04-400d-a05f-bc0ee2794e9a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Revenue Budget - Generate from Another Source" Guid="acba6442-c3d2-47c3-94ca-cf9f0294b134" ConceptRef="index.html#Guid=acba6442-c3d2-47c3-94ca-cf9f0294b134&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=acba6442-c3d2-47c3-94ca-cf9f0294b134&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=acba6442-c3d2-47c3-94ca-cf9f0294b134&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=acba6442-c3d2-47c3-94ca-cf9f0294b134&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost Forecast - Manually Create Forecast Lines" Guid="9bd9eaa9-5967-40ea-acc8-670a8a00406f" ConceptRef="index.html#Guid=9bd9eaa9-5967-40ea-acc8-670a8a00406f&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=9bd9eaa9-5967-40ea-acc8-670a8a00406f&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=9bd9eaa9-5967-40ea-acc8-670a8a00406f&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=9bd9eaa9-5967-40ea-acc8-670a8a00406f&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost Forecast - Copy from Another Source" Guid="8ed1eb3f-877f-4c7a-9892-228b0223f6fa" ConceptRef="index.html#Guid=8ed1eb3f-877f-4c7a-9892-228b0223f6fa&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=8ed1eb3f-877f-4c7a-9892-228b0223f6fa&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=8ed1eb3f-877f-4c7a-9892-228b0223f6fa&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=8ed1eb3f-877f-4c7a-9892-228b0223f6fa&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost Forecast - Generate from Another Source" Guid="85f57bf8-59ce-4e73-8991-d05cecd17ac4" ConceptRef="index.html#Guid=85f57bf8-59ce-4e73-8991-d05cecd17ac4&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=85f57bf8-59ce-4e73-8991-d05cecd17ac4&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=85f57bf8-59ce-4e73-8991-d05cecd17ac4&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=85f57bf8-59ce-4e73-8991-d05cecd17ac4&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Approving a Forecast" Guid="b05fdeb1-0a74-4e1c-a19e-0df75bddca9d" ConceptRef="index.html#Guid=b05fdeb1-0a74-4e1c-a19e-0df75bddca9d&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=b05fdeb1-0a74-4e1c-a19e-0df75bddca9d&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=b05fdeb1-0a74-4e1c-a19e-0df75bddca9d&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=b05fdeb1-0a74-4e1c-a19e-0df75bddca9d&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost and Revenue Forecast (same version) Manually Create Forecast Lines" Guid="f620989d-33fa-4232-a7a8-ab807c151b90" ConceptRef="index.html#Guid=f620989d-33fa-4232-a7a8-ab807c151b90&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=f620989d-33fa-4232-a7a8-ab807c151b90&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=f620989d-33fa-4232-a7a8-ab807c151b90&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=f620989d-33fa-4232-a7a8-ab807c151b90&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Deleting a Working Version" Guid="4202338c-26f9-48a7-8b26-a78ca4b28215" ConceptRef="index.html#Guid=4202338c-26f9-48a7-8b26-a78ca4b28215&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=4202338c-26f9-48a7-8b26-a78ca4b28215&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=4202338c-26f9-48a7-8b26-a78ca4b28215&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=4202338c-26f9-48a7-8b26-a78ca4b28215&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Setting a  Budget Status" Guid="97849b1b-bbf4-494f-b039-5aae85e70bf0" ConceptRef="index.html#Guid=97849b1b-bbf4-494f-b039-5aae85e70bf0&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=97849b1b-bbf4-494f-b039-5aae85e70bf0&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=97849b1b-bbf4-494f-b039-5aae85e70bf0&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=97849b1b-bbf4-494f-b039-5aae85e70bf0&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Cost and Revenue Forecast (different version) Copy from Another Source" Guid="0256df0d-65f6-4695-81a3-c8d6d8a2067c" ConceptRef="index.html#Guid=0256df0d-65f6-4695-81a3-c8d6d8a2067c&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=0256df0d-65f6-4695-81a3-c8d6d8a2067c&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=0256df0d-65f6-4695-81a3-c8d6d8a2067c&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=0256df0d-65f6-4695-81a3-c8d6d8a2067c&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Approving a Cost and Revenue Forecast (different versions)" Guid="4e945ebc-288e-4cf6-9a58-49341afb1f82" ConceptRef="index.html#Guid=4e945ebc-288e-4cf6-9a58-49341afb1f82&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=4e945ebc-288e-4cf6-9a58-49341afb1f82&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=4e945ebc-288e-4cf6-9a58-49341afb1f82&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=4e945ebc-288e-4cf6-9a58-49341afb1f82&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Unlocking a Budget" Guid="2b96deea-6942-43ed-be64-38bf8999ba14" ConceptRef="index.html#Guid=2b96deea-6942-43ed-be64-38bf8999ba14&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=2b96deea-6942-43ed-be64-38bf8999ba14&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=2b96deea-6942-43ed-be64-38bf8999ba14&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=2b96deea-6942-43ed-be64-38bf8999ba14&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Unlocking a Forecast" Guid="158d74fc-6529-4832-9180-78b2c98f2ec9" ConceptRef="index.html#Guid=158d74fc-6529-4832-9180-78b2c98f2ec9&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=158d74fc-6529-4832-9180-78b2c98f2ec9&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=158d74fc-6529-4832-9180-78b2c98f2ec9&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=158d74fc-6529-4832-9180-78b2c98f2ec9&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Duplicating Selected Version to Create Working Version" Guid="a0f73a1c-66df-4775-833b-6fa2e7a58245" ConceptRef="index.html#Guid=a0f73a1c-66df-4775-833b-6fa2e7a58245&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=a0f73a1c-66df-4775-833b-6fa2e7a58245&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=a0f73a1c-66df-4775-833b-6fa2e7a58245&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=a0f73a1c-66df-4775-833b-6fa2e7a58245&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Budgeting for Budgetary Control" Guid="b47eb3c1-b234-4c26-a236-01d4f169d71f" ConceptRef="index.html#Guid=b47eb3c1-b234-4c26-a236-01d4f169d71f&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=b47eb3c1-b234-4c26-a236-01d4f169d71f&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=b47eb3c1-b234-4c26-a236-01d4f169d71f&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=b47eb3c1-b234-4c26-a236-01d4f169d71f&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Budgeting with Workflow Approvals" Guid="479fa1b0-a5d6-4a89-be5c-edeebe2da442" ConceptRef="index.html#Guid=479fa1b0-a5d6-4a89-be5c-edeebe2da442&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=479fa1b0-a5d6-4a89-be5c-edeebe2da442&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=479fa1b0-a5d6-4a89-be5c-edeebe2da442&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=479fa1b0-a5d6-4a89-be5c-edeebe2da442&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Capture" Guid="cfa6a7be-45d0-4b96-9315-6d2d890012ce" ConceptRef="index.html#Guid=cfa6a7be-45d0-4b96-9315-6d2d890012ce&amp;ConceptOnly"><Topic Title="Creating Labor Costs" Guid="4077275d-060a-4de5-ac58-f5ffa33e95b5" ConceptRef="index.html#Guid=4077275d-060a-4de5-ac58-f5ffa33e95b5&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=4077275d-060a-4de5-ac58-f5ffa33e95b5&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=4077275d-060a-4de5-ac58-f5ffa33e95b5&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=4077275d-060a-4de5-ac58-f5ffa33e95b5&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Nonlabor Costs" Guid="4ddb2c4b-88fb-423b-ac57-75628f639992" ConceptRef="index.html#Guid=4ddb2c4b-88fb-423b-ac57-75628f639992&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=4ddb2c4b-88fb-423b-ac57-75628f639992&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=4ddb2c4b-88fb-423b-ac57-75628f639992&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=4ddb2c4b-88fb-423b-ac57-75628f639992&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Labor Costs for Third-Party Applications" Guid="9cbacd01-65cf-4d4b-a982-1291fb3c55bc" ConceptRef="index.html#Guid=9cbacd01-65cf-4d4b-a982-1291fb3c55bc&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=9cbacd01-65cf-4d4b-a982-1291fb3c55bc&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=9cbacd01-65cf-4d4b-a982-1291fb3c55bc&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=9cbacd01-65cf-4d4b-a982-1291fb3c55bc&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Nonlabor Costs for Third-Party Applications" Guid="5323d224-60e9-4880-acba-73b21e5d1aa3" ConceptRef="index.html#Guid=5323d224-60e9-4880-acba-73b21e5d1aa3&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=5323d224-60e9-4880-acba-73b21e5d1aa3&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=5323d224-60e9-4880-acba-73b21e5d1aa3&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=5323d224-60e9-4880-acba-73b21e5d1aa3&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Costed or Accounted Transactions for Third-Party Applications" Guid="5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6" ConceptRef="index.html#Guid=5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Managing Unprocessed Costs" Guid="b8df1e73-44b8-4a5c-b568-a92f40b4fb31" ConceptRef="index.html#Guid=b8df1e73-44b8-4a5c-b568-a92f40b4fb31&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=b8df1e73-44b8-4a5c-b568-a92f40b4fb31&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=b8df1e73-44b8-4a5c-b568-a92f40b4fb31&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=b8df1e73-44b8-4a5c-b568-a92f40b4fb31&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Managing Unreleased Costs" Guid="66eaddf1-8e60-4251-b058-8529c4c40e23" ConceptRef="index.html#Guid=66eaddf1-8e60-4251-b058-8529c4c40e23&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=66eaddf1-8e60-4251-b058-8529c4c40e23&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=66eaddf1-8e60-4251-b058-8529c4c40e23&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=66eaddf1-8e60-4251-b058-8529c4c40e23&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Importing and Processing Cost Transactions" Guid="e561ff5f-c2b2-48a4-b2f6-688430066056" ConceptRef="index.html#Guid=e561ff5f-c2b2-48a4-b2f6-688430066056&amp;ConceptOnly"><Topic Title="Cost Management - Miscellaneous Inventory" Guid="f825b0bd-3241-41fa-99c5-59037709412f" ConceptRef="index.html#Guid=f825b0bd-3241-41fa-99c5-59037709412f&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=f825b0bd-3241-41fa-99c5-59037709412f&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=f825b0bd-3241-41fa-99c5-59037709412f&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=f825b0bd-3241-41fa-99c5-59037709412f&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Cost Management - Purchase Receipt" Guid="681bdcb7-6265-4d3a-9949-f2dfc85cc4e5" ConceptRef="index.html#Guid=681bdcb7-6265-4d3a-9949-f2dfc85cc4e5&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=681bdcb7-6265-4d3a-9949-f2dfc85cc4e5&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=681bdcb7-6265-4d3a-9949-f2dfc85cc4e5&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=681bdcb7-6265-4d3a-9949-f2dfc85cc4e5&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Payables - Expense Report" Guid="087498fc-8827-4e46-8133-236bf57decb2" ConceptRef="index.html#Guid=087498fc-8827-4e46-8133-236bf57decb2&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=087498fc-8827-4e46-8133-236bf57decb2&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=087498fc-8827-4e46-8133-236bf57decb2&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=087498fc-8827-4e46-8133-236bf57decb2&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Payables - Intercompany Invoice" Guid="2a833db6-52bb-473d-a777-d679f1df1336" ConceptRef="index.html#Guid=2a833db6-52bb-473d-a777-d679f1df1336&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=2a833db6-52bb-473d-a777-d679f1df1336&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=2a833db6-52bb-473d-a777-d679f1df1336&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=2a833db6-52bb-473d-a777-d679f1df1336&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Payables - Interproject Invoice" Guid="fd86794f-25c3-44b2-8268-f02c719d5d1a" ConceptRef="index.html#Guid=fd86794f-25c3-44b2-8268-f02c719d5d1a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=fd86794f-25c3-44b2-8268-f02c719d5d1a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=fd86794f-25c3-44b2-8268-f02c719d5d1a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=fd86794f-25c3-44b2-8268-f02c719d5d1a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Payables - Payment" Guid="da57036b-4da6-4101-aab3-6a5ab6d6e10a" ConceptRef="index.html#Guid=da57036b-4da6-4101-aab3-6a5ab6d6e10a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=da57036b-4da6-4101-aab3-6a5ab6d6e10a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=da57036b-4da6-4101-aab3-6a5ab6d6e10a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=da57036b-4da6-4101-aab3-6a5ab6d6e10a&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Payables - Supplier Invoice" Guid="d1798c99-3547-4385-92ca-e4b08e3edb1e" ConceptRef="index.html#Guid=d1798c99-3547-4385-92ca-e4b08e3edb1e&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=d1798c99-3547-4385-92ca-e4b08e3edb1e&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=d1798c99-3547-4385-92ca-e4b08e3edb1e&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=d1798c99-3547-4385-92ca-e4b08e3edb1e&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Allocation Expenditure" Guid="4cdabc37-692a-4109-962c-5b8782bada91" ConceptRef="index.html#Guid=4cdabc37-692a-4109-962c-5b8782bada91&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=4cdabc37-692a-4109-962c-5b8782bada91&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=4cdabc37-692a-4109-962c-5b8782bada91&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=4cdabc37-692a-4109-962c-5b8782bada91&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Burden Expenditure" Guid="dd192a20-fc28-4479-8217-9b150784e608" ConceptRef="index.html#Guid=dd192a20-fc28-4479-8217-9b150784e608&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=dd192a20-fc28-4479-8217-9b150784e608&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=dd192a20-fc28-4479-8217-9b150784e608&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=dd192a20-fc28-4479-8217-9b150784e608&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Capitalized Interest Expenditure" Guid="bec49d46-17f3-4b53-a20a-61c64c0b723c" ConceptRef="index.html#Guid=bec49d46-17f3-4b53-a20a-61c64c0b723c&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=bec49d46-17f3-4b53-a20a-61c64c0b723c&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=bec49d46-17f3-4b53-a20a-61c64c0b723c&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=bec49d46-17f3-4b53-a20a-61c64c0b723c&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Inventory Expenditure" Guid="b025a7b9-6e4a-4403-87de-ffa6a1bb3b25" ConceptRef="index.html#Guid=b025a7b9-6e4a-4403-87de-ffa6a1bb3b25&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=b025a7b9-6e4a-4403-87de-ffa6a1bb3b25&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=b025a7b9-6e4a-4403-87de-ffa6a1bb3b25&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=b025a7b9-6e4a-4403-87de-ffa6a1bb3b25&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Miscellaneous Expenditure" Guid="cbaabdc1-e803-49aa-9bb5-6f6a4182f92f" ConceptRef="index.html#Guid=cbaabdc1-e803-49aa-9bb5-6f6a4182f92f&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=cbaabdc1-e803-49aa-9bb5-6f6a4182f92f&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=cbaabdc1-e803-49aa-9bb5-6f6a4182f92f&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=cbaabdc1-e803-49aa-9bb5-6f6a4182f92f&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Summarized Burden Expenditure" Guid="58de1912-5251-42c7-803b-545d77994f7b" ConceptRef="index.html#Guid=58de1912-5251-42c7-803b-545d77994f7b&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=58de1912-5251-42c7-803b-545d77994f7b&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=58de1912-5251-42c7-803b-545d77994f7b&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=58de1912-5251-42c7-803b-545d77994f7b&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Time Card" Guid="439934ad-872d-4858-98fe-d3934330711f" ConceptRef="index.html#Guid=439934ad-872d-4858-98fe-d3934330711f&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=439934ad-872d-4858-98fe-d3934330711f&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=439934ad-872d-4858-98fe-d3934330711f&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=439934ad-872d-4858-98fe-d3934330711f&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Usage Expenditure" Guid="1fd98393-2571-41e8-b0ca-431d2b46a02c" ConceptRef="index.html#Guid=1fd98393-2571-41e8-b0ca-431d2b46a02c&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=1fd98393-2571-41e8-b0ca-431d2b46a02c&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=1fd98393-2571-41e8-b0ca-431d2b46a02c&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=1fd98393-2571-41e8-b0ca-431d2b46a02c&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Projects - Work-in-Progress Expenditure" Guid="269a589e-3cda-4f8b-ba70-1b7853983b5e" ConceptRef="index.html#Guid=269a589e-3cda-4f8b-ba70-1b7853983b5e&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=269a589e-3cda-4f8b-ba70-1b7853983b5e&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=269a589e-3cda-4f8b-ba70-1b7853983b5e&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=269a589e-3cda-4f8b-ba70-1b7853983b5e&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Time and Labor" Guid="cf1863cc-7a4c-40b3-a12e-fbea013b3332" ConceptRef="index.html#Guid=cf1863cc-7a4c-40b3-a12e-fbea013b3332&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=cf1863cc-7a4c-40b3-a12e-fbea013b3332&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=cf1863cc-7a4c-40b3-a12e-fbea013b3332&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=cf1863cc-7a4c-40b3-a12e-fbea013b3332&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Miscellaneous Accrual" Guid="20da76d1-83e7-44c6-a43a-580ee02c38f6" ConceptRef="index.html#Guid=20da76d1-83e7-44c6-a43a-580ee02c38f6&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=20da76d1-83e7-44c6-a43a-580ee02c38f6&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=20da76d1-83e7-44c6-a43a-580ee02c38f6&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=20da76d1-83e7-44c6-a43a-580ee02c38f6&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Importing" Guid="b0ab1c43-8e86-47f4-8518-5932804e0df6" ConceptRef="index.html#Guid=b0ab1c43-8e86-47f4-8518-5932804e0df6&amp;ConceptOnly"><Topic Title="Importing Commitments" Guid="de564804-32ae-4988-8ac0-57df763a6b90" ConceptRef="index.html#Guid=de564804-32ae-4988-8ac0-57df763a6b90&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=de564804-32ae-4988-8ac0-57df763a6b90&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=de564804-32ae-4988-8ac0-57df763a6b90&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=de564804-32ae-4988-8ac0-57df763a6b90&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Capital Projects" Guid="6849786b-b466-4c7a-95ff-92890b4a436c" ConceptRef="index.html#Guid=6849786b-b466-4c7a-95ff-92890b4a436c&amp;ConceptOnly"><Topic Title="Defining Assets" Guid="49981a0f-08a7-4960-91d7-c0ca318ca9a6" ConceptRef="index.html#Guid=49981a0f-08a7-4960-91d7-c0ca318ca9a6&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=49981a0f-08a7-4960-91d7-c0ca318ca9a6&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=49981a0f-08a7-4960-91d7-c0ca318ca9a6&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=49981a0f-08a7-4960-91d7-c0ca318ca9a6&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Assets in Excel" Guid="37fc9be1-e6ca-4f54-acb8-0a153a326d8b" ConceptRef="index.html#Guid=37fc9be1-e6ca-4f54-acb8-0a153a326d8b&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=37fc9be1-e6ca-4f54-acb8-0a153a326d8b&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=37fc9be1-e6ca-4f54-acb8-0a153a326d8b&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=37fc9be1-e6ca-4f54-acb8-0a153a326d8b&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Assigning Assets at the Task Level" Guid="bae14505-b4a2-4acc-ae3a-59dfe51492c1" ConceptRef="index.html#Guid=bae14505-b4a2-4acc-ae3a-59dfe51492c1&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=bae14505-b4a2-4acc-ae3a-59dfe51492c1&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=bae14505-b4a2-4acc-ae3a-59dfe51492c1&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=bae14505-b4a2-4acc-ae3a-59dfe51492c1&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Burden Expenditure Items" Guid="e2fdebd7-1199-4532-a4cf-62a9fd897bb3" ConceptRef="index.html#Guid=e2fdebd7-1199-4532-a4cf-62a9fd897bb3&amp;ConceptOnly"><Topic Title="Testing Burden Cost Calculations" Guid="d343d728-9ba7-475d-85f3-300873ff14e1" ConceptRef="index.html#Guid=d343d728-9ba7-475d-85f3-300873ff14e1&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=d343d728-9ba7-475d-85f3-300873ff14e1&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=d343d728-9ba7-475d-85f3-300873ff14e1&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=d343d728-9ba7-475d-85f3-300873ff14e1&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Allocations" Guid="d2dcc416-27e4-4d35-bd6c-4dc858cd0964" ConceptRef="index.html#Guid=d2dcc416-27e4-4d35-bd6c-4dc858cd0964&amp;ConceptOnly"><Topic Title="Generating Allocations" Guid="f54a93db-477d-4875-8f74-64565bed813d" ConceptRef="index.html#Guid=f54a93db-477d-4875-8f74-64565bed813d&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=f54a93db-477d-4875-8f74-64565bed813d&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=f54a93db-477d-4875-8f74-64565bed813d&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=f54a93db-477d-4875-8f74-64565bed813d&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Contracts" Guid="7ac0e7a3-ca63-410d-8271-a0d1c7bc89d1" ConceptRef="index.html#Guid=7ac0e7a3-ca63-410d-8271-a0d1c7bc89d1&amp;ConceptOnly"><Topic Title="Creating a Contract" Guid="ba11cc45-6b4d-4479-ba12-f8290aa136a7" ConceptRef="index.html#Guid=ba11cc45-6b4d-4479-ba12-f8290aa136a7&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=ba11cc45-6b4d-4479-ba12-f8290aa136a7&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=ba11cc45-6b4d-4479-ba12-f8290aa136a7&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=ba11cc45-6b4d-4479-ba12-f8290aa136a7&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Contract in Wizard" Guid="e02deff3-1c35-45f6-95d3-734559bc7572" ConceptRef="index.html#Guid=e02deff3-1c35-45f6-95d3-734559bc7572&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=e02deff3-1c35-45f6-95d3-734559bc7572&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=e02deff3-1c35-45f6-95d3-734559bc7572&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=e02deff3-1c35-45f6-95d3-734559bc7572&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating Contract Lines and Fund Project" Guid="6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7" ConceptRef="index.html#Guid=6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Creating a Revenue Plan" Guid="0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a" ConceptRef="index.html#Guid=0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section><Section Title="Contract Revenue" Guid="47470796-c58d-4305-82a3-d8b41bcb0b30" ConceptRef="index.html#Guid=47470796-c58d-4305-82a3-d8b41bcb0b30&amp;ConceptOnly"><Topic Title="Managing Events" Guid="0927b70d-349a-4b1f-b591-afe72053e7b8" ConceptRef="index.html#Guid=0927b70d-349a-4b1f-b591-afe72053e7b8&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=0927b70d-349a-4b1f-b591-afe72053e7b8&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=0927b70d-349a-4b1f-b591-afe72053e7b8&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=0927b70d-349a-4b1f-b591-afe72053e7b8&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Generating Revenue" Guid="d8453c71-e666-4c6b-83a2-0abd5674befc" ConceptRef="index.html#Guid=d8453c71-e666-4c6b-83a2-0abd5674befc&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=d8453c71-e666-4c6b-83a2-0abd5674befc&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=d8453c71-e666-4c6b-83a2-0abd5674befc&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=d8453c71-e666-4c6b-83a2-0abd5674befc&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Managing Billing Offset Balances" Guid="6f627360-7648-4048-984f-2a8e92144c46" ConceptRef="index.html#Guid=6f627360-7648-4048-984f-2a8e92144c46&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=6f627360-7648-4048-984f-2a8e92144c46&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=6f627360-7648-4048-984f-2a8e92144c46&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=6f627360-7648-4048-984f-2a8e92144c46&amp;Mode=P" />
+  </PlayModes>
+</Topic><Topic Title="Reclassifying Billing Offset Balances" Guid="fe947be8-b48c-4d21-99bd-a77a721bb574" ConceptRef="index.html#Guid=fe947be8-b48c-4d21-99bd-a77a721bb574&amp;ConceptOnly">
+  <PlayModes>
+    <Mode type="simulated" name="TeacherMode" caption="Try It!" href="index.html#Guid=fe947be8-b48c-4d21-99bd-a77a721bb574&amp;Mode=T" />
+    <Mode type="live" name="GuideItMode" caption="Do It!" href="index.html#Guid=fe947be8-b48c-4d21-99bd-a77a721bb574&amp;Mode=D" />
+    <Mode type="print" name="PrintItMode" caption="Print It!" href="index.html#Guid=fe947be8-b48c-4d21-99bd-a77a721bb574&amp;Mode=P" />
+  </PlayModes>
+</Topic></Section></Outline></KPExport>

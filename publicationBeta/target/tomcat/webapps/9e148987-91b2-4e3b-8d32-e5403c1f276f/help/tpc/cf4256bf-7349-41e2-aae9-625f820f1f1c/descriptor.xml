@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Play Content on iPad</Title>
+  <Type>Section</Type>
+  <Concept Guid="50b4aca5-93da-4a81-bd3e-c04cb924084f">./tpc/50b4aca5-93da-4a81-bd3e-c04cb924084f/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

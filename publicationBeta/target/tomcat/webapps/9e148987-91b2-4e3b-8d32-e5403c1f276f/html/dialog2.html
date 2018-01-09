@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../css/dialog.css" rel="stylesheet" type="text/css" />
+    <link href="../css/skin.css" rel="stylesheet" type="text/css" />
+    <link href="../css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="../css/playerimages.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/_dialog.js"></script>
+    <script type="text/javascript">
+        var timeout = 1000;
+        var sentinel = 0;
+        var bordersize = 2;
+
+        function popupDialog_onload() {
+            loc_height = parent.dlg_height;
+            if (Math.round(parent.dlg_height) == -1) loc_height = "auto";
+            else {
+                loc_height = parent.dlg_height - bordersize * 2;
+                loc_height += "px";
+            }
+            s = "<div id='popupContent' style='overflow: auto;position:absolute;width:" + (parent.dlg_width - bordersize * 2) + "px;height:" + (loc_height) + ";top:0px;left:0px;'>";
+            s = s + parent.getDialog2Content();
+            s = s + "</div>";
+
+            $("#popupRootContent").width("auto").height("auto").html(s);
+
+            if (parent.dlg_autosizeheight == true) {
+                setTimeout("loadSizes()", 10);
+                sentinel += 10;
+            }
+            else {
+                $('#dialogBodyDiv', parent.document).css("visibility", "visible");
+            }
+        }
+
+        function loadSizes() {
+            if (sentinel > timeout) return;
+            contentsize = $("#popupContent")[0].offsetHeight;
+            if (contentsize == 0) {
+                setTimeout("loadSizes()", 10);
+                sentinel += 10;
+            }
+            else {
+                w = $("#popupContent")[0].offsetWidth;
+                containerdiv = parent.document.getElementById("dialogBodyDiv");
+                containerdiv.style.height = contentsize + "px";
+
+                maindiv = parent.document.getElementById("dialog");
+                maindiv.style.width = (w + bordersize * 2) + "px";
+                maindiv.style.height = contentsize + "px";
+
+                $("#popupContent").css("height", (contentsize) - 4 + "px");
+                $("#popupContent").css("width", (w) + "px");
+                $('#dialogBodyDiv', parent.document).width((w + bordersize * 2) + "px");
+                $(containerdiv).css("visibility", "visible");
+            }
+        }
+
+    </script>
+</head>
+<body onload="popupDialog_onload()" onkeypress="keyPressHandler(event)">
+    <div id="popupRootContent">
+    </div>
+</body>
+</html>

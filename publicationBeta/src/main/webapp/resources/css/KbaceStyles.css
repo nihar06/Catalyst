@@ -1,0 +1,380 @@
+@charset "ISO-8859-1";
+
+body {
+	font-family: Calibri, Helvetica, sans-Serif;
+	font-size: 11pt
+}
+
+a:hover {
+	transition: color 0.2s linear 0s, background 0.2s linear 0s;
+	color: #ff670f;
+}
+
+h3 {
+	font-size: 16pt;
+}
+
+p {
+	font-family: Calibri, Helvetica, sans-Serif;
+	font-size: 11pt;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+
+/* .home_info {
+	background: url("../img/clipbord.png") no-repeat center center;
+} */
+
+.KBACE-menu {
+	color: white;
+	text-align: center;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px 5px 0px 0px;
+}
+
+.KBACE-manager-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+	float: left;
+	min-width: 10rem;
+	font-size: 1rem;
+	color: white;
+	text-align: center;
+	list-style: none;
+	background-color: #012939;
+	border: 1px solid rgb(255, 255, 255);
+	border: 1px solid rgb(255, 255, 255);
+	margin: 0px;
+	border-radius: 0px;
+	padding: 0px;
+	font-size: 11pt;
+}
+
+.KBACE-manager-menu>a {
+	color: white;
+}
+
+.padding-zero {
+	padding: 0px 10px 0px 0px;
+}
+
+.KBACE-menu:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.border-radius {
+	border-radius: 0px;
+}
+
+.bg-banner {
+	background-color: #012939 !important;
+}
+
+.bg-footer {
+	background-color: #4A575F !important;
+}
+
+.embed-responsive-70::before {
+	padding-top: 70%;
+}
+
+.dropdown-item:hover {
+	color: #16181b !important;
+	text-decoration: none;
+	background-color: #f8f9fa;
+}
+
+.footer-ul {
+	list-style-type: none;
+	padding-left: 0px;
+	margin-left: 2px;
+}
+
+.footer-ul li {
+	line-height: 20px;
+	font-size: 11pt;
+	font-family: Calibri, Helvetica, sans-Serif;
+}
+
+.footer-ul li a {
+	color: #ffffff;
+	transition: color 0.2s linear 0s, background 0.2s linear 0s;
+}
+
+.footer-ul i {
+	margin-right: 10px;
+}
+
+.footer-ul li a:hover {
+	transition: color 0.2s linear 0s, background 0.2s linear 0s;
+	color: #ff670f;
+}
+
+.footer-p {
+	color: white;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.font-white {
+	color: white;
+}
+
+.font-bold {
+	font-weight: bold;
+}
+
+.font-KBACE-Green {
+	color: #63BB46;
+}
+
+.form-table td {
+	border: none;
+}
+
+.hand-hover:hover {
+	cursor: pointer;
+}
+
+.KBACE-footer-hr {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	border: 0;
+	border-top: 2px solid #63BB46;
+}
+
+.KBACE-hr {
+	border-bottom: 2px solid #63BB46;
+}
+
+.KBACE-Vertical-Line {
+	border-right: 2px solid #63BB46;
+}
+
+.KBACE-footer-container {
+	min-height: 70px;
+	padding-top: 10px;
+	padding-right: 50px;
+	padding-left: 50px;
+}
+
+.KBACE-container {
+	/* min-height: calc(100vh - 200px); */
+}
+
+.KBACE-btn-info {
+	color: #ffffff;
+	background-color: #012838;
+	border-width: 0px;
+	border-left-color: #63BB46;
+	border-left-width: 6px;
+	border-radius: 0.0;
+	font-size: 11pt;
+	line-height: 0.8;
+}
+
+.KBACE-menu-btn-header {
+	text-align: left;
+	color: #ffffff !important;
+	background-color: #012838;
+	border-left-color: #63BB46;
+	border-left-width: 6px;
+	border-radius: 0.0;
+	font-size: 13pt;
+	margin-bottom: 10px;
+	white-space: normal;
+	height: 65px;
+	width: 100%;
+	padding-top: 0px;
+	background-image: url(../img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: 103% 212%;
+}
+
+.KBACE-btn-info:hover {
+	background-color: #023D54;
+	cursor: pointer;
+}
+
+.KBACE-menu-btn-header:hover {
+	background-color: #023D54;
+	cursor: pointer;
+}
+
+.KBACE-progress-bar {
+	background-color: #63BB46;
+	color: white;
+}
+
+.KBACE-second-menu {
+	color: white;
+	padding-left: 15px;
+	display: flow-root;
+}
+
+.KBACE-table {
+	border: 1px solid #808080;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	font-size: 11pt;
+}
+
+.KBACE-table tr {
+	line-height: 15px;
+	word-wrap: break-word;
+}
+
+.KBACE-table td {
+	padding-left: 6px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.KBACE-table th, td {
+	border: 1px solid #808080;
+}
+
+.KBACE-table th {
+	background: #BFDAE3;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.KBACE-toggler-icon {
+	color: white;
+    font-size: 25px;
+}
+
+.KBACE-background {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3d484e+0,929aa0+100,929aa0+100 */
+	background: #3d484e; /* Old browsers */
+	background: -moz-linear-gradient(top, #3d484e 0%, #929aa0 100%, #929aa0 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #3d484e 0%, #929aa0 100%, #929aa0 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #3d484e 0%, #929aa0 100%, #929aa0 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d484e',
+		endColorstr='#929aa0', GradientType=0); /* IE6-9 */
+}
+
+.KBACE-input {
+	border: none;
+}
+
+.searchInput {
+	background-image: url('../img/icons/icons8-Search-25.png');
+	background-repeat: no-repeat;
+	background-position-x: right;
+	float: right;
+}
+
+.select-label {
+	border: 1px solid #808080;
+	border-bottom: none;
+	margin-bottom: 0%;
+	text-align: center;
+	background-color: #BFDAE3;
+	font-weight: bold;
+}
+
+.margin-right-5 {
+	margin-right: 5%;
+}
+
+@media ( min-width : 767px) {
+	.KBACE-sidebar {
+		display: block;
+	}
+	.KBACE-second-menu {
+		display: none;
+	}
+	.KBACE-menu-btn-header {
+		height: 85px;
+		width: 105%;
+		background-position: 105% 152%;
+	}
+}
+
+@media ( min-width : 992px) {
+	.KBACE-sidebar {
+		display: block;
+	}
+	.KBACE-second-menu {
+		display: none;
+	}
+	.KBACE-menu-btn-header {
+		height: 65px;
+		width: 100%;
+		background-position: 103% 212%;
+	}
+	.KBACE-navbar-collapse {
+		display: block !important;
+		flex-basis: 100%;
+		align-items: center;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		-ms-flex-align: center;
+		text-align: center;
+	}
+	.bg-banner {
+		min-height: 100px;
+	}
+}
+
+@media ( min-width : 1200px) {
+	.KBACE-sidebar {
+		display: block;
+	}
+	.KBACE-second-menu {
+		display: none;
+	}
+}
+
+@media ( max-width :766px) {
+	.form-table td {
+		border: none;
+		display: block;
+	}
+	.KBACE-table {
+		border: 0;
+		width: 100%;
+	}
+	.KBACE-table thead {
+		border: none;
+		clip: rect(0, 0, 0, 0);
+		height: 1px;
+		margin: -1px;
+		overflow: hidden;
+		padding: 0;
+		position: absolute;
+		width: 1px;
+	}
+	.KBACE-table tr {
+		border-bottom: 3px solid #ddd;
+		display: grid;
+		margin-bottom: .625em;
+	}
+	.KBACE-table td {
+		border-bottom: 1px solid #ddd;
+		display: block;
+		font-size: .8em;
+		text-align: right;
+	}
+	.KBACE-table td:before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+	.KBACE-table td:last-child {
+		border-bottom: 0;
+	}
+}

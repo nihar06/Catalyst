@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Resize and Hide the Outline</Title>
+  <Type>Section</Type>
+  <Concept Guid="5acececc-d43f-4edd-a276-4ccb60632a62">./tpc/5acececc-d43f-4edd-a276-4ccb60632a62/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

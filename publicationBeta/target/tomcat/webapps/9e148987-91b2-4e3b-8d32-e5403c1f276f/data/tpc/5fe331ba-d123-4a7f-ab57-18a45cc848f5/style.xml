@@ -1,0 +1,1739 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Stylesheet xmlns="urn:stylesheet-v1">
+   <Style>
+      <DisplayName>Document</DisplayName>
+      <ElementName>body</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="color" Value="#000000" />
+         </Declarations>
+         <LanguageVariant Language="zh-CHS">
+            <Declaration Property="font-family" Value="SimSun, Hei, sans-serif" />
+            <Declaration Property="font-size" Value="9pt" />
+         </LanguageVariant>
+         <LanguageVariant Language="zh-CHT">
+            <Declaration Property="font-family" Value="MingLiU, LiSong Pro, sans-serif" />
+            <Declaration Property="font-size" Value="9pt" />
+         </LanguageVariant>
+         <LanguageVariant Language="ja">
+            <Declaration Property="font-family" Value="MS UI Gothic, Osaka, sans-serif" />
+            <Declaration Property="font-size" Value="9pt" />
+         </LanguageVariant>
+         <LanguageVariant Language="ko">
+            <Declaration Property="font-family" Value="Gulim, Nanum Gothic, Apple Gothic, sans-serif" />
+            <Declaration Property="font-size" Value="9pt" />
+         </LanguageVariant>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Table (Formatted - Left Indent 0)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-collapse" Value="collapse" />
+            <Declaration Property="border-style" Value="double" />
+            <Declaration Property="border-width" Value="1px" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-style" Value="double" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#d9d9d9" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Divider Line - Full Page</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#bfbfbf" />
+            <Declaration Property="height" Value="1px" />
+            <Declaration Property="border-width" Value="0px" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Divider Line - Half Page</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#bfbfbf" />
+            <Declaration Property="height" Value="1px" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="width" Value="50%" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Hyperlink</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#3f7c91" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Page Title</DisplayName>
+      <ElementName>h1</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="24pt" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+            <Declaration Property="margin-left" Value="0pt" />
+            <Declaration Property="margin-right" Value="0pt" />
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="text-align" Value="left" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="padding-top" Value="0pt" />
+            <Declaration Property="padding-bottom" Value="0pt" />
+            <Declaration Property="padding-left" Value="0pt" />
+            <Declaration Property="padding-right" Value="0pt" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-style" Value="solid" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>H2 Section Title</DisplayName>
+      <ElementName>h2</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#035271" />
+            <Declaration Property="font-size" Value="12pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="margin-left" Value="40px" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>H3 Section Title</DisplayName>
+      <ElementName>h3</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="12pt" />
+            <Declaration Property="margin-left" Value="80px" />
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Block Quote 1</DisplayName>
+      <ElementName>blockquote</ElementName>
+      <DeclarationSet>
+         <Declarations />
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Bulleted List - KBACE Arrows (blue)</DisplayName>
+      <ElementName>ul</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Arrows%20Blue%20Blue%20%2816x9%29.png&quot;)" />
+            <Declaration Property="list-style-type" Value="none" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="10pt" />
+               <Declaration Property="font-family" Value="Calibri" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Bulleted List - KBACE Squares (blue)</DisplayName>
+      <ElementName>ul</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+            <Declaration Property="list-style-type" Value="none" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="10pt" />
+               <Declaration Property="font-family" Value="Calibri" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Paragraph 1 (Left Indent 0)</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Paragraph 2 (Left Indent 15)</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="15pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Paragraph 3 (Left Indent 30)</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Numbered List - Numbers</DisplayName>
+      <ElementName>ol</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-type" Value="decimal" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ol</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-type" Value="upper-alpha" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ol &gt; li &gt; ol</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-type" Value="upper-roman" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ol &gt; li &gt; ol &gt; li &gt; ol</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-type" Value="lower-alpha" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ol &gt; li &gt; ol &gt; li &gt; ol &gt; li &gt; ol</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-type" Value="lower-roman" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="10pt" />
+               <Declaration Property="font-family" Value="Calibri" />
+               <Declaration Property="color" Value="#000000" />
+               <Declaration Property="font-weight" Value="normal" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Address</DisplayName>
+      <ElementName>address</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="12pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-style" Value="normal" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Table (Borderless - Left Indent 0)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#ffffff" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Footer</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="font-size" Value="10pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Table (Borderless - Left Indent 30)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#ffffff" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Table (Formatted - Left Indent 30)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-collapse" Value="collapse" />
+            <Declaration Property="border-style" Value="double" />
+            <Declaration Property="border-width" Value="1px" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-style" Value="double" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#d9d9d9" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Hyperlink (Navigation)</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#3f7c91" />
+            <Declaration Property="font-size" Value="10pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>Preformatted</DisplayName>
+      <ElementName>pre</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="font-weight" Value="bold" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style IsDefault="true">
+      <DisplayName>H1 Section Title</DisplayName>
+      <ElementName>h1</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="font-size" Value="12pt" />
+            <Declaration Property="padding-top" Value="1pt" />
+            <Declaration Property="padding-bottom" Value="1pt" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Home Page Table (Borderless - Left Indent 0)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#ffffff" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#003b59" />
+               <Declaration Property="padding-top" Value="3pt" />
+               <Declaration Property="padding-bottom" Value="3pt" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Bulleted List - KBACE Squares (white)</DisplayName>
+      <ElementName>ul</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20White%20%286x7%29.png&quot;)" />
+            <Declaration Property="list-style-type" Value="none" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="10pt" />
+               <Declaration Property="font-family" Value="Calibri" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Home Page Table (Formatted - Left Indent 0)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="double" />
+            <Declaration Property="border-width" Value="1px" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+            <Declaration Property="border-collapse" Value="collapse" />
+            <Declaration Property="border-color" Value="#808080" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-top" Value="3pt" />
+               <Declaration Property="padding-bottom" Value="3pt" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-style" Value="double" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#d9d9d9" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Header Table (Borderless - Left Indent 0, No Pad)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#ffffff" />
+            <Declaration Property="margin-left" Value="3pt" />
+            <Declaration Property="margin-right" Value="3pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+               <Declaration Property="padding-top" Value="0pt" />
+               <Declaration Property="padding-bottom" Value="0pt" />
+               <Declaration Property="padding-left" Value="0pt" />
+               <Declaration Property="padding-right" Value="0pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Timeline Table (Borderless - Left Indent 30, No Pad)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#ffffff" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="0pt" />
+               <Declaration Property="padding-right" Value="0pt" />
+               <Declaration Property="padding-top" Value="0pt" />
+               <Declaration Property="padding-bottom" Value="0pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Timeline Table (Formatted - Left Indent 30, No Pad)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-collapse" Value="collapse" />
+            <Declaration Property="border-style" Value="double" />
+            <Declaration Property="border-width" Value="1px" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-left" Value="0pt" />
+               <Declaration Property="padding-right" Value="0pt" />
+               <Declaration Property="padding-top" Value="0pt" />
+               <Declaration Property="padding-bottom" Value="0pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="1px" />
+               <Declaration Property="border-style" Value="double" />
+               <Declaration Property="border-color" Value="#808080" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#d9d9d9" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Divider TimeLine - Full Page</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#bfbfbf" />
+            <Declaration Property="height" Value="1px" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="margin-top" Value="8pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Divider Line - Full Page (No Spacing)</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#bfbfbf" />
+            <Declaration Property="height" Value="1px" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Divider Line - Full Page Green</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#63bb46" />
+            <Declaration Property="height" Value="2px" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>H1 Section Title Blue</DisplayName>
+      <ElementName>h1</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#035271" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>1px spacer</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="01pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>H2 Section Title - Grey</DisplayName>
+      <ElementName>h2</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Bulleted List - KBACE Squares (blue) 2</DisplayName>
+      <ElementName>ul</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+            <Declaration Property="list-style-type" Value="none" />
+            <Declaration Property="padding-top" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="inherit" />
+               <Declaration Property="list-style-type" Value="inherit" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="10pt" />
+               <Declaration Property="font-family" Value="Calibri" />
+               <Declaration Property="margin-top" Value="0pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Table (Formatted - Left Indent 30, No Border, Banded Rows, Padding)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+            <Declaration Property="margin-left" Value="30pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+               <Declaration Property="padding-top" Value="2pt" />
+               <Declaration Property="padding-bottom" Value="2pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-color" Value="#f2f2f2" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr:nth-of-type(even)</Selector>
+         <DeclarationSet>
+            <Declarations />
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr:nth-of-type(odd)</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#efefef" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Module_Section Name Concept Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="12pt" />
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="color" Value="#035271" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Module_Section Regular Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="12pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Bulleted List - Catalyst Concept Page</DisplayName>
+      <ElementName>ul</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+            <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+            <Declaration Property="list-style-type" Value="none" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+               <Declaration Property="list-style-type" Value="none" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+               <Declaration Property="list-style-type" Value="none" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+               <Declaration Property="list-style-type" Value="none" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="MandatorySelectorDeclaration" Value="MandatorySelectorDeclaration" />
+               <Declaration Property="list-style-image" Value="url(&quot;../b821f039-42a6-4c07-be2f-165459cac96d/Parts/KBACE%20Bullet%20Square%20Blue%20%286x7%29.png&quot;)" />
+               <Declaration Property="list-style-type" Value="none" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="12pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="12pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="12pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="12pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>&gt; li &gt; ul &gt; li &gt; ul &gt; li &gt; ul &gt; li</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-size" Value="12pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Divider Line - Full Page Blue</DisplayName>
+      <ElementName>hr</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="background-color" Value="#035271" />
+            <Declaration Property="height" Value="3px" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Table (Formatted - Left Indent 60)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-collapse" Value="collapse" />
+            <Declaration Property="border-style" Value="solid" />
+            <Declaration Property="margin-left" Value="60pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="solid" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Footer Structure Headers</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="color" Value="#035271" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Hyper Link (Home Page Section Title)</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#035271" />
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="text-decoration" Value="none" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>PMO Table - Left Indent 15</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="margin-left" Value="15px" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="padding-top" Value="1px" />
+               <Declaration Property="padding-bottom" Value="1px" />
+               <Declaration Property="padding-left" Value="3px" />
+               <Declaration Property="padding-right" Value="3px" />
+               <Declaration Property="border-width" Value="0px" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="background-color" Value="#ffffff" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="font-weight" Value="normal" />
+               <Declaration Property="padding-top" Value="1pt" />
+               <Declaration Property="padding-bottom" Value="1pt" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>Table (Formatted - Left Indent 35, No Border, Banded Rows)</DisplayName>
+      <ElementName>table</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="border-style" Value="hidden" />
+            <Declaration Property="border-width" Value="0px" />
+            <Declaration Property="border-color" Value="#808080" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="vertical-align" Value="top" />
+            <Declaration Property="margin-left" Value="35pt" />
+         </Declarations>
+      </DeclarationSet>
+      <DescendantStyle>
+         <Selector>td</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-color" Value="#808080" />
+               <Declaration Property="vertical-align" Value="top" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=col]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="color" Value="#ffffff" />
+               <Declaration Property="background-color" Value="#035271" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="border-width" Value="0px" />
+               <Declaration Property="border-style" Value="hidden" />
+               <Declaration Property="border-color" Value="#f2f2f2" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>th[scope=row]</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#ffffff" />
+               <Declaration Property="padding-left" Value="3pt" />
+               <Declaration Property="padding-right" Value="3pt" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr:nth-of-type(even)</Selector>
+         <DeclarationSet>
+            <Declarations />
+         </DeclarationSet>
+      </DescendantStyle>
+      <DescendantStyle>
+         <Selector>tbody tr:nth-of-type(odd)</Selector>
+         <DeclarationSet>
+            <Declarations>
+               <Declaration Property="background-color" Value="#d9d9d9" />
+            </Declarations>
+         </DeclarationSet>
+      </DescendantStyle>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L1 Active</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+            <Declaration Property="font-weight" Value="bold" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L2 Active</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="10pt" />
+            <Declaration Property="font-weight" Value="normal" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L3 Active</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="20pt" />
+            <Declaration Property="font-style" Value="italic" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L1 Inactive</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+            <Declaration Property="color" Value="#808080" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L2 Inactive</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="10pt" />
+            <Declaration Property="color" Value="#808080" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L2 Selected</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="10pt" />
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="color" Value="#df7a1c" />
+            <Declaration Property="font-style" Value="italic" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L3 Selected</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="margin-left" Value="20pt" />
+            <Declaration Property="font-style" Value="italic" />
+            <Declaration Property="color" Value="#df7a1c" />
+            <Declaration Property="font-weight" Value="bold" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>LC Gray Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>LC Gray Text BOLD</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#595959" />
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>LC Copyright Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#adb8bf" />
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>LC Body Text</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="color" Value="#000000" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Nav L1 Selected</DisplayName>
+      <ElementName>p</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="margin-top" Value="0pt" />
+            <Declaration Property="margin-bottom" Value="0pt" />
+            <Declaration Property="font-weight" Value="bold" />
+            <Declaration Property="font-style" Value="italic" />
+            <Declaration Property="color" Value="#df7a1c" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Hyperlink</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="color" Value="#808080" />
+            <Declaration Property="text-decoration" Value="underline" />
+            <Declaration Property="font-style" Value="normal" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>BPM Hyperlink (no underline)</DisplayName>
+      <ElementName>span</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="font-size" Value="10pt" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="color" Value="#808080" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Hyperlink (BPM Index SP)</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#3f7c91" />
+            <Declaration Property="font-family" Value="Calibri" />
+            <Declaration Property="font-weight" Value="bold" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Hyperlink 1</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#3f7c91" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+   <Style>
+      <DisplayName>Hyperlink (BPM Index PROC)</DisplayName>
+      <ElementName>a</ElementName>
+      <DeclarationSet>
+         <Declarations>
+            <Declaration Property="color" Value="#3f7c91" />
+            <Declaration Property="font-family" Value="Calibri" />
+         </Declarations>
+      </DeclarationSet>
+   </Style>
+</Stylesheet>

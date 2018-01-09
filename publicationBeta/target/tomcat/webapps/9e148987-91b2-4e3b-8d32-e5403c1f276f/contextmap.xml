@@ -1,0 +1,1858 @@
+﻿<ContextMap xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:odext="urn:odext"><Document>
+  <DocumentName>Catalyst ERP Cloud - Project Portfolio Management</DocumentName>
+  <DocId>9e148987-91b2-4e3b-8d32-e5403c1f276f</DocId>
+</Document><Document>
+  <DocumentName>Initiate Project</DocumentName>
+  <DocId>36239f29-bd59-4783-8904-4affd0534c3f</DocId>
+</Document><Document>
+  <DocumentName>Creating a Billable Project from Template</DocumentName>
+  <DocId>6bca1ad2-8f95-4e2d-8120-b6f54bb55cf4</DocId>
+  <Contexts>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Capital Project from Template</DocumentName>
+  <DocId>dd1ff582-9429-4266-8bb8-4e2d7d4dddad</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Billable Capital Project from Template</DocumentName>
+  <DocId>9c0a1c5a-d7e7-4152-ab93-9f28867c0a03</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Overhead Project from Template</DocumentName>
+  <DocId>3106e452-f1e3-4e00-9615-e6300d46343a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Project from Another Project</DocumentName>
+  <DocId>cf291c0f-3fea-4d5c-8128-1bf7d99577f4</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Manage Financial Project Settings</DocumentName>
+  <DocId>8e785733-be21-41cc-99fa-a90768e6fc09</DocId>
+</Document><Document>
+  <DocumentName>Editing a Project Start Date and Project Finish Date</DocumentName>
+  <DocId>0db78f8b-b142-4cc7-ad56-94b0a9172987</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Cascading Project Dates</DocumentName>
+  <DocId>86eeb5e4-0ebc-4d70-8e5b-3f3df5f14087</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Editing a Classification</DocumentName>
+  <DocId>d6acfba4-d839-46f9-8b1d-e6f24ddf4a62</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Adding an Attachment</DocumentName>
+  <DocId>2cf09155-8162-46f3-bdf4-2a3bd631c89a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CC5EF32C3-22CA37E0-3B68BB8A-9A7ADF46">
+      <Application>IE5</Application>
+      <Name>Choose File to Upload</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Adding Team Members</DocumentName>
+  <DocId>a88aabfc-d32b-4a2f-a9ac-cb4ea6a1b15a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Adding Customers</DocumentName>
+  <DocId>dce5aca4-5e26-4286-a480-f9144620f727</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Adding Partner Organization</DocumentName>
+  <DocId>6035fe8a-dc65-49ee-958f-de33ad2cb6fb</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Adding Supplier Organization</DocumentName>
+  <DocId>81cf8d1b-5369-433d-bff0-645e8dea02f4</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Editing a Project Plan Type</DocumentName>
+  <DocId>2c02806a-fc6a-4f02-ae24-c458e584cfb5</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Editing Project Level Transaction Controls</DocumentName>
+  <DocId>496804a6-6e9b-45f5-acdc-d32a8f85cd21</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Editing Task Level Transaction Controls</DocumentName>
+  <DocId>6fe857f5-659f-45fb-a6e4-f87a5c7302bd</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Changing a Project Status Without Approvals</DocumentName>
+  <DocId>2b3aa00e-b858-4185-a16b-c0b05129d481</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Plan and Execute</DocumentName>
+  <DocId>741771e6-8578-4bab-8186-b77859109f9f</DocId>
+</Document><Document>
+  <DocumentName>Maintaining a Project Plan</DocumentName>
+  <DocId>3a58fc32-badb-45f0-9c67-f2467d708163</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CB96BDF44-2E314D75-F3EFC8E5-3E660A60">
+      <Application>IE5</Application>
+      <Name>IE5</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Control</DocumentName>
+  <DocId>95ffa4ea-89f7-44fb-a814-cdd60451ae52</DocId>
+</Document><Document>
+  <DocumentName>Creating a Cost Budget - Manually create budget lines</DocumentName>
+  <DocId>d1e92018-4cc6-4cf7-9673-f6fced0ee5da</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost Budget - Copy from Another Source</DocumentName>
+  <DocId>5b9eb052-4d24-41df-ae81-11a5c6e0a6e3</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost Budget - Generate from Another Source</DocumentName>
+  <DocId>1fb0ae6f-0d83-4311-8b4e-a672c5661a8c</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Approving a Budget</DocumentName>
+  <DocId>6153aa75-219b-44a7-9713-5f1fbcf3ff09</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Revenue Budget - Manually Create Budget Lines</DocumentName>
+  <DocId>7089f5b5-c332-4066-a5aa-6fd9fdcf5a4e</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Revenue Budget - Copy from Another Source</DocumentName>
+  <DocId>30172be7-3b04-400d-a05f-bc0ee2794e9a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Revenue Budget - Generate from Another Source</DocumentName>
+  <DocId>acba6442-c3d2-47c3-94ca-cf9f0294b134</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost Forecast - Manually Create Forecast Lines</DocumentName>
+  <DocId>9bd9eaa9-5967-40ea-acc8-670a8a00406f</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost Forecast - Copy from Another Source</DocumentName>
+  <DocId>8ed1eb3f-877f-4c7a-9892-228b0223f6fa</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost Forecast - Generate from Another Source</DocumentName>
+  <DocId>85f57bf8-59ce-4e73-8991-d05cecd17ac4</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Approving a Forecast</DocumentName>
+  <DocId>b05fdeb1-0a74-4e1c-a19e-0df75bddca9d</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost and Revenue Forecast (same version) Manually Create Forecast Lines</DocumentName>
+  <DocId>f620989d-33fa-4232-a7a8-ab807c151b90</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Deleting a Working Version</DocumentName>
+  <DocId>4202338c-26f9-48a7-8b26-a78ca4b28215</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Setting a  Budget Status</DocumentName>
+  <DocId>97849b1b-bbf4-494f-b039-5aae85e70bf0</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Cost and Revenue Forecast (different version) Copy from Another Source</DocumentName>
+  <DocId>0256df0d-65f6-4695-81a3-c8d6d8a2067c</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Approving a Cost and Revenue Forecast (different versions)</DocumentName>
+  <DocId>4e945ebc-288e-4cf6-9a58-49341afb1f82</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Unlocking a Budget</DocumentName>
+  <DocId>2b96deea-6942-43ed-be64-38bf8999ba14</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Unlocking a Forecast</DocumentName>
+  <DocId>158d74fc-6529-4832-9180-78b2c98f2ec9</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Duplicating Selected Version to Create Working Version</DocumentName>
+  <DocId>a0f73a1c-66df-4775-833b-6fa2e7a58245</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Budgeting for Budgetary Control</DocumentName>
+  <DocId>b47eb3c1-b234-4c26-a236-01d4f169d71f</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C56F3ABE1-4D0D5BD8-2A408497-5727DDF8">
+      <Application>FUSION</Application>
+      <Name>Monitor Processes - Scheduled Processes - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.EssUIShell" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+        <EcidPart Name="C" Caption="Context ID" Value="MainTaskID=undefined" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Budgeting with Workflow Approvals</DocumentName>
+  <DocId>479fa1b0-a5d6-4a89-be5c-edeebe2da442</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="C56F3ABE1-4D0D5BD8-2A408497-5727DDF8">
+      <Application>FUSION</Application>
+      <Name>Monitor Processes - Scheduled Processes - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.EssUIShell" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+        <EcidPart Name="C" Caption="Context ID" Value="MainTaskID=undefined" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Capture</DocumentName>
+  <DocId>cfa6a7be-45d0-4b96-9315-6d2d890012ce</DocId>
+</Document><Document>
+  <DocumentName>Creating Labor Costs</DocumentName>
+  <DocId>4077275d-060a-4de5-ac58-f5ffa33e95b5</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C25000451-558A6641-6FAAE50C-B4C33015">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Nonlabor Costs</DocumentName>
+  <DocId>4ddb2c4b-88fb-423b-ac57-75628f639992</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C25000451-558A6641-6FAAE50C-B4C33015">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Labor Costs for Third-Party Applications</DocumentName>
+  <DocId>9cbacd01-65cf-4d4b-a982-1291fb3c55bc</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C0A7AA54F-8A57DADE-147CC0A9-1C257D5A">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyLabor.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="C75BB80EB-DCF0FD36-649FDEC9-93DF8CDA">
+      <Application>STDAPP</Application>
+      <Name>STDAPP</Name>
+    </Context>
+    <Context Ucid="C678CA52F-8E6C1130-8881F04D-CB4B87E2">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyLabor.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="C9ABF68FD-C9067F2D-2D7BE6B1-DA62655C">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyLabor.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="CD4852E1B-E55F5614-E5F52B4F-C4E74655">
+      <Application>STDAPP</Application>
+      <Name>Export Expenditure Batch to Oracle Fusion Project Costing</Name>
+    </Context>
+    <Context Ucid="C9CCCF37C-B426768B-8A7D8000-57CCCD9E">
+      <Application>STDAPP</Application>
+      <Name>Microsoft Excel</Name>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="C25000451-558A6641-6FAAE50C-B4C33015">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Nonlabor Costs for Third-Party Applications</DocumentName>
+  <DocId>5323d224-60e9-4880-acba-73b21e5d1aa3</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C25000451-558A6641-6FAAE50C-B4C33015">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Costed or Accounted Transactions for Third-Party Applications</DocumentName>
+  <DocId>5d0562f9-3fe0-4d37-81b3-63cdfbdeeeb6</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C4FF7C7D4-F4AE3D77-E858D433-F942C7D3">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="CB732C69E-DC9ED540-F3BB458B-5F19431E">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+    <Context Ucid="C7D4743C6-E570E110-395B8DBA-CCD18F8B">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyCosted.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="C75BB80EB-DCF0FD36-649FDEC9-93DF8CDA">
+      <Application>STDAPP</Application>
+      <Name>STDAPP</Name>
+    </Context>
+    <Context Ucid="CA11C7673-01FEDC01-3CFD1B06-40AA216F">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyCosted.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="C9D3081A9-3C157650-0A44AF3C-3839DFAA">
+      <Application>STDAPP</Application>
+      <Name>ThirdPartyCosted.xlsx  [Read-Only] - Excel</Name>
+    </Context>
+    <Context Ucid="CD4852E1B-E55F5614-E5F52B4F-C4E74655">
+      <Application>STDAPP</Application>
+      <Name>Export Expenditure Batch to Oracle Fusion Project Costing</Name>
+    </Context>
+    <Context Ucid="C9CCCF37C-B426768B-8A7D8000-57CCCD9E">
+      <Application>STDAPP</Application>
+      <Name>Microsoft Excel</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Managing Unprocessed Costs</DocumentName>
+  <DocId>b8df1e73-44b8-4a5c-b568-a92f40b4fb31</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>146762_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+    <Context Ucid="C48F50D62-5888563B-1F0D431A-AA282306">
+      <Application>STDAPP</Application>
+      <Name>STDAPP</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Managing Unreleased Costs</DocumentName>
+  <DocId>66eaddf1-8e60-4251-b058-8529c4c40e23</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>146771_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Importing and Processing Cost Transactions</DocumentName>
+  <DocId>e561ff5f-c2b2-48a4-b2f6-688430066056</DocId>
+</Document><Document>
+  <DocumentName>Cost Management - Miscellaneous Inventory</DocumentName>
+  <DocId>f825b0bd-3241-41fa-99c5-59037709412f</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>155563_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Cost Management - Purchase Receipt</DocumentName>
+  <DocId>681bdcb7-6265-4d3a-9949-f2dfc85cc4e5</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>154782_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Payables - Expense Report</DocumentName>
+  <DocId>087498fc-8827-4e46-8133-236bf57decb2</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C863E04C9-0A92A194-DAEE5F10-83CFF525">
+      <Application>STDAPP</Application>
+      <Name>Reading Untagged Document with Assistive Technology</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>150788_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Payables - Intercompany Invoice</DocumentName>
+  <DocId>2a833db6-52bb-473d-a777-d679f1df1336</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>150794_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Payables - Interproject Invoice</DocumentName>
+  <DocId>fd86794f-25c3-44b2-8268-f02c719d5d1a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>150965_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Payables - Payment</DocumentName>
+  <DocId>da57036b-4da6-4101-aab3-6a5ab6d6e10a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>150971_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Payables - Supplier Invoice</DocumentName>
+  <DocId>d1798c99-3547-4385-92ca-e4b08e3edb1e</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>150977_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Allocation Expenditure</DocumentName>
+  <DocId>4cdabc37-692a-4109-962c-5b8782bada91</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>152402_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Burden Expenditure</DocumentName>
+  <DocId>dd192a20-fc28-4479-8217-9b150784e608</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>155569_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Capitalized Interest Expenditure</DocumentName>
+  <DocId>bec49d46-17f3-4b53-a20a-61c64c0b723c</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>146778_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Inventory Expenditure</DocumentName>
+  <DocId>b025a7b9-6e4a-4403-87de-ffa6a1bb3b25</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>155577_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Miscellaneous Expenditure</DocumentName>
+  <DocId>cbaabdc1-e803-49aa-9bb5-6f6a4182f92f</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>146786_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Summarized Burden Expenditure</DocumentName>
+  <DocId>58de1912-5251-42c7-803b-545d77994f7b</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>155581_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Time Card</DocumentName>
+  <DocId>439934ad-872d-4858-98fe-d3934330711f</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>152410_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Usage Expenditure</DocumentName>
+  <DocId>1fd98393-2571-41e8-b0ca-431d2b46a02c</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>152413_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Projects - Work-in-Progress Expenditure</DocumentName>
+  <DocId>269a589e-3cda-4f8b-ba70-1b7853983b5e</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>155589_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Time and Labor</DocumentName>
+  <DocId>cf1863cc-7a4c-40b3-a12e-fbea013b3332</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>153189_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Miscellaneous Accrual</DocumentName>
+  <DocId>20da76d1-83e7-44c6-a43a-580ee02c38f6</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="CA801E61E-CFFF6BD8-838CAA68-86E6C8A1">
+      <Application>STDAPP</Application>
+      <Name>153203_ Import Costs Output Report.pdf - Adobe Acrobat Reader DC</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Importing</DocumentName>
+  <DocId>b0ab1c43-8e86-47f4-8518-5932804e0df6</DocId>
+</Document><Document>
+  <DocumentName>Importing Commitments</DocumentName>
+  <DocId>de564804-32ae-4988-8ac0-57df763a6b90</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Capital Projects</DocumentName>
+  <DocId>6849786b-b466-4c7a-95ff-92890b4a436c</DocId>
+</Document><Document>
+  <DocumentName>Defining Assets</DocumentName>
+  <DocId>49981a0f-08a7-4960-91d7-c0ca318ca9a6</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Assets in Excel</DocumentName>
+  <DocId>37fc9be1-e6ca-4f54-acb8-0a153a326d8b</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Assets - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="C25000451-558A6641-6FAAE50C-B4C33015">
+      <Application>IE5</Application>
+      <Name>Internet Explorer</Name>
+    </Context>
+    <Context Ucid="C81F17E53-E1344404-4A711D6B-5E70B1FC">
+      <Application>STDAPP</Application>
+      <Name>Connect</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Assigning Assets at the Task Level</DocumentName>
+  <DocId>bae14505-b4a2-4acc-ae3a-59dfe51492c1</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Manage Projects - Project Financial Management - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Burden Expenditure Items</DocumentName>
+  <DocId>e2fdebd7-1199-4532-a4cf-62a9fd897bb3</DocId>
+</Document><Document>
+  <DocumentName>Testing Burden Cost Calculations</DocumentName>
+  <DocId>d343d728-9ba7-475d-85f3-300873ff14e1</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Allocations</DocumentName>
+  <DocId>d2dcc416-27e4-4d35-bd6c-4dc858cd0964</DocId>
+</Document><Document>
+  <DocumentName>Generating Allocations</DocumentName>
+  <DocId>f54a93db-477d-4875-8f74-64565bed813d</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Costs - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Contracts</DocumentName>
+  <DocId>7ac0e7a3-ca63-410d-8271-a0d1c7bc89d1</DocId>
+</Document><Document>
+  <DocumentName>Creating a Contract</DocumentName>
+  <DocId>ba11cc45-6b4d-4479-ba12-f8290aa136a7</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Contracts - Contracts - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+    <Context Ucid="C8B5C1D03-7682918F-9C6833D1-0D3394D8">
+      <Application>IE5</Application>
+      <Name>Choose File to Upload</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Contract in Wizard</DocumentName>
+  <DocId>e02deff3-1c35-45f6-95d3-734559bc7572</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Contracts - Contracts - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CC5EF32C3-22CA37E0-3B68BB8A-9A7ADF46">
+      <Application>IE5</Application>
+      <Name>Choose File to Upload</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating Contract Lines and Fund Project</DocumentName>
+  <DocId>6a0c2bec-bf61-4196-92fd-f0a6b2e0f5e7</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Contracts - Contracts - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CFC60D1D6-3A7EA0D5-C55646D6-6D919124">
+      <Application>IE5</Application>
+      <Name>Internet Explorer Main Window</Name>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Creating a Revenue Plan</DocumentName>
+  <DocId>0c81e40a-99a5-4de4-aa2a-1e5ad5d27b9a</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Contracts - Contracts - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Contract Revenue</DocumentName>
+  <DocId>47470796-c58d-4305-82a3-d8b41bcb0b30</DocId>
+</Document><Document>
+  <DocumentName>Managing Events</DocumentName>
+  <DocId>0927b70d-349a-4b1f-b591-afe72053e7b8</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Invoices - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Generating Revenue</DocumentName>
+  <DocId>d8453c71-e666-4c6b-83a2-0abd5674befc</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Revenue - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Managing Billing Offset Balances</DocumentName>
+  <DocId>6f627360-7648-4048-984f-2a8e92144c46</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Revenue - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document><Document>
+  <DocumentName>Reclassifying Billing Offset Balances</DocumentName>
+  <DocId>fe947be8-b48c-4d21-99bd-a77a721bb574</DocId>
+  <Contexts>
+    <Context Ucid="CAF93A5B6-0DC2BB55-CF9E5DDB-2CCBA3B5">
+      <Application>FUSION</Application>
+      <Name>Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FuseWelcome" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+    <Context Ucid="CAA000DB3-E590AA3F-49166110-A2C4952E">
+      <Application>FUSION</Application>
+      <Name>Overview - Revenue - Oracle Applications</Name>
+      <Ecid>
+        <EcidPart Name="C" Caption="Context ID" Value="ViewID=.FndOverview" UseNameAsPrefix="true" Searchable="true" Generic="false" />
+      </Ecid>
+    </Context>
+  </Contexts>
+</Document></ContextMap>

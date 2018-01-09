@@ -1,0 +1,6 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Play Try It! Mode</Title>
+  <Type>Section</Type>
+  <Concept Guid="a3bf0140-6b3c-4096-b948-0ee4eb4f77f8">./tpc/a3bf0140-6b3c-4096-b948-0ee4eb4f77f8/Parts/index.html</Concept>
+  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
+</Description>

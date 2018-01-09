@@ -1,0 +1,12 @@
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:02:04 -0500] "GET /publicationBeta/manager/userGroup-management HTTP/1.1" 302 - http-bio-8080-exec-6 67
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:02:04 -0500] "GET /publicationBeta/login HTTP/1.1" 200 7112 http-bio-8080-exec-6 34
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:02:10 -0500] "POST /publicationBeta/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-6 3955
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:02:10 -0500] "GET /publicationBeta/manager/userGroup-management HTTP/1.1" 200 8631 http-bio-8080-exec-10 60
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:05:20 -0500] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-8 0
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:05:20 -0500] "GET /publicationBeta/ HTTP/1.1" 200 16337 http-bio-8080-exec-8 15
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:49 -0500] "GET /publicationBeta/manager/importContent HTTP/1.1" 302 - http-bio-8080-exec-4 19
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:49 -0500] "GET /publicationBeta/login HTTP/1.1" 200 7112 http-bio-8080-exec-4 8
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:54 -0500] "POST /publicationBeta/j_spring_security_check HTTP/1.1" 302 - http-bio-8080-exec-4 2961
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:54 -0500] "GET /publicationBeta/manager/importContent HTTP/1.1" 200 6165 http-bio-8080-exec-5 74
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:57 -0500] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [05/Jan/2018:13:36:57 -0500] "GET /publicationBeta/ HTTP/1.1" 200 16337 http-bio-8080-exec-7 10

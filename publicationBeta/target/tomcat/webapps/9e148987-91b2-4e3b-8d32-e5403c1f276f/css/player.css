@@ -1,0 +1,419 @@
+﻿/*--- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. --- */
+body
+{
+	background-color: #000000;
+	color: #000000;
+	margin: 0px;
+}
+
+html, body
+{
+	height: 100%;
+}
+
+.startplayfont
+{
+	font-family: Arial;
+	font-size: 18px;
+	color: White;
+	position: fixed;
+	z-index: 89;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	line-height: 25px;
+	text-align: center;
+	background: url(../img/ipad_messagebar.png) repeat-x;
+}
+
+.grayoverlay
+{
+	background: gray;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 88;
+	opacity: .60;
+	-moz-opacity: .60;
+	filter: alpha(opacity=60);
+}
+
+.startcenter
+{
+	width: 192px;
+	height: 195px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -96px;
+	margin-left: -98px;
+	z-index: 89;
+}
+
+#screencontent
+{
+	transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+}
+
+.swipeanim
+{
+	-webkit-transition: all 0.25s ease-out;
+}
+
+#screen
+{
+	margin: auto;
+	transform: translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	overflow: hidden;
+}
+
+p
+{
+	margin: 0;
+	padding: 0;
+}
+
+li.DecisionList
+{
+	padding-left: 16px;
+	text-indent: -16px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+li.DecisionListIE10
+{
+	padding-left: 22px;
+	text-indent: -22px;
+	list-style-type: disc;
+	list-style-position: inside;
+}
+
+A:link[href*="javascript:"], A:link[href*="http:"]
+{
+	color: #0000FF;
+}
+A:active[href*="javascript:"], A:active[href*="http:"]
+{
+	color: #0000FF;
+}
+A:visited[href*="javascript:"], A:visited[href*="http:"]
+{
+	color: #0000FF;
+}
+A:hover[href*="javascript:"], A:hover[href*="http:"]
+{
+	color: #0099FF;
+}
+
+.CurvedBoxColor
+{
+	background-color: rgb(102,102,102);
+}
+.BubbleBg
+{
+	background-color: #ffffcc;
+}
+span
+{
+	font-family: Arial, Helvetica, sans-serif;
+}
+span.InstructText, input.InstructText, select.InstructText, label.InstructText, a.InstructText, p.InstructText
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.InstructText:hover, .DeciScreenHead:hover
+{
+	color: black;
+}
+input.InstructTextButtonIE
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	display: inline;
+	height: 25px;
+}
+input.InstructTextButtonFF
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	display: inline;
+	height: 25px;
+	padding-bottom: 2px;
+}
+.GrayBackground
+{
+	background: #cccccc;
+}
+.AMenu
+{
+	background-color: #f7f7e7;
+}
+
+.BubbleHyperText
+{
+	color: #0033cc;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+}
+a:link[class="BubbleHyperText"]
+{
+	color: #0033cc;
+}
+
+.HomeNavHypertext
+{
+	color: #003399;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+.NavHypertextLight
+{
+	color: #ccffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	font-weight: bold;
+}
+.CurvedBoxNav
+{
+	color: #ccffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.CurvedBoxNav:hover
+{
+	color: #ccffff;
+}
+.FrameText
+{
+	color: black;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+.TocFormControl
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+/* preferences dialog */
+#MarqueeColor div
+{
+	margin: 10px 10px -5px 10px;
+	width: 26px;
+	height: 19px;
+	border-width: 1px;
+	display: inline-block;
+}
+.pref_line
+{
+	margin-top: 8px;
+}
+.pref_button_line
+{
+	height: 25px;
+}
+.pref_checkbox_line
+{
+	height: 17px;
+}
+.pref_multi_line
+{
+	height: 34px;
+}
+input[name='ResetDefaults']
+{
+	float: right;
+}
+.pref_ctrl_buttons
+{
+	position: static; /* absolute;*/
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	visibility: visible;
+	margin-top: 15px;
+}
+.pref_ctrl_buttons form
+{
+	float: right;
+}
+.pref_ctrl_buttons form input
+{
+	margin-left: 5px;
+}
+#prefTabs
+{
+	font-family: Arial, Helvetica, sans-serif;
+	height: 85%;
+	border: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+#tabNames
+{
+	padding: 0;
+	border: 0;
+	font-size: 75%;
+}
+#tabNames .tabButton
+{
+	padding: 0.4em 1em;
+}
+.PrefTextHead
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+}
+#prefTabs div.PrefBody, #rolemain
+{
+	margin: 0;
+	padding: 10px 15px;
+}
+.PrefBody
+{
+	height: 100%;
+}
+.PrefControls
+{
+	display: none;
+}
+.smallerText
+{
+	font-size: 8pt;
+}
+label span
+{
+	vertical-align: middle;
+}
+#note1
+{
+	font-weight: bold;
+	margin-left: 5px;
+	margin-right: 3px;
+}
+#FlashText a
+{
+	font-size: 10px;
+	margin-left: 20px;
+}
+/* end preferences dialog */
+/* roles.html */
+#roles_intro
+{
+	margin-bottom: 5px;
+}
+#roles_list
+{
+	height: 180px;
+	overflow: auto;
+}
+
+
+/* end roles.html */
+
+.Area
+{
+	border-bottom-color: red;
+	border-left-color: red;
+	border-right-color: red;
+	border-top-color: red;
+	border-width: 3px;
+	border-style: solid;
+}
+
+div#content p, div#content ul
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+#prbr
+{
+	font-size: 11pt;
+}
+
+a p, a div
+{
+	padding-bottom: 15px;
+}
+
+#knowItResults
+{
+	margin-bottom: 20px;
+}
+
+#scoretext
+{
+	padding-top: 15px;
+}
+
+#knowItResults td
+{
+	white-space: nowrap;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* share content dialog controls */
+fieldset legend
+{
+	padding: 0 5px;
+}
+fieldset
+{
+	margin-bottom: 5px;
+}
+#scmain
+{
+	width: 550px;
+	padding: 5px;
+}
+#scmain label
+{
+	display: block;
+}
+#viewoutline
+{
+	margin-bottom: 15px;
+}
+#scurl
+{
+	width: 100%;
+	display: block;
+	margin-bottom: 15px;
+}
+#scclose
+{
+	float: right;
+}
+/* end share content dialog controls */
+
+/* embedded dialog in the testit player */
+#embedded_dialog
+{
+	display: none;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+#embedded_dialog iframe
+{
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* end embedded dialog in the testit player */

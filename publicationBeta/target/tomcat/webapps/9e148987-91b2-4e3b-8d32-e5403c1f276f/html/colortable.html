@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--
+Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title></title>
+
+	<script type="text/javascript" src="../js/resource.js"></script>
+
+	<script type="text/javascript">
+
+		function Selection(s) {
+			parent.ColorSelected(s);
+		}
+
+		function Close() {
+			parent.HideColorTable();
+		}
+
+		function Init() {
+			var aColors = ["white", "black", "gray", "silver", "red", "green", "blue", "yellow", "purple", "olive", "navy",
+					"aqua", "lime", "maroon", "teal", "fuchsia"];
+			var strColorTable = '<table cellspacing="2" cellpadding="2" width="100%" border="0">';
+			for (var i = 0; i < aColors.length; i++) {
+				if (i % 4 == 0)
+					strColorTable += '<tr>';
+				strColorTable += '<td style="width:25%; height:9pt; background-color:' + aColors[i] + '; border-style:solid; border-width:1px; border-color:gray; font-size: 4pt; font-family: Arial" onclick="Selection(' + "'" + aColors[i] + "'" + ');">&nbsp;</td>';
+				if (i % 4 == 3)
+					strColorTable += '</tr>';
+			}
+			strColorTable += '<tr><td colspan="4" style="text-align: center; cursor: default; font-family: Arial, Helvetica, sans-serif; font-size: 8pt; border-style:solid; border-width:1px; border-color:gray" onclick="Close();">' + R_cancel + '</td></tr>';
+			strColorTable += '</table>';
+			document.body.innerHTML = strColorTable;
+		}
+
+	</script>
+
+</head>
+<body onload="Init();" style="background-color: White">
+</body>
+</html>

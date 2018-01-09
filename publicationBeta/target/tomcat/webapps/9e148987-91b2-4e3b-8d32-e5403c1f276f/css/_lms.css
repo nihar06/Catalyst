@@ -1,0 +1,362 @@
+﻿/*--- Copyright © 1998, 2014, Oracle and/or its affiliates.  All rights reserved. --- */
+body
+{
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+*:focus
+{
+	outline: 1px dotted gray;
+}
+
+body, html
+{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+a:link[href]
+{
+	color: #00F;
+}
+
+a:active[href]
+{
+	color: #00F;
+}
+
+a:visited[href]
+{
+	color: #00F;
+}
+
+a:hover[href]
+{
+	color: #00F;
+}
+
+.fill
+{
+	width: 100%;
+	height: 100%;
+}
+
+.autoscroll
+{
+	overflow: auto;
+}
+
+.tiframe
+{
+	height: 100%;
+}
+
+.thorizontal
+{
+	width: 100%;
+	height: 5px;
+}
+
+.tvertical
+{
+	width: 5px;
+	height: 100%;
+}
+
+#tdownborder
+{
+	position: absolute;
+	bottom: 0;
+}
+
+#myTable
+{
+	width: 100%;
+	height: 100%;
+	table-layout: fixed;
+}
+
+#header2
+{
+	width: 100%;
+}
+
+.dividerColor
+{
+	border-width: 2px;
+	border-style: solid;
+}
+
+.button
+{
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+	position: absolute;
+	top: 0px;
+	color: White;
+}
+/* it must be more specific than just '.lastbutton' otherwise 'width:100%' would be overwritten by 'width:2px' in '.tdbackground' of playerimages.css */
+#playmodetable .lastbutton
+{
+	width: 100%;
+}
+
+.textalign1
+{
+	position: absolute;
+	top: 15px;
+	left: 38px;
+	width: auto;
+	white-space: nowrap;
+}
+
+.textalign2
+{
+	position: absolute;
+	top: 15px;
+	left: 38px;
+	width: auto;
+	white-space: nowrap;
+}
+
+#playmodetable
+{
+	height: 41px;
+}
+
+.jumpinimgclass
+{
+	position: absolute;
+	top: 10px;
+	left: 1px;
+}
+
+.jumpin
+{
+	width: 12px;
+	height: 41px;
+	position: absolute;
+	top: 0px;
+	display: none;
+}
+
+.btnimage9
+{
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 9px;
+	left: 5px;
+}
+
+.btnimage7
+{
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 7px;
+	left: 5px;
+}
+
+.btnimage6
+{
+	width: 34px;
+	height: 34px;
+	position: absolute;
+	top: 6px;
+	left: 5px;
+}
+
+#BigSCOStartImage
+{
+	position: absolute;
+	top: 17px;
+	left: 17px;
+}
+
+.horizontalrule
+{
+	width: 100%;
+	height: 1px;
+	background-color: Gray;
+}
+
+.arrowImg
+{
+	position: relative;
+	width: 9px;
+	height: 8px;
+	top: 7px;
+	float: right;
+}
+
+.Asterisk
+{
+	position: absolute;
+	width: 5px;
+	color: White;
+	top: 15px;
+	display: none;
+}
+
+.requiredText
+{
+	position: absolute;
+	top: 27px;
+	left: 38px;
+	width: auto;
+	font-size: 10px;
+	display: none;
+}
+
+.statusbar
+{
+	background-color: #FFFFFF;
+}
+
+.statusbar_error
+{
+	background-color: #FFFFD7;
+}
+
+.statusbar_text
+{
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.statusbar_error_text
+{
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+}
+
+.statustext
+{
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 2px 18px 1px 5px;
+}
+
+.StatusDescXCloseImgClass
+{
+	position: relative;
+	width: 17px;
+	height: 17px;
+	float: right;
+}
+
+.ToolbarIndicatorField
+{
+	float: left;
+}
+
+.ToolbarImageLink
+{
+	margin: 3px 5px 0 5px;
+}
+
+.blueBarIcon
+{
+	vertical-align: middle;
+	border: 0px;
+}
+
+.blueBarIconMargin1
+{
+	margin: 1px 0 0 3px;
+}
+
+.blueBarIconMargin2
+{
+	margin: 0 5px 0 3px;
+}
+#ShareContentDiv span
+{
+	vertical-align: middle;
+}
+/* 100% concept and myTable divs */
+#concept_div, #myTableDiv
+{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+#myconceptframe
+{
+	margin-bottom: -3px;
+}
+
+.toolbarButton
+{
+	width: 21px;
+	margin: 3px 5px 0 0;
+	float: right;
+}
+
+.toolbarButton2
+{
+	width: 21px;
+	margin: 3px 4px 0 0;
+	float: right;
+}
+
+.toolbarButton3
+{
+	width: 3px;
+	height: 16px;
+	margin: 3px 7px 0 0;
+	float: right;
+}
+/* see also button */
+.toolbarButton4
+{
+	cursor: pointer;
+	background-color: White;
+	border-width: 1px;
+	border-style: solid;
+	padding: 0 0 0 3px;
+	margin: 1px 9px 0 0;
+	float: left;
+	height: 18px;
+}
+.toolbarButton5
+{
+	width: 3px;
+	height: 16px;
+	margin: 3px 7px 0 0;
+	float: left;
+}
+
+#SeeAlsoContainer
+{
+	float: right;
+}
+.hiddenElement
+{
+	display: none;
+}
+
+#status_label
+{
+	margin: 3px 5px 0 5px;
+	float: left;
+}
+
+#status_value
+{
+	margin: 3px 5px 0 0;
+	float: left;
+}

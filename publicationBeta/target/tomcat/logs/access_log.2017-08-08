@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [08/Aug/2017:08:59:38 -0400] "GET /publicationBeta HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [08/Aug/2017:08:59:38 -0400] "GET /publicationBeta/ HTTP/1.1" 200 59 http-bio-8080-exec-3 48
+0:0:0:0:0:0:0:1 - - [08/Aug/2017:08:59:39 -0400] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-4 0
+0:0:0:0:0:0:0:1 - - [08/Aug/2017:09:00:11 -0400] "GET /publicationBeta/Batch HTTP/1.1" 200 275 http-bio-8080-exec-5 92

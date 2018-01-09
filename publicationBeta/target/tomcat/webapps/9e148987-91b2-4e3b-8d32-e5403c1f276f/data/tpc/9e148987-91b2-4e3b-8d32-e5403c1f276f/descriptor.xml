@@ -1,0 +1,7 @@
+﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
+  <Title>Catalyst ERP Cloud - Project Portfolio Management</Title>
+  <Type>Outline</Type>
+  <Concept Guid="566747f6-fc01-4730-a36d-90cfc176747d">./tpc/566747f6-fc01-4730-a36d-90cfc176747d/Parts/index.html</Concept>
+  <Template>85c651a5-069d-419e-a943-9f923cdfa097</Template>
+  <BigSco>9e148987-91b2-4e3b-8d32-e5403c1f276f_1</BigSco>
+</Description>
