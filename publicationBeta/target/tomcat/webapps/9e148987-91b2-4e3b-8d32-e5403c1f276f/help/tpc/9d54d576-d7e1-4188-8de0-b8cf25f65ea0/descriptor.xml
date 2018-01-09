@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Play Do It! Mode</Title>
-  <Type>Section</Type>
-  <Concept Guid="2976a522-1950-4caa-abd4-801fabfed08b">./tpc/2976a522-1950-4caa-abd4-801fabfed08b/Parts/index.html</Concept>
-  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
-</Description>

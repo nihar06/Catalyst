@@ -32,7 +32,7 @@ public class ContentDAOImpl implements ContentDAO {
 		Content oldModule = module;
 		if (session.get(Content.class, module.getContent_id()) != null) {
 			oldModule = session.get(Content.class, module.getContent_id());
-			oldModule.setContent_path(module.getContent_path());
+	//		oldModule.setContent_path(module.getContent_path());
 			oldModule.setLast_updated(module.getLast_updated());
 			oldModule.setTitle(module.getTitle());
 		}
@@ -72,8 +72,6 @@ public class ContentDAOImpl implements ContentDAO {
 				+ userID + " GROUP BY"
 				+ " c.content_id,  c.title, c.content_path, c.last_updated,  c.content_Type, c.application"
 				+ " ORDER BY c.title";
-
-		// List<Content> contents = session.createQuery(query).list();
 		return session.createQuery(query).list();
 	}
 

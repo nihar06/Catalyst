@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Answer a Question</Title>
-  <Type>Section</Type>
-  <Concept Guid="98557ef0-ef12-48bc-b24a-f9e79934793a">./tpc/98557ef0-ef12-48bc-b24a-f9e79934793a/Parts/index.html</Concept>
-  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
-</Description>

@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Plan and Execute</Title>
-  <Type>Section</Type>
-  <Concept Guid="daa3bd6a-2e3c-4f0c-9c4e-6813abd1f4a8">./tpc/daa3bd6a-2e3c-4f0c-9c4e-6813abd1f4a8/Parts/index.html</Concept>
-  <Template>85c651a5-069d-419e-a943-9f923cdfa097</Template>
-</Description>

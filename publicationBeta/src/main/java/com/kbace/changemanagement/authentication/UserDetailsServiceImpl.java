@@ -24,7 +24,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
 		CatalystUser user = userService.findUser(username);
-
 		if (user == null) {
 			throw new UsernameNotFoundException("User " + username + " was not found in the database");
 		}

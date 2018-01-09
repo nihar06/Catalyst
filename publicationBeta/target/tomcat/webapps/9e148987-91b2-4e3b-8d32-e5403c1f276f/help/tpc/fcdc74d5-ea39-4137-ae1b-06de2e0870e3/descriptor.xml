@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Play Know It? Mode</Title>
-  <Type>Section</Type>
-  <Concept Guid="23f32f0c-5fe8-415c-9a9d-0a658952d346">./tpc/23f32f0c-5fe8-415c-9a9d-0a658952d346/Parts/index.html</Concept>
-  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
-</Description>

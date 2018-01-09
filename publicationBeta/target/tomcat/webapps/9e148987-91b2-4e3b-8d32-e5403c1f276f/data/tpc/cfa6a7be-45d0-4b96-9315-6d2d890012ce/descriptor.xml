@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Capture</Title>
-  <Type>Section</Type>
-  <Concept Guid="7858162d-97b2-499b-882c-885ed475dbfb">./tpc/7858162d-97b2-499b-882c-885ed475dbfb/Parts/index.html</Concept>
-  <Template>85c651a5-069d-419e-a943-9f923cdfa097</Template>
-</Description>

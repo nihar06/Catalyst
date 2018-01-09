@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Ask an Expert (available in Professional edition only)</Title>
-  <Type>Section</Type>
-  <Concept Guid="9671d265-869a-4f9b-9681-3f4e1be52969">./tpc/9671d265-869a-4f9b-9681-3f4e1be52969/Parts/index.html</Concept>
-  <Template>7da4d947-a7cf-438f-b522-f940453eaa5b</Template>
-</Description>

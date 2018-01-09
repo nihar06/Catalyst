@@ -1,6 +1,0 @@
-﻿<Description xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mfx="urn:manifest-v1" xmlns:tpc="urn:topic-v1" xmlns:sct="urn:section-v1" xmlns:asm="urn:assessment-v1" xmlns:odext="urn:odext">
-  <Title>Manage Financial Project Settings</Title>
-  <Type>Section</Type>
-  <Concept Guid="067bb4b2-d140-484d-9a7d-b2d2e82c18dc">./tpc/067bb4b2-d140-484d-9a7d-b2d2e82c18dc/Parts/index.html</Concept>
-  <Template>85c651a5-069d-419e-a943-9f923cdfa097</Template>
-</Description>
