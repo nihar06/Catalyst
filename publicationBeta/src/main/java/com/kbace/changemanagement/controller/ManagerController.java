@@ -225,4 +225,12 @@ public class ManagerController {
 			@RequestParam("contentType") String contentType, @RequestParam("app") String app) {
 		managerservice.updateContent(titleID, contentType, app);
 	}
+	
+	@RequestMapping(value = { "/manager/updatePath" }, method = RequestMethod.POST)
+	public ModelAndView updateContentPath(ModelAndView mav,HttpServletResponse response, @RequestParam("titleID") String titleID,
+			@RequestParam("contentPath") String path) {
+		managerservice.updateContentPath(titleID, path);
+		mav.setViewName("redirect:/manager/title-management");
+		return mav;
+	}
 }

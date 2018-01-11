@@ -169,14 +169,14 @@
 
 								</td>
 								<td data-label="RESET PW"><input type="image"
-									data-toggle="modal" data-target="#myModal"
+									data-toggle="modal" data-target="#passModal"
 									src="${pageContext.request.contextPath}/resources/img/icons/password-reset.png"
 									onclick="setUserID(${user.getUser_id()})"></td>
 							</tr>
 						</c:forEach>
 					</tbody>
 				</table>
-				<div class="modal fade" id="myModal" role="dialog">
+				<div class="modal fade" id="passModal" role="dialog">
 					<div class="modal-dialog">
 
 						<!-- Modal content-->

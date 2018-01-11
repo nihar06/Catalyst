@@ -420,5 +420,11 @@ function showInfo(contentType) {
 	if (contentType.indexOf("cloudspotlightrelease ") > -1) {
 		document.getElementById("cloudrelesespotlight-intro").style.display = "flex";
 	}
+}
 
+function setLinkInfo(titleID, titleLink) {
+	document.getElementById("titleID").value = titleID;
+	document.getElementById("titleLink").innerHTML = titleLink;
+	
+	
 }

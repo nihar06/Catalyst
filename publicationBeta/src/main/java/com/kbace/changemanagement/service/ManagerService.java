@@ -187,9 +187,12 @@ public class ManagerService {
 			contentInUserGroupDAO.addContent(new ContentInUserGroup(userGroupId, id));
 		}
 	}
-
 	// add contentType in Content table
 	public void updateContent(String titleID, String contentType, String app) {
 		contentDAO.updateContent(titleID, contentType, app);
+	}
+	
+	public void updateContentPath(String contentID, String path) {
+		contentDAO.updatePath(path, contentID);
 	}
 }

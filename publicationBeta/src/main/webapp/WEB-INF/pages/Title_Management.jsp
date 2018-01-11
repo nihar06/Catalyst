@@ -28,6 +28,7 @@
 							<th>UPDATED DATE</th>
 							<th>EDIT/SAVE</th>
 							<th>DELETE</th>
+							<th>RESET LN</th>
 						</tr>
 					<tbody>
 						<c:forEach items="${titleList}" var="title">
@@ -123,12 +124,36 @@
 											alt="Submit">
 									</form>
 								</td>
-
+								<td data-label="RESET LINK"><input type="image"
+									data-toggle="modal" data-target="#linkModal"
+									src="${pageContext.request.contextPath}/resources/img/icons/editLink.png"
+									onclick="setLinkInfo('${title.getContent_id()}', '${title.getContent_path()}')"></td>
 							</tr>
 						</c:forEach>
-
 					</tbody>
 				</table>
+				<div class="modal fade" id="linkModal" role="dialog">
+					<div class="modal-dialog">
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<h4 class="modal-title">Edit Link</h4>
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+							</div>
+							<div class="modal-body">
+								<p>Your current link is <span id="titleLink"></span> Please enter new Link</p>
+								<form
+									action="${pageContext.request.contextPath}/manager/updatePath"
+									method="POST">
+									New Link* <input type="text" name="contentPath" required><br>
+									<br> <input type="hidden" name="titleID" value=""
+										id="titleID"> <input type="submit"
+										class="btn KBACE-btn-info btn-lg" value="Edit Link">
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

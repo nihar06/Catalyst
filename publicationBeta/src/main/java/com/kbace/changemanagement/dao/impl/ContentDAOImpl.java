@@ -32,7 +32,6 @@ public class ContentDAOImpl implements ContentDAO {
 		Content oldModule = module;
 		if (session.get(Content.class, module.getContent_id()) != null) {
 			oldModule = session.get(Content.class, module.getContent_id());
-	//		oldModule.setContent_path(module.getContent_path());
 			oldModule.setLast_updated(module.getLast_updated());
 			oldModule.setTitle(module.getTitle());
 		}
@@ -75,7 +74,6 @@ public class ContentDAOImpl implements ContentDAO {
 		return session.createQuery(query).list();
 	}
 
-	@SuppressWarnings("unchecked")
 	@Override
 	public boolean checkAssignemnt(String contentID, Long userID) {
 		Session session = this.sessionFactory.getCurrentSession();
@@ -86,10 +84,18 @@ public class ContentDAOImpl implements ContentDAO {
 				+ " c.content_id,  c.title, c.content_path, c.last_updated,  c.content_Type, c.application"
 				+ " ORDER BY c.title";
 
-		List<Content> contents = session.createQuery(query).list();
-		if (contents.size() == 0)
+		if (session.createQuery(query).list().size() == 0)
 			return false;
 
 		return true;
+	}
+
+	@Override
+	public void updatePath(String path, String contentID) {
+		Session session = this.sessionFactory.getCurrentSession();
+		Content content = session.load(Content.class, contentID);
+		content.setContent_path(path);
+		session.update(content);
+
 	}
 }
