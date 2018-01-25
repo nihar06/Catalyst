@@ -13,6 +13,6 @@
 					<a class="dropdown-item" href="${pageContext.request.contextPath}/manager/title-management">Manage Content</a> 
 					<a class="dropdown-item" href="${pageContext.request.contextPath}/manager/importContent">Import Content</a>
 			</div></li>
-		<li style="display: inline;"><a href="logout" class="KBACE-menu">Logout</a></li>
+		<li style="display: inline;"><a href="${pageContext.request.contextPath}/logout" class="KBACE-menu">Logout</a></li>
 	</ul>
 </nav>

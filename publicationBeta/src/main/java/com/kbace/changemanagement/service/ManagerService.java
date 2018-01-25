@@ -64,7 +64,7 @@ public class ManagerService {
 	}
 
 	public void resetPassword(long id, String password) {
-	
+
 		userDAO.resetPassword(id, passwordEncroder.encode(password));
 	}
 
@@ -88,9 +88,9 @@ public class ManagerService {
 	// upload content/title onserver. It uploads, unzip, and rename folder by ID.
 	// Info is stored in database too.
 	public void uploadContentModule(MultipartFile file) throws IOException, ParserConfigurationException, SAXException {
-//		String filename = fileUtilities.uploadFile(file);
+		// String filename = fileUtilities.uploadFile(file);
 		unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + fileUtilities.uploadFile(file), UNZIP_DIRECTORY);
-//		Content content = xmlReader.getContentInfo(UNZIP_DIRECTORY);
+		// Content content = xmlReader.getContentInfo(UNZIP_DIRECTORY);
 		contentDAO.saveModule(xmlReader.getContentInfo(UNZIP_DIRECTORY));
 	}
 
@@ -153,45 +153,55 @@ public class ManagerService {
 			newContentIds = new HashSet<>();
 		}
 
+		// copying oldUser IDs
 		HashSet<Long> oldUserIds = new HashSet<>();
 		for (CatalystUser user : oldUserList) {
 			oldUserIds.add(user.getUser_id());
 		}
 
+		// copying old User Content
 		HashSet<String> oldContentIds = new HashSet<>();
 		for (Content content : oldContentList) {
 			oldContentIds.add(content.getContent_id());
 		}
 
+		// oldUserIds will contain ids to be deleted and newUserIds will contain ids to be added
 		HashSet<Long> tempUserids = new HashSet<>();
 		tempUserids.addAll(oldUserIds);
 		oldUserIds.removeAll(newUserIds);
 		newUserIds.removeAll(tempUserids);
 
+		// deleting old ids
 		for (Long id : oldUserIds) {
 			userInUserGroupDAO.deleteUser(new UserInUserGroup(userGroupId, id));
 		}
+		// adding new Ids
 		for (Long id : newUserIds) {
 			userInUserGroupDAO.addUser(new UserInUserGroup(userGroupId, id));
 		}
 
+		// oldContentIds will contain ids to be deleted and newContentIds will contain
+		// ids to add
 		HashSet<String> tempContentids = new HashSet<>();
 		tempContentids.addAll(oldContentIds);
 		oldContentIds.removeAll(newContentIds);
 		newContentIds.removeAll(tempContentids);
+
+		// deleting old ids
 		for (String id : oldContentIds) {
 			contentInUserGroupDAO.deleteContent(new ContentInUserGroup(userGroupId, id));
 		}
-
+		// adding new Ids
 		for (String id : newContentIds) {
 			contentInUserGroupDAO.addContent(new ContentInUserGroup(userGroupId, id));
 		}
 	}
+
 	// add contentType in Content table
 	public void updateContent(String titleID, String contentType, String app) {
 		contentDAO.updateContent(titleID, contentType, app);
 	}
-	
+
 	public void updateContentPath(String contentID, String path) {
 		contentDAO.updatePath(path, contentID);
 	}

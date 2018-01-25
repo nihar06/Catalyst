@@ -141,14 +141,18 @@
 								<button type="button" class="close" data-dismiss="modal">&times;</button>
 							</div>
 							<div class="modal-body">
-								<p>Your current link is <span id="titleLink"></span> Please enter new Link</p>
+								<p style="text-align: center;">
+									Your current link is <span id="titleLink"></span> Please enter
+									new Link
+								</p>
 								<form
 									action="${pageContext.request.contextPath}/manager/updatePath"
 									method="POST">
-									New Link* <input type="text" name="contentPath" required><br>
-									<br> <input type="hidden" name="titleID" value=""
-										id="titleID"> <input type="submit"
-										class="btn KBACE-btn-info btn-lg" value="Edit Link">
+									New Link* <input type="text" id=newLink name="contentPath"
+										required style="width: 100%;"><br> <br> <input
+										type="hidden" name="titleID" value="" id="titleID"> <input
+										type="submit" class="btn KBACE-btn-info btn-lg"
+										value="Edit Link">
 								</form>
 							</div>
 						</div>

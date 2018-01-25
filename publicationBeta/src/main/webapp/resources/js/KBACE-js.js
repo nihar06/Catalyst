@@ -401,9 +401,9 @@ function createLogout(accountType) {
 	if (accountType == "admin") {
 		document.getElementById("managerMenu").style.display = "inline-block";
 	}
-	
+
 	document.getElementById("supportMenu").style.display = "inline-block";
-	
+
 }
 
 function showInfo(contentType) {
@@ -425,6 +425,5 @@ function showInfo(contentType) {
 function setLinkInfo(titleID, titleLink) {
 	document.getElementById("titleID").value = titleID;
 	document.getElementById("titleLink").innerHTML = titleLink;
-	
-	
+	document.getElementById("newLink").value = titleLink;
 }
