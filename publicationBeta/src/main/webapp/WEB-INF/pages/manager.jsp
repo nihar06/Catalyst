@@ -114,11 +114,9 @@
 								<td data-label="START DATE"><input class="KBACE-input"
 									id="startDate${user.getUser_id()}" type="date" name="startdate"
 									value="${user.getStart_date()}" readonly></td>
-
 								<td data-label="END DATE"><input class="KBACE-input"
 									id="endDate${user.getUser_id()}" type="date" name="enddate"
 									value="${user.getEnd_date()}" readonly></td>
-
 								<td data-label="EDIT/SAVE">
 									<form
 										action="${pageContext.request.contextPath}/manager/updateUser"
@@ -153,8 +151,6 @@
 											src="${pageContext.request.contextPath}/resources/img/icons/save_icon.png"
 											id="save-EditedUser${user.getUser_id()}"
 											style="display: none" alt="Submit">
-
-
 									</form>
 								</td>
 								<td data-label="DELETE">
@@ -166,7 +162,6 @@
 											src="${pageContext.request.contextPath}/resources/img/icons/delete_icon.png"
 											alt="Submit">
 									</form>
-
 								</td>
 								<td data-label="RESET PW"><input type="image"
 									data-toggle="modal" data-target="#passModal"
@@ -178,7 +173,6 @@
 				</table>
 				<div class="modal fade" id="passModal" role="dialog">
 					<div class="modal-dialog">
-
 						<!-- Modal content-->
 						<div class="modal-content">
 							<div class="modal-header">
@@ -194,17 +188,13 @@
 									<br> <input type="hidden" name="userID" value="" id="userID"> <input
 										type="submit" class="btn KBACE-btn-info btn-lg"
 										value="Reset password">
-
 								</form>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>
 		</div>
-
 	</div>
-	
 </body>
 </html>

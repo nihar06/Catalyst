@@ -31,7 +31,7 @@ public class UserDAOImpl implements UserDAO {
 	public CatalystUser getUser(String username) {
 		String active = "yes";
 		Session session = this.sessionFactory.getCurrentSession();
-		Query finduser = session.createQuery("from CatalystUser where username = :username and UPPER(active) = UPPER(:active)");
+		Query finduser = session.createQuery("from CatalystUser where username = :username AND UPPER(active) = UPPER(:active) AND end_date >= SYSDATE");
 		finduser.setParameter("username", username);
 		finduser.setParameter("active", active.toUpperCase());
 		return (CatalystUser) finduser.uniqueResult();

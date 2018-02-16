@@ -64,7 +64,6 @@ public class ManagerService {
 	}
 
 	public void resetPassword(long id, String password) {
-
 		userDAO.resetPassword(id, passwordEncroder.encode(password));
 	}
 

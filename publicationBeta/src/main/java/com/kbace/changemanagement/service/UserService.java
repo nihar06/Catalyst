@@ -3,6 +3,7 @@ package com.kbace.changemanagement.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -25,6 +26,9 @@ public class UserService {
 	@Autowired
 	private UserProfileDAO userProfileDAO;
 
+	@Autowired
+	private PasswordEncoder passwordEncroder;
+
 	public CatalystUser findUser(String username) {
 		CatalystUser user = userDAO.getUser(username);
 		return user;
@@ -39,11 +43,19 @@ public class UserService {
 		return contentDAO.getAssignedContent(userID);
 	}
 
-	//check is user is assigned to requested contentID
+	// check is user is assigned to requested contentID
 	public boolean checkAssignemnt(String contentID, long userID) {
 		return contentDAO.checkAssignemnt(contentID, userID);
 	}
-	
-	
-	
+
+	public boolean isAdminUser(String username, String password) {
+		CatalystUser catalystUser = findUser(username);
+		if (passwordEncroder.encode(password).equals(catalystUser.getPassword())) {
+			if (catalystUser.getAccount_type().equalsIgnoreCase("ADMIN"))
+				return true;
+		}
+		return false;
+
+	}
+
 }
