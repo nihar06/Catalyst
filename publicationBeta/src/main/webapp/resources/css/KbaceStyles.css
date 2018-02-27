@@ -165,6 +165,7 @@ p {
 
 .KBACE-container {
 	/* min-height: calc(100vh - 200px); */
+	
 }
 
 .KBACE-btn-info {
@@ -249,7 +250,7 @@ p {
 
 .KBACE-toggler-icon {
 	color: white;
-    font-size: 25px;
+	font-size: 25px;
 }
 
 .KBACE-background {

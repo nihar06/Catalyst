@@ -11,7 +11,7 @@ public interface ContentDAO {
 
 	public void deleteTitleById(String titleId);
 
-	public void updateContent(String titleID, String contentType, String app);
+	public void updateContent(String titleID, String titleName, String contentType, String app);
 
 	public List<Content> getAssignedContent(long userID);
 

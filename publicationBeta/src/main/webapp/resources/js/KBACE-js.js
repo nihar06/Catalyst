@@ -229,6 +229,8 @@ function setUserID(id) {
 function enableToEditContent(id) {
 
 	document.getElementById(id).style.border = "solid red 2px";
+	document.getElementById("contentName" + id).setAttribute("contenteditable",
+			"true");
 	document.getElementById("selectContentType" + id).removeAttribute(
 			"disabled");
 	document.getElementById("selectApp" + id).removeAttribute("disabled");
@@ -382,28 +384,15 @@ function createLogout(accountType) {
 
 	// get upper level menu doc
 	var upperLevelMenu = document.getElementById("upplerLevelMenu");
-	var liType = document.createElement("li");
-	var div = document.createElement("div");
-	var aType = document.createElement("a");
-
-	aType.setAttribute("href", "logout");
-	aType.setAttribute("class", "KBACE-menu");
-	aType.appendChild(document.createTextNode("Logout"));
-
-	div.appendChild(aType);
-	liType.appendChild(div);
 
 	upperLevelMenu.appendChild(document.getElementById("managerMenu"));
 	upperLevelMenu.appendChild(document.getElementById("supportMenu"));
-	upperLevelMenu.appendChild(liType);
+	upperLevelMenu.appendChild(document.getElementById("logout"));
 
 	accountType = accountType.toLowerCase();
 	if (accountType == "admin") {
-		document.getElementById("managerMenu").style.display = "inline-block";
+		document.getElementById("managerMenu").style.display = "";
 	}
-
-	document.getElementById("supportMenu").style.display = "inline-block";
-
 }
 
 function showInfo(contentType) {

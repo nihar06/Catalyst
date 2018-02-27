@@ -33,7 +33,8 @@
 					<tbody>
 						<c:forEach items="${titleList}" var="title">
 							<tr id="${title.getContent_id()}">
-								<td data-label="TITLE NAME">${title.getTitle()}</td>
+								<td id="contentName${title.getContent_id()}"
+									data-label="TITLE NAME">${title.getTitle()}</td>
 								<td data-label="CONTENT TYPE"><select
 									id="selectContentType${title.getContent_id()}" disabled
 									style="border: none; -webkit-appearance: none;">

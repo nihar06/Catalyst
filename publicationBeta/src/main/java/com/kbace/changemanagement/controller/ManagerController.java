@@ -142,7 +142,6 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/title-management" })
 	public ModelAndView titleManager(ModelAndView mav) {
 		mav.setViewName("Title_Management");
-		// List<Content> titleList = managerservice.getContentInfo();
 		mav.addObject("titleList", managerservice.getContentInfo());
 		return mav;
 	}
@@ -157,7 +156,6 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/userGroup-management" })
 	public ModelAndView userGroupManager(ModelAndView mav) {
 		mav.setViewName("userGroupManager");
-		// List<UserGroup> userGroupList = managerservice.getUserGroupList();
 		mav.addObject("userGroupList", managerservice.getUserGroupList());
 		return mav;
 	}
@@ -165,10 +163,6 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/addUserGroup" }, method = RequestMethod.POST)
 	public ModelAndView addUserGroup(ModelAndView mav, @RequestParam("usergroup") String usergroupname) {
 		mav.setViewName("redirect:/manager/userGroup-management");
-		/*
-		 * UserGroup usergroup = new UserGroup();
-		 * usergroup.setUserGroup_name(usergroupname);
-		 */
 		managerservice.addUserGroup(new UserGroup(usergroupname));
 		return mav;
 	}
@@ -221,14 +215,15 @@ public class ManagerController {
 	}
 
 	@RequestMapping(value = { "/manager/updateContent" }, method = RequestMethod.POST)
-	public void contentUpdate(HttpServletResponse response, @RequestParam("title") String titleID,
-			@RequestParam("contentType") String contentType, @RequestParam("app") String app) {
-		managerservice.updateContent(titleID, contentType, app);
+	public void contentUpdate(HttpServletResponse response, @RequestParam("titleID") String titleID,
+			@RequestParam("titleName") String titleName, @RequestParam("contentType") String contentType,
+			@RequestParam("app") String app) {
+		managerservice.updateContent(titleID, titleName, contentType, app);
 	}
-	
+
 	@RequestMapping(value = { "/manager/updatePath" }, method = RequestMethod.POST)
-	public ModelAndView updateContentPath(ModelAndView mav,HttpServletResponse response, @RequestParam("titleID") String titleID,
-			@RequestParam("contentPath") String path) {
+	public ModelAndView updateContentPath(ModelAndView mav, HttpServletResponse response,
+			@RequestParam("titleID") String titleID, @RequestParam("contentPath") String path) {
 		managerservice.updateContentPath(titleID, path);
 		mav.setViewName("redirect:/manager/title-management");
 		return mav;

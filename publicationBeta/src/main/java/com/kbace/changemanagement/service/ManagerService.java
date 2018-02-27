@@ -164,7 +164,8 @@ public class ManagerService {
 			oldContentIds.add(content.getContent_id());
 		}
 
-		// oldUserIds will contain ids to be deleted and newUserIds will contain ids to be added
+		// oldUserIds will contain ids to be deleted and newUserIds will contain ids to
+		// be added
 		HashSet<Long> tempUserids = new HashSet<>();
 		tempUserids.addAll(oldUserIds);
 		oldUserIds.removeAll(newUserIds);
@@ -197,8 +198,8 @@ public class ManagerService {
 	}
 
 	// add contentType in Content table
-	public void updateContent(String titleID, String contentType, String app) {
-		contentDAO.updateContent(titleID, contentType, app);
+	public void updateContent(String titleID, String titleName, String contentType, String app) {
+		contentDAO.updateContent(titleID, titleName, contentType, app);
 	}
 
 	public void updateContentPath(String contentID, String path) {

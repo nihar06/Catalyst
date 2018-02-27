@@ -53,9 +53,10 @@ public class ContentDAOImpl implements ContentDAO {
 	}
 
 	@Override
-	public void updateContent(String titleID, String contentType, String app) {
+	public void updateContent(String titleID, String titleName, String contentType, String app) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Content content = session.load(Content.class, titleID);
+		content.setTitle(titleName);
 		content.setContent_Type(contentType);
 		content.setApplication(app);
 		session.saveOrUpdate(content);

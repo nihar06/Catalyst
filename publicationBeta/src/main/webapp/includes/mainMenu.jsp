@@ -22,13 +22,17 @@
 				</div>
 			</div></li>
 
-		<li class="dropdown" id="supportMenu" style="display: none"><a
+		<li class="dropdown" id="supportMenu"><a
 			href="#" class="KBACE-menu dropdown-toggle">Support</a>
 			<div class="KBACE-hrsub">
 				<div class="KBACE-hrsub-inner">
 					<a class="dropdown-item" href="#">Page 1</a> <a
 						class="dropdown-item" href="#">Page 2</a>
 				</div>
+			</div></li>
+
+		<li id="logout"><div>
+				<a href="logout" class="KBACE-menu">Logout</a>
 			</div></li>
 	</ul>
 </nav>

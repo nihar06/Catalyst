@@ -21,6 +21,7 @@ header.masthead {
 	-o-background-size: cover;
 	background-size: cover;
 	padding-bottom: 30px;
+	background-attachment: fixed;
 }
 
 header.masthead .overlay {
