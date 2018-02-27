@@ -25,6 +25,8 @@
 			</div>
 		</div>
 	</header>
+	
+	
 	<section class="features-icons text-center" style="padding: 0px">
 		<div class="container">
 			<div class="row" style="justify-content: center; height: 25em;">
