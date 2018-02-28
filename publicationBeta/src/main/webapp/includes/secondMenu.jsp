@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 
 
-<div class="KBACE-second-menu">
+<div class="KBACE-second-menu" style=" ">
 	<button class="navbar-toggler" type="button" data-toggle="collapse"
 		data-target="#KBACE-hrmenu"
 		aria-controls="KBACE-hrmenu" aria-expanded="false"

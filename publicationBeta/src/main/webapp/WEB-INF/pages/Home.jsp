@@ -9,24 +9,23 @@
 <body>
 	<%@ include file="../../includes/header.html"%>
 
-
-	<!-- Masthead -->
-	<header class="masthead text-white text-center">
+	<div class="masthead">
 		<%@ include file="../../includes/secondMenu.jsp"%>
-		<%@ include file="../../includes/mainMenu.jsp"%>
-
-		<!-- <div class="overlay"></div> -->
-		<div class="container"
-			style="padding-top: 12em; padding-bottom: 12em;">
-			<div class="row">
-				<div class="col-xl-9 mx-auto">
-					<h1 class="mb-5">Lorem Ipsum is simply dummy text!</h1>
+		<!-- Masthead -->
+		<header class="text-white text-center">
+		<div>&nbsp;</div>
+		<div>&nbsp;</div>
+			<%@ include file="../../includes/mainMenu.jsp"%>
+			<div class="container"
+				style="padding-top: 12em; padding-bottom: 12em;">
+				<div class="row">
+					<div class="col-xl-9 mx-auto">
+						<h1 class="mb-5">Lorem Ipsum is simply dummy text!</h1>
+					</div>
 				</div>
 			</div>
-		</div>
-	</header>
-	
-	
+		</header>
+	</div>
 	<section class="features-icons text-center" style="padding: 0px">
 		<div class="container">
 			<div class="row" style="justify-content: center; height: 25em;">
@@ -149,8 +148,7 @@
 				<div class="col-lg-4">
 					<div class="testimonial-item mx-auto mb-5 mb-lg-0">
 						<div>
-							<img class="img-fluid mb-3"
-								src="resources/img/DTCC.png" alt="">
+							<img class="img-fluid mb-3" src="resources/img/DTCC.png" alt="">
 						</div>
 						<h5>DTCC</h5>
 						<p class="font-weight-light mb-0">Lorem Ipsum is simply dummy
@@ -159,8 +157,8 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-						<img class="img-fluid  mb-3"
-							src="resources/img/PPD Logo.jpg" alt="">
+						<img class="img-fluid  mb-3" src="resources/img/PPD Logo.jpg"
+							alt="">
 						<h5>PPD</h5>
 						<p class="font-weight-light mb-0">Lorem Ipsum is simply dummy
 							text of the printing and typesetting industry.</p>
@@ -168,8 +166,8 @@
 				</div>
 				<div class="col-lg-4">
 					<div class="testimonial-item mx-auto mb-5 mb-lg-0">
-						<img class="img-fluid  mb-3"
-							src="resources/img/Estes Logo.jpg" alt="">
+						<img class="img-fluid  mb-3" src="resources/img/Estes Logo.jpg"
+							alt="">
 						<h5>Estes</h5>
 						<p class="font-weight-light mb-0">Lorem Ipsum is simply dummy
 							text of the printing and typesetting industry.</p>
@@ -179,6 +177,7 @@
 		</div>
 	</section>
 	<%@ include file="../../includes/Footer.html"%>
+
 </body>
 
 <c:forEach items="${contents}" var="content">
@@ -192,7 +191,6 @@
 <script type="text/javascript">
 	createLogout("${accountType}");
 </script>
-
 <script
 	src="${pageContext.request.contextPath}/resources/js/kbaceHorizontalMenu.min.js"></script>
 
@@ -201,4 +199,5 @@
 		kbaceHorizontalMenu.init();
 	});
 </script>
+
 </html>

@@ -12,19 +12,19 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-header.masthead {
+.masthead {
 	position: relative;
 	background-color: #343a40;
 	background: url("../img/matrix2.jpg") no-repeat center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
 	padding-bottom: 30px;
-	background-attachment: fixed;
+	/* background-attachment: fixed; */
+	/* height: 550px; */
 }
 
-header.masthead .overlay {
+.masthead .overlay {
 	position: absolute;
 	background-color: #212529;
 	height: 100%;
@@ -34,7 +34,7 @@ header.masthead .overlay {
 	opacity: 0.3;
 }
 
-header.masthead h1 {
+.masthead h1 {
 	font-size: 2rem;
 }
 
@@ -109,3 +109,14 @@ footer.footer {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
+
+@media screen and (max-width: 576px) {
+	.masthead {
+		height: 700px;
+	}
+}
+@media ( max-width :765px) {
+		.masthead {
+			height: 700px;
+		}
+	}

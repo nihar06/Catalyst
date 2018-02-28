@@ -346,7 +346,8 @@ function createMenu(contentType, contentTitle, contentLink, contentApp) {
 		divApp.setAttribute("id", "app-" + contentType + application);
 		divApp.setAttribute("class", "submenu-col");
 
-		header = document.createElement("h5");
+		header = document.createElement("p");
+		header.setAttribute("class", "menu-header")
 		header.appendChild(document.createTextNode(application
 				+ " Cloud Transactional Support"));
 

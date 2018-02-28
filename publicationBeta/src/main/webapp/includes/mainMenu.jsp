@@ -4,7 +4,7 @@
 
 <!DOCTYPE html>
 
-<nav id="KBACE-hrmenu" class="KBACE-hrmenu">
+<nav id="KBACE-hrmenu" class="KBACE-hrmenu" style="position: absolute;">
 	<ul id="upplerLevelMenu">
 		<li class="dropdown" id="managerMenu" style="display: none"><a
 			href="#" class="KBACE-menu dropdown-toggle">Manager</a>
@@ -22,8 +22,8 @@
 				</div>
 			</div></li>
 
-		<li class="dropdown" id="supportMenu"><a
-			href="#" class="KBACE-menu dropdown-toggle">Support</a>
+		<li class="dropdown" id="supportMenu"><a href="#"
+			class="KBACE-menu dropdown-toggle">Support</a>
 			<div class="KBACE-hrsub">
 				<div class="KBACE-hrsub-inner">
 					<a class="dropdown-item" href="#">Page 1</a> <a

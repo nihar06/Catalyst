@@ -122,5 +122,12 @@
 	.KBACE-hrmenu .KBACE-hrsub-inner>div {
 		width: 100%;
 		float: none;
+		padding: 0px 0 0 1em;
 	}
+	
+	.KBACE-hrmenu>ul, .KBACE-hrmenu .KBACE-hrsub-inner {
+	margin: 0 auto;
+	font-size: 16px;
+}
+	
 }

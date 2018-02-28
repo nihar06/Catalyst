@@ -24,6 +24,11 @@ p {
 /* .home_info {
 	background: url("../img/clipbord.png") no-repeat center center;
 } */
+.menu-header {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 0px;
+}
 
 .KBACE-menu {
 	color: white;
