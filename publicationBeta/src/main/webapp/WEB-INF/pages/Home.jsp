@@ -13,8 +13,8 @@
 		<%@ include file="../../includes/secondMenu.jsp"%>
 		<!-- Masthead -->
 		<header class="text-white text-center">
-		<div>&nbsp;</div>
-		<div>&nbsp;</div>
+			<div class="KBACE-second-menu">&nbsp;</div>
+			<div class="KBACE-second-menu">&nbsp;</div>
 			<%@ include file="../../includes/mainMenu.jsp"%>
 			<div class="container"
 				style="padding-top: 12em; padding-bottom: 12em;">
@@ -60,14 +60,12 @@
 								style="height: 10px; width: 85%;" aria-valuemax="100"></div>
 						</div>
 					</div>
-
 					<div style="margin-bottom: 20px;">
 						<p class="font-bold">Lorem Ipsum 90%
 						<div class="progress">
 							<div class="KBACE-progress-bar" role="progressbar"
 								style="height: 10px; width: 90%;" aria-valuemax="100"></div>
 						</div>
-
 					</div>
 					<div style="margin-bottom: 20px;">
 						<p class="font-bold">Lorem Ipsum 75%
@@ -179,12 +177,13 @@
 	<%@ include file="../../includes/Footer.html"%>
 
 </body>
-
+<!-- 
+creates menu tabs in menu with content assigned to particular user 
+ -->
 <c:forEach items="${contents}" var="content">
 	<script>
 		createMenu("${content.getContent_Type()}", "${content.getTitle()}",
 				"${content.getContent_path()}", "${content.getApplication()}");
-		showInfo("${content.getContent_Type()}");
 	</script>
 </c:forEach>
 

@@ -84,13 +84,15 @@ public class ManagerService {
 		return userDAO.getUserInfoByID(userID);
 	}
 
-	// upload content/title onserver. It uploads, unzip, and rename folder by ID.
+	// upload content/title onserver. It uploads, unzip, rename folder by ID and
+	// replace toc.html file with custom file.
 	// Info is stored in database too.
 	public void uploadContentModule(MultipartFile file) throws IOException, ParserConfigurationException, SAXException {
 		// String filename = fileUtilities.uploadFile(file);
 		unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + fileUtilities.uploadFile(file), UNZIP_DIRECTORY);
-		// Content content = xmlReader.getContentInfo(UNZIP_DIRECTORY);
-		contentDAO.saveModule(xmlReader.getContentInfo(UNZIP_DIRECTORY));
+		Content content = xmlReader.getContentInfo(UNZIP_DIRECTORY);
+		contentDAO.saveModule(content);
+		fileUtilities.replaceFile(content.getContent_id());
 	}
 
 	// get list of all titles available

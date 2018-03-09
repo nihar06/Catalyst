@@ -238,6 +238,8 @@ function enableToEditContent(id) {
 	document.getElementById("edit-user" + id).style.display = "none";
 }
 
+//send updated content to server. 
+//Called in Manage content page
 function updateContent(title) {
 	console.log(title);
 
@@ -246,6 +248,7 @@ function updateContent(title) {
 
 	var contentType = content.options[content.selectedIndex].value;
 	var app = application.options[application.selectedIndex].value;
+	var titleName = document.getElementById("contentName" + title).innerHTML;
 
 	document.getElementById("save-EditedUser" + title).style.display = "none";
 	document.getElementById("edit-user" + title).style.display = "initial";
@@ -254,9 +257,10 @@ function updateContent(title) {
 		type : "POST",
 		url : "updateContent",
 		data : {
-			title : title,
+			titleID : title,
 			contentType : contentType,
-			app : app
+			app : app,
+			titleName : titleName
 		},
 		traditional : true,
 		success : function() {
@@ -267,6 +271,7 @@ function updateContent(title) {
 		}
 	});
 }
+
 
 function createMenu(contentType, contentTitle, contentLink, contentApp) {
 	// get upper level menu doc
@@ -294,6 +299,7 @@ function createMenu(contentType, contentTitle, contentLink, contentApp) {
 	var divApp;
 	var header;
 	var ul;
+	
 	// make link in menu if there is no Application type
 	if (contentApp == "") {
 		liType = document.createElement("li");
@@ -378,9 +384,10 @@ function createMenu(contentType, contentTitle, contentLink, contentApp) {
 
 	liType.appendChild(aType);
 	liType.appendChild(hrsubDiv);
-	upperLevelMenu.appendChild(liType);
+	upperLevelMenu.insertBefore(liType, upperLevelMenu.childNodes[0]);
 }
 
+//create logout and support tab in main menu.
 function createLogout(accountType) {
 
 	// get upper level menu doc
@@ -394,26 +401,4 @@ function createLogout(accountType) {
 	if (accountType == "admin") {
 		document.getElementById("managerMenu").style.display = "";
 	}
-}
-
-function showInfo(contentType) {
-	contentType = contentType.toLowerCase();
-	contentType = contentType.replace(/\s+/g, '');
-
-	if (contentType.indexOf("fsm") > -1) {
-		document.getElementById("fsm-intro").style.display = "flex";
-	}
-	if (contentType.indexOf("cloudtransactionaltraining") > -1) {
-		document.getElementById("cloudtransactionaltraining-intro").style.display = "flex";
-
-	}
-	if (contentType.indexOf("cloudspotlightrelease ") > -1) {
-		document.getElementById("cloudrelesespotlight-intro").style.display = "flex";
-	}
-}
-
-function setLinkInfo(titleID, titleLink) {
-	document.getElementById("titleID").value = titleID;
-	document.getElementById("titleLink").innerHTML = titleLink;
-	document.getElementById("newLink").value = titleLink;
 }
