@@ -1,5 +1,7 @@
 package com.kbace.changemanagement.config;
 
+import java.security.SecureRandom;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -25,6 +27,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private UserDetailsServiceImpl userDetailsServiceimpl;
+	
+	private SecureRandom random;
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -40,7 +44,11 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		return new EncryptPassword();
+		
+		random= new SecureRandom();
+		byte[] seeds = new byte[20];
+		random.nextBytes(seeds);
+		return new EncryptPassword(random);
 	}
 
 	@Bean

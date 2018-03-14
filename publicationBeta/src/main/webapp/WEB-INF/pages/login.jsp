@@ -1,12 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 
 <body class="">
 	<%@ include file="../../includes/header.html"%>
-
 	<div class="container-fluid KBACE-background KBACE-container"
 		style="padding-bottom: 20px; padding-top: 10px; min-height: calc(100vh - 170px);">
 		<div class="row justify-content-end"

@@ -50,7 +50,7 @@ public class UserService {
 
 	public boolean isAdminUser(String username, String password) {
 		CatalystUser catalystUser = findUser(username);
-		if (passwordEncroder.encode(password).equals(catalystUser.getPassword())) {
+		if (passwordEncroder.matches(password, catalystUser.getPassword())) {
 			if (catalystUser.getAccount_type().equalsIgnoreCase("ADMIN"))
 				return true;
 		}
