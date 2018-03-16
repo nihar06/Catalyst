@@ -27,7 +27,7 @@ public class ContentDAOImpl implements ContentDAO {
 	}
 
 	@Override
-	public void saveModule(Content module) {
+	public Content saveModule(Content module) {
 		Session session = this.sessionFactory.getCurrentSession();
 		Content oldModule = module;
 		if (session.get(Content.class, module.getContent_id()) != null) {
@@ -36,6 +36,7 @@ public class ContentDAOImpl implements ContentDAO {
 			oldModule.setTitle(module.getTitle());
 		}
 		session.saveOrUpdate(oldModule);
+		return oldModule;
 	}
 
 	@SuppressWarnings("unchecked")

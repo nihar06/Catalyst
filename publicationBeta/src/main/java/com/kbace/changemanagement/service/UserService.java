@@ -30,8 +30,7 @@ public class UserService {
 	private PasswordEncoder passwordEncroder;
 
 	public CatalystUser findUser(String username) {
-		CatalystUser user = userDAO.getUser(username);
-		return user;
+		return userDAO.getUser(username);
 	}
 
 	public void updateLastLogin(long userID) {

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UnzipModule {
 
-	public void unzip(String zipFilePath, String destDir) {
+	public Boolean unzip(String zipFilePath, String destDir) {
 		File dir = new File(destDir);
 		// create output directory if it doesn't exist
 		if (!dir.exists())
@@ -20,8 +20,8 @@ public class UnzipModule {
 
 		// buffer for read and write data to file
 		byte[] buffer = new byte[1024];
-		try(FileInputStream fis = new FileInputStream(zipFilePath);) {
-			
+		try (FileInputStream fis = new FileInputStream(zipFilePath)) {
+
 			ZipInputStream zis = new ZipInputStream(fis);
 			ZipEntry ze = zis.getNextEntry();
 			while (ze != null) {
@@ -43,12 +43,10 @@ public class UnzipModule {
 			zis.closeEntry();
 			zis.close();
 			fis.close();
+			return true;
 		} catch (IOException e) {
 			e.printStackTrace();
+			return false;
 		}
-		finally {
-			
-		}
-
 	}
 }

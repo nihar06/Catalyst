@@ -1,6 +1,7 @@
 package com.kbace.changemanagement.controller;
 
 import java.io.IOException;
+import java.text.ParseException;
 
 import javax.xml.parsers.ParserConfigurationException;
 
@@ -33,7 +34,17 @@ public class HttpPOSTController {
 			managerservice.uploadContentModule(file);
 			return new ResponseEntity<>("Done!!", HttpStatus.OK);
 		}
-		return new ResponseEntity<>("Fail!!", HttpStatus.INTERNAL_SERVER_ERROR);
+		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);
 	}
 
+	@RequestMapping(value = { "/importUserData" }, method = RequestMethod.POST)
+	public ResponseEntity<Object> bulkLoad_UserList(@RequestParam("usersList") MultipartFile usersCsvFile,
+			@RequestParam("username") String username, @RequestParam("password") String password)
+			throws IOException, ParseException {
+		if (userservice.isAdminUser(username, password)) {
+			managerservice.importUsers(usersCsvFile);
+			return new ResponseEntity<>("Done!!", HttpStatus.OK);
+		}
+		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);
+	}
 }

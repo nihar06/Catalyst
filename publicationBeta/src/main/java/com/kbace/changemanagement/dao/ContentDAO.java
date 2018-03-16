@@ -5,7 +5,7 @@ import java.util.List;
 import com.kbace.changemanagement.entity.Content;
 
 public interface ContentDAO {
-	public void saveModule(Content module);
+	public Content saveModule(Content module);
 
 	public List<Content> getContentList();
 

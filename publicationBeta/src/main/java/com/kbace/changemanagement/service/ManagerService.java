@@ -2,6 +2,11 @@ package com.kbace.changemanagement.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.sql.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.HashSet;
 import java.util.List;
 
@@ -27,6 +32,7 @@ import com.kbace.changemanagement.entity.UserInUserGroup;
 import com.kbace.changemanagement.util.UnzipModule;
 import com.kbace.changemanagement.util.FileUtilities;
 import com.kbace.changemanagement.util.XMLReader;
+import com.opencsv.CSVReader;
 
 import static com.kbace.changemanagement.util.DirectoryConstants.*;
 
@@ -74,8 +80,7 @@ public class ManagerService {
 
 	// get details of all users.
 	public List<CatalystUser> getUserList() {
-		List<CatalystUser> users = userDAO.getAllUsers();
-		return users;
+		return userDAO.getAllUsers();
 	}
 
 	// get user info by id. THIS IS USED IN ORDER TO UPDATE USER. USER-ID AND
@@ -89,22 +94,20 @@ public class ManagerService {
 	// Info is stored in database too.
 	public void uploadContentModule(MultipartFile file) throws IOException, ParserConfigurationException, SAXException {
 		// String filename = fileUtilities.uploadFile(file);
-		unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + fileUtilities.uploadFile(file), UNZIP_DIRECTORY);
-		Content content = xmlReader.getContentInfo(UNZIP_DIRECTORY);
-		contentDAO.saveModule(content);
-		fileUtilities.replaceFile(content.getContent_id());
+		if (unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + fileUtilities.uploadFile(file), UNZIP_DIRECTORY)) {
+			fileUtilities.replaceFile(contentDAO.saveModule(xmlReader.getContentInfo(UNZIP_DIRECTORY)).getContent_id());
+		}
 	}
 
 	// get list of all titles available
 	public List<Content> getContentInfo() {
-		List<Content> titleDetails = contentDAO.getContentList();
-		return titleDetails;
+		return contentDAO.getContentList();
 	}
 
 	// delete title. Also delete directory from server.
 	public void deleteTitle(String titleID) {
 		contentDAO.deleteTitleById(titleID);
-		fileUtilities.deleteFile(titleID);
+		fileUtilities.deleteFile(UPLOAD_DIRECTORY + File.separator + titleID);
 	}
 
 	// add new UserGroup.
@@ -207,4 +210,20 @@ public class ManagerService {
 	public void updateContentPath(String contentID, String path) {
 		contentDAO.updatePath(path, contentID);
 	}
+
+	public void importUsers(MultipartFile file) throws IOException, ParseException {
+		try (CSVReader readFile = new CSVReader(
+				Files.newBufferedReader(Paths.get(UPLOAD_DIRECTORY, fileUtilities.uploadFile(file))))) {
+			String[] nextRecord;
+			while ((nextRecord = readFile.readNext()) != null) {
+
+				addNewUser(new CatalystUser(nextRecord[0], nextRecord[1], nextRecord[2], nextRecord[3], nextRecord[4],
+						nextRecord[5], nextRecord[6], nextRecord[7],
+						new Date(new SimpleDateFormat("MM/dd/yyyy").parse(nextRecord[8]).getTime()),
+						new Date(new SimpleDateFormat("MM/dd/yyyy").parse(nextRecord[9]).getTime())));
+			}
+			readFile.close();
+		}
+	}
+
 }

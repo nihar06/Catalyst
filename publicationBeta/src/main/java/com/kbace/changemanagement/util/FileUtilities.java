@@ -37,8 +37,8 @@ public class FileUtilities {
 		}
 	}
 
-	public void deleteFile(String titleId) {
-		File dir = new File(UPLOAD_DIRECTORY + File.separator + titleId);
+	public void deleteFile(String filePath) {
+		File dir = new File(filePath);
 		dir.delete();
 	}
 

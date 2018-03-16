@@ -3,7 +3,6 @@ package com.kbace.changemanagement.controller;
 import java.io.IOException;
 import java.sql.Date;
 import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -91,14 +90,14 @@ public class ManagerController {
 			@RequestParam("firstname") String firstname, @RequestParam("lastname") String lastname,
 			@RequestParam("active") String active, @RequestParam("customerName") String customerName,
 			@RequestParam("email") String email, @RequestParam("accounttype") String accounttype,
-			@RequestParam("startdate") String sdate, @RequestParam("enddate") String edate) throws ParseException {
+			@RequestParam("startdate") @DateTimeFormat(pattern = "yyyy-MM-dd") java.util.Date sdate,
+			@RequestParam("enddate") @DateTimeFormat(pattern = "yyyy-MM-dd") java.util.Date edate)
+			throws ParseException {
 
 		ModelAndView mav = new ModelAndView("redirect:/manager");
 		CatalystUser updatedUser = managerservice.getUserInfoByID(usrId);
 
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
-		System.out.println("------- " + sdate);
+		// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
 
 		updatedUser.setUser_id(usrId);
 		updatedUser.setUsername(username);
@@ -108,17 +107,16 @@ public class ManagerController {
 		updatedUser.setCustomerName(customerName);
 		updatedUser.setEmail(email);
 		updatedUser.setAccount_type(accounttype);
-
-		if (sdate != "") {
-			java.util.Date stemp = sdf.parse(sdate);
-			Date startdate = new Date(stemp.getTime());
-			updatedUser.setStart_date(startdate);
-		}
-		if (edate != "") {
-			java.util.Date etemp = sdf.parse(edate);
-			Date enddate = new Date(etemp.getTime());
-			updatedUser.setEnd_date(enddate);
-		}
+		updatedUser.setStart_date(new Date(sdate.getTime()));
+		updatedUser.setEnd_date(new Date(edate.getTime()));
+		/*
+		 * if (sdate != "") { java.util.Date stemp = sdf.parse(sdate); Date startdate =
+		 * new Date(stemp.getTime()); updatedUser.setStart_date(startdate); }
+		 */
+		/*
+		 * if (edate != "") { java.util.Date etemp = sdf.parse(edate); Date enddate =
+		 * new Date(etemp.getTime()); updatedUser.setEnd_date(enddate); }
+		 */
 		managerservice.updateUser(updatedUser);
 		return mav;
 	}
@@ -206,7 +204,6 @@ public class ManagerController {
 
 		managerservice.updateUserGroup(usergroupID, userinUserGroupList, updatedUserIDList, contentinUserGroupList,
 				updatedContentIDList);
-
 		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
