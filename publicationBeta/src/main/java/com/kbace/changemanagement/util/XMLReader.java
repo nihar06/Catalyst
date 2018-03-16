@@ -28,10 +28,10 @@ public class XMLReader {
 
 	public Content getContentInfo(String xmlFile) throws ParserConfigurationException, SAXException, IOException {
 
-		inputFile = new File(xmlFile + File.separator + "contextmap.xml");
+		this.inputFile = new File(xmlFile + File.separator + "contextmap.xml");
 		DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
 		DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
-		Document document = documentBuilder.parse(inputFile);
+		Document document = documentBuilder.parse(this.inputFile);
 		document.getDocumentElement().normalize();
 
 		NodeList nlist = document.getElementsByTagName("Document"); // doc list

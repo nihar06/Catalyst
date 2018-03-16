@@ -30,26 +30,26 @@ public class UserService {
 	private PasswordEncoder passwordEncroder;
 
 	public CatalystUser findUser(String username) {
-		return userDAO.getUser(username);
+		return this.userDAO.getUser(username);
 	}
 
 	public void updateLastLogin(long userID) {
-		userProfileDAO.updateLastlogin(userID);
+		this.userProfileDAO.updateLastlogin(userID);
 	}
 
 	// get all assigned content for user
 	public List<Content> getAssignedContent(long userID) {
-		return contentDAO.getAssignedContent(userID);
+		return this.contentDAO.getAssignedContent(userID);
 	}
 
 	// check is user is assigned to requested contentID
 	public boolean checkAssignemnt(String contentID, long userID) {
-		return contentDAO.checkAssignemnt(contentID, userID);
+		return this.contentDAO.checkAssignemnt(contentID, userID);
 	}
 
 	public boolean isAdminUser(String username, String password) {
 		CatalystUser catalystUser = findUser(username);
-		if (passwordEncroder.matches(password, catalystUser.getPassword())) {
+		if (this.passwordEncroder.matches(password, catalystUser.getPassword())) {
 			if (catalystUser.getAccount_type().equalsIgnoreCase("ADMIN"))
 				return true;
 		}

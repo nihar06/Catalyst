@@ -41,7 +41,7 @@ public class UserImpl extends User {
 	}
 
 	public long getUser_id() {
-		return user_id;
+		return this.user_id;
 	}
 
 	public void setUser_id(long user_id) {
@@ -49,7 +49,7 @@ public class UserImpl extends User {
 	}
 
 	public String getFirstname() {
-		return firstname;
+		return this.firstname;
 	}
 
 	public void setFirstname(String firstname) {
@@ -57,7 +57,7 @@ public class UserImpl extends User {
 	}
 
 	public String getLastname() {
-		return lastname;
+		return this.lastname;
 	}
 
 	public void setLastname(String lastname) {
@@ -65,7 +65,7 @@ public class UserImpl extends User {
 	}
 
 	public String getActive() {
-		return active;
+		return this.active;
 	}
 
 	public void setActive(String active) {
@@ -73,7 +73,7 @@ public class UserImpl extends User {
 	}
 
 	public String getCustomerName() {
-		return customerName;
+		return this.customerName;
 	}
 
 	public void setCustomerName(String customerName) {
@@ -81,7 +81,7 @@ public class UserImpl extends User {
 	}
 
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
 
 	public void setEmail(String email) {
@@ -89,7 +89,7 @@ public class UserImpl extends User {
 	}
 
 	public String getAccount_type() {
-		return account_type;
+		return this.account_type;
 	}
 
 	public void setAccount_type(String account_type) {
@@ -97,7 +97,7 @@ public class UserImpl extends User {
 	}
 
 	public Date getStart_date() {
-		return start_date;
+		return this.start_date;
 	}
 
 	public void setStart_date(Date start_date) {
@@ -105,7 +105,7 @@ public class UserImpl extends User {
 	}
 
 	public Date getEnd_date() {
-		return end_date;
+		return this.end_date;
 	}
 
 	public void setEnd_date(Date end_date) {
@@ -113,7 +113,7 @@ public class UserImpl extends User {
 	}
 
 	public List<Content> getContents() {
-		return contents;
+		return this.contents;
 	}
 
 	public void setContents(List<Content> contents) {

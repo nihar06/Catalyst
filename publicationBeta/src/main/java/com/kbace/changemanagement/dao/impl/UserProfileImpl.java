@@ -1,7 +1,6 @@
 package com.kbace.changemanagement.dao.impl;
 
 import org.hibernate.Query;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -25,8 +24,7 @@ public class UserProfileImpl implements UserProfileDAO {
 
 	@Override
 	public void updateLastlogin(long userID) {
-		Session session = this.sessionFactory.getCurrentSession();
-		Query updateTime = session.createQuery("UPDATE UserProfile set Last_login=SYSDATE where user_id= :user_id");
+		Query updateTime = this.sessionFactory.getCurrentSession().createQuery("UPDATE UserProfile set Last_login=SYSDATE where user_id= :user_id");
 		updateTime.setParameter("user_id", userID);
 		updateTime.executeUpdate();
 	}

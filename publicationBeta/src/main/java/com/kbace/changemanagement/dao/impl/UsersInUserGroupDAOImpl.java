@@ -2,7 +2,6 @@ package com.kbace.changemanagement.dao.impl;
 
 import java.util.List;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -30,29 +29,25 @@ public class UsersInUserGroupDAOImpl implements UsersInUserGroupDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<CatalystUser> usersNotInUserGroup(long id) {
-		Session session = sessionFactory.getCurrentSession();
-		return session.createQuery("FROM CatalystUser WHERE user_id NOT IN "
+		return this.sessionFactory.getCurrentSession().createQuery("FROM CatalystUser WHERE user_id NOT IN "
 				+ "( SELECT user_ID FROM UserInUserGroup WHERE usergroup_ID =" + id + " )").list();
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<CatalystUser> usersInUserGroup(long id) {
-		Session session = sessionFactory.getCurrentSession();
 
-		return session.createQuery("FROM CatalystUser WHERE user_id IN "
+		return this.sessionFactory.getCurrentSession().createQuery("FROM CatalystUser WHERE user_id IN "
 				+ "( SELECT user_ID FROM UserInUserGroup WHERE usergroup_ID =" + id + " )").list();
 	}
 
 	@Override
 	public void addUser(UserInUserGroup userinUserGroup) {
-		Session session = sessionFactory.getCurrentSession();
-		session.persist(userinUserGroup);
+		this.sessionFactory.getCurrentSession().persist(userinUserGroup);
 	}
 
 	@Override
 	public void deleteUser(UserInUserGroup userinUserGroup) {
-		Session session = sessionFactory.getCurrentSession();
-		session.delete(userinUserGroup);
+		this.sessionFactory.getCurrentSession().delete(userinUserGroup);
 	}
 }

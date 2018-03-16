@@ -2,7 +2,6 @@ package com.kbace.changemanagement.dao.impl;
 
 import java.util.List;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
@@ -28,9 +27,8 @@ public class ContentInUserGroupDAOImpl implements ContentInUserGroupDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Content> contentNotInUserGroup(long id) {
-		Session session = this.sessionFactory.getCurrentSession();
 
-		return session.createQuery("FROM Content WHERE Content_id NOT IN "
+		return this.sessionFactory.getCurrentSession().createQuery("FROM Content WHERE Content_id NOT IN "
 				+ "( SELECT Content_id FROM ContentInUserGroup WHERE usergroup_ID =" + id + " )").list();
 
 	}
@@ -38,22 +36,19 @@ public class ContentInUserGroupDAOImpl implements ContentInUserGroupDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Content> contentInUserGroup(long id) {
-		Session session = this.sessionFactory.getCurrentSession();
 
-		return session.createQuery("FROM Content WHERE Content_id IN "
+		return this.sessionFactory.getCurrentSession().createQuery("FROM Content WHERE Content_id IN "
 				+ "( SELECT Content_id FROM ContentInUserGroup WHERE usergroup_ID =" + id + " )").list();
 	}
 
 	@Override
 	public void addContent(ContentInUserGroup contentinUserGroup) {
-		Session session = this.sessionFactory.getCurrentSession();
-		session.persist(contentinUserGroup);
+		this.sessionFactory.getCurrentSession().persist(contentinUserGroup);
 	}
 
 	@Override
 	public void deleteContent(ContentInUserGroup contentinUserGroup) {
-		Session session = this.sessionFactory.getCurrentSession();
-		session.delete(contentinUserGroup);
+		this.sessionFactory.getCurrentSession().delete(contentinUserGroup);
 	}
 
 }

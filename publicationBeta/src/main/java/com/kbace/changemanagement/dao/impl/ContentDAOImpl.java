@@ -2,7 +2,6 @@ package com.kbace.changemanagement.dao.impl;
 
 import java.util.List;
 
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -28,57 +27,51 @@ public class ContentDAOImpl implements ContentDAO {
 
 	@Override
 	public Content saveModule(Content module) {
-		Session session = this.sessionFactory.getCurrentSession();
 		Content oldModule = module;
-		if (session.get(Content.class, module.getContent_id()) != null) {
-			oldModule = session.get(Content.class, module.getContent_id());
+		if (this.sessionFactory.getCurrentSession().get(Content.class, module.getContent_id()) != null) {
+			oldModule = this.sessionFactory.getCurrentSession().get(Content.class, module.getContent_id());
 			oldModule.setLast_updated(module.getLast_updated());
 			oldModule.setTitle(module.getTitle());
 		}
-		session.saveOrUpdate(oldModule);
+		this.sessionFactory.getCurrentSession().saveOrUpdate(oldModule);
 		return oldModule;
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Content> getContentList() {
-		Session session = this.sessionFactory.getCurrentSession();
-		return session.createQuery("from Content").list();
+		return this.sessionFactory.getCurrentSession().createQuery("from Content").list();
 	}
 
 	@Override
 	public void deleteTitleById(String titleId) {
-		Session session = this.sessionFactory.getCurrentSession();
-		Content content = session.load(Content.class, titleId);
-		session.delete(content);
+		Content content = this.sessionFactory.getCurrentSession().load(Content.class, titleId);
+		this.sessionFactory.getCurrentSession().delete(content);
 	}
 
 	@Override
 	public void updateContent(String titleID, String titleName, String contentType, String app) {
-		Session session = this.sessionFactory.getCurrentSession();
-		Content content = session.load(Content.class, titleID);
+		Content content = this.sessionFactory.getCurrentSession().load(Content.class, titleID);
 		content.setTitle(titleName);
 		content.setContent_Type(contentType);
 		content.setApplication(app);
-		session.saveOrUpdate(content);
+		this.sessionFactory.getCurrentSession().saveOrUpdate(content);
 	}
 
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Content> getAssignedContent(long userID) {
-		Session session = this.sessionFactory.getCurrentSession();
 		String query = "SELECT c FROM Content c, ContentInUserGroup cug, UserGroup ug, UserInUserGroup uug, CatalystUser cu"
 				+ " WHERE" + " ug.userGroup_id = cug.usergroup_ID" + " AND c.content_id = cug.Content_id"
 				+ " AND ug.userGroup_id = uug.usergroup_ID" + " AND cu.user_id = uug.user_ID" + " AND cu.user_id = "
 				+ userID + " GROUP BY"
 				+ " c.content_id,  c.title, c.content_path, c.last_updated,  c.content_Type, c.application"
 				+ " ORDER BY c.title";
-		return session.createQuery(query).list();
+		return this.sessionFactory.getCurrentSession().createQuery(query).list();
 	}
 
 	@Override
 	public boolean checkAssignemnt(String contentID, Long userID) {
-		Session session = this.sessionFactory.getCurrentSession();
 		String query = "SELECT c FROM Content c, ContentInUserGroup cug, UserGroup ug, UserInUserGroup uug, CatalystUser cu"
 				+ " WHERE" + " ug.userGroup_id = cug.usergroup_ID" + " AND c.content_id = cug.Content_id"
 				+ " AND ug.userGroup_id = uug.usergroup_ID" + " AND cu.user_id = uug.user_ID" + " AND cu.user_id = "
@@ -86,7 +79,7 @@ public class ContentDAOImpl implements ContentDAO {
 				+ " c.content_id,  c.title, c.content_path, c.last_updated,  c.content_Type, c.application"
 				+ " ORDER BY c.title";
 
-		if (session.createQuery(query).list().size() == 0)
+		if (this.sessionFactory.getCurrentSession().createQuery(query).list().size() == 0)
 			return false;
 
 		return true;
@@ -94,10 +87,9 @@ public class ContentDAOImpl implements ContentDAO {
 
 	@Override
 	public void updatePath(String path, String contentID) {
-		Session session = this.sessionFactory.getCurrentSession();
-		Content content = session.load(Content.class, contentID);
+		Content content = this.sessionFactory.getCurrentSession().load(Content.class, contentID);
 		content.setContent_path(path);
-		session.update(content);
+		this.sessionFactory.getCurrentSession().update(content);
 
 	}
 }

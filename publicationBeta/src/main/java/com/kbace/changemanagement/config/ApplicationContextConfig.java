@@ -53,10 +53,10 @@ public class ApplicationContextConfig {
 
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		// See: datasource-cfg.properties
-		dataSource.setDriverClassName(env.getProperty("ds.database-driver"));
-		dataSource.setUrl(env.getProperty("ds.url"));
-		dataSource.setUsername(env.getProperty("ds.username"));
-		dataSource.setPassword(env.getProperty("ds.password"));
+		dataSource.setDriverClassName(this.env.getProperty("ds.database-driver"));
+		dataSource.setUrl(this.env.getProperty("ds.url"));
+		dataSource.setUsername(this.env.getProperty("ds.username"));
+		dataSource.setPassword(this.env.getProperty("ds.password"));
 		return dataSource;
 	}
 
@@ -66,9 +66,9 @@ public class ApplicationContextConfig {
 		Properties properties = new Properties();
 
 		// See: ds-hibernate-cfg.properties
-		properties.put("hibernate.dialect", env.getProperty("hibernate.dialect"));
-		properties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
-		properties.put("current_session_context_class", env.getProperty("current_session_context_class"));
+		properties.put("hibernate.dialect", this.env.getProperty("hibernate.dialect"));
+		properties.put("hibernate.show_sql", this.env.getProperty("hibernate.show_sql"));
+		properties.put("current_session_context_class", this.env.getProperty("current_session_context_class"));
 
 		LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
 		factoryBean.setPackagesToScan(new String[] { "com.kbace.changemanagement.entity" });

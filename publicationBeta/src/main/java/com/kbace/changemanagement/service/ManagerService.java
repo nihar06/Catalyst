@@ -61,32 +61,32 @@ public class ManagerService {
 
 	// add new user
 	public void addNewUser(CatalystUser newUser) {
-		newUser.setPassword(passwordEncroder.encode(newUser.getPassword()));
-		userDAO.addUser(newUser);
+		newUser.setPassword(this.passwordEncroder.encode(newUser.getPassword()));
+		this.userDAO.addUser(newUser);
 	}
 
 	public void deleteUser(long id) {
-		userDAO.deleteUser(id);
+		this.userDAO.deleteUser(id);
 	}
 
 	public void resetPassword(long id, String password) {
-		userDAO.resetPassword(id, passwordEncroder.encode(password));
+		this.userDAO.resetPassword(id, this.passwordEncroder.encode(password));
 	}
 
 	// updates edited user. USER-ID AND PASSWORD ARE NOT UPDATED BY THIS METHOD.
 	public void updateUser(CatalystUser updatedUser) {
-		userDAO.updateUser(updatedUser);
+		this.userDAO.updateUser(updatedUser);
 	}
 
 	// get details of all users.
 	public List<CatalystUser> getUserList() {
-		return userDAO.getAllUsers();
+		return this.userDAO.getAllUsers();
 	}
 
 	// get user info by id. THIS IS USED IN ORDER TO UPDATE USER. USER-ID AND
 	// PASSWORD ARE NOT UPDATED BY THIS METHOD.
 	public CatalystUser getUserInfoByID(long userID) {
-		return userDAO.getUserInfoByID(userID);
+		return this.userDAO.getUserInfoByID(userID);
 	}
 
 	// upload content/title onserver. It uploads, unzip, rename folder by ID and
@@ -94,55 +94,55 @@ public class ManagerService {
 	// Info is stored in database too.
 	public void uploadContentModule(MultipartFile file) throws IOException, ParserConfigurationException, SAXException {
 		// String filename = fileUtilities.uploadFile(file);
-		if (unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + fileUtilities.uploadFile(file), UNZIP_DIRECTORY)) {
-			fileUtilities.replaceFile(contentDAO.saveModule(xmlReader.getContentInfo(UNZIP_DIRECTORY)).getContent_id());
+		if (this.unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + this.fileUtilities.uploadFile(file), UNZIP_DIRECTORY)) {
+			this.fileUtilities.replaceFile(this.contentDAO.saveModule(this.xmlReader.getContentInfo(UNZIP_DIRECTORY)).getContent_id());
 		}
 	}
 
 	// get list of all titles available
 	public List<Content> getContentInfo() {
-		return contentDAO.getContentList();
+		return this.contentDAO.getContentList();
 	}
 
 	// delete title. Also delete directory from server.
 	public void deleteTitle(String titleID) {
-		contentDAO.deleteTitleById(titleID);
-		fileUtilities.deleteFile(UPLOAD_DIRECTORY + File.separator + titleID);
+		this.contentDAO.deleteTitleById(titleID);
+		this.fileUtilities.deleteFile(UPLOAD_DIRECTORY + File.separator + titleID);
 	}
 
 	// add new UserGroup.
 	public void addUserGroup(UserGroup userGroup) {
-		userGroupDAO.addUserGroup(userGroup);
+		this.userGroupDAO.addUserGroup(userGroup);
 	}
 
 	// add new UserGroup.
 	public void deleteUserGroup(long userGroupID) {
-		userGroupDAO.deleteUserGroup(userGroupID);
+		this.userGroupDAO.deleteUserGroup(userGroupID);
 	}
 
 	// get list of all UserGroup
 	public List<UserGroup> getUserGroupList() {
-		return userGroupDAO.getUserGroupList();
+		return this.userGroupDAO.getUserGroupList();
 	}
 
 	// get list of user which are not assigned to user group
 	public List<CatalystUser> getUsersNotInUserGroup(long id) {
-		return userInUserGroupDAO.usersNotInUserGroup(id);
+		return this.userInUserGroupDAO.usersNotInUserGroup(id);
 	}
 
 	// get list of user which are assigned to user group
 	public List<CatalystUser> getUsersInUserGroup(long id) {
-		return userInUserGroupDAO.usersInUserGroup(id);
+		return this.userInUserGroupDAO.usersInUserGroup(id);
 	}
 
 	// get list of user which are not assigned to user group
 	public List<Content> getContentNotInUserGroup(long id) {
-		return contentInUserGroupDAO.contentNotInUserGroup(id);
+		return this.contentInUserGroupDAO.contentNotInUserGroup(id);
 	}
 
 	// get list of user which are assigned to user group
 	public List<Content> getContentInUserGroup(long id) {
-		return contentInUserGroupDAO.contentInUserGroup(id);
+		return this.contentInUserGroupDAO.contentInUserGroup(id);
 	}
 
 	// update usergroup user and file assignment
@@ -178,11 +178,11 @@ public class ManagerService {
 
 		// deleting old ids
 		for (Long id : oldUserIds) {
-			userInUserGroupDAO.deleteUser(new UserInUserGroup(userGroupId, id));
+			this.userInUserGroupDAO.deleteUser(new UserInUserGroup(userGroupId, id));
 		}
 		// adding new Ids
 		for (Long id : newUserIds) {
-			userInUserGroupDAO.addUser(new UserInUserGroup(userGroupId, id));
+			this.userInUserGroupDAO.addUser(new UserInUserGroup(userGroupId, id));
 		}
 
 		// oldContentIds will contain ids to be deleted and newContentIds will contain
@@ -194,26 +194,26 @@ public class ManagerService {
 
 		// deleting old ids
 		for (String id : oldContentIds) {
-			contentInUserGroupDAO.deleteContent(new ContentInUserGroup(userGroupId, id));
+			this.contentInUserGroupDAO.deleteContent(new ContentInUserGroup(userGroupId, id));
 		}
 		// adding new Ids
 		for (String id : newContentIds) {
-			contentInUserGroupDAO.addContent(new ContentInUserGroup(userGroupId, id));
+			this.contentInUserGroupDAO.addContent(new ContentInUserGroup(userGroupId, id));
 		}
 	}
 
 	// add contentType in Content table
 	public void updateContent(String titleID, String titleName, String contentType, String app) {
-		contentDAO.updateContent(titleID, titleName, contentType, app);
+		this.contentDAO.updateContent(titleID, titleName, contentType, app);
 	}
 
 	public void updateContentPath(String contentID, String path) {
-		contentDAO.updatePath(path, contentID);
+		this.contentDAO.updatePath(path, contentID);
 	}
 
 	public void importUsers(MultipartFile file) throws IOException, ParseException {
 		try (CSVReader readFile = new CSVReader(
-				Files.newBufferedReader(Paths.get(UPLOAD_DIRECTORY, fileUtilities.uploadFile(file))))) {
+				Files.newBufferedReader(Paths.get(UPLOAD_DIRECTORY, this.fileUtilities.uploadFile(file))))) {
 			String[] nextRecord;
 			while ((nextRecord = readFile.readNext()) != null) {
 

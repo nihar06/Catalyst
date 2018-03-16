@@ -31,7 +31,7 @@ public class ContentInUserGroup implements Serializable {
 	
 	@Column(name = "usergroup_id")
 	public long getUsergroup_ID() {
-		return usergroup_ID;
+		return this.usergroup_ID;
 	}
 
 	public void setUsergroup_ID(long usergroup_ID) {
@@ -40,7 +40,7 @@ public class ContentInUserGroup implements Serializable {
 
 	@Column(name = "content_id")
 	public String getContent_ID() {
-		return Content_id;
+		return this.Content_id;
 	}
 
 	public void setContent_ID(String content_ID) {

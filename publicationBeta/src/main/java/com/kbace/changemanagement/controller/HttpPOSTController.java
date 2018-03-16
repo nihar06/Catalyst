@@ -30,8 +30,8 @@ public class HttpPOSTController {
 	public ResponseEntity<Object> fileUpload(@RequestParam("file") MultipartFile file,
 			@RequestParam("username") String username, @RequestParam("password") String password)
 			throws IOException, ParserConfigurationException, SAXException {
-		if (userservice.isAdminUser(username, password)) {
-			managerservice.uploadContentModule(file);
+		if (this.userservice.isAdminUser(username, password)) {
+			this.managerservice.uploadContentModule(file);
 			return new ResponseEntity<>("Done!!", HttpStatus.OK);
 		}
 		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);
@@ -41,8 +41,8 @@ public class HttpPOSTController {
 	public ResponseEntity<Object> bulkLoad_UserList(@RequestParam("usersList") MultipartFile usersCsvFile,
 			@RequestParam("username") String username, @RequestParam("password") String password)
 			throws IOException, ParseException {
-		if (userservice.isAdminUser(username, password)) {
-			managerservice.importUsers(usersCsvFile);
+		if (this.userservice.isAdminUser(username, password)) {
+			this.managerservice.importUsers(usersCsvFile);
 			return new ResponseEntity<>("Done!!", HttpStatus.OK);
 		}
 		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);

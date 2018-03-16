@@ -26,7 +26,7 @@ public class UserGroup implements Serializable {
 	@Id
 	@Column(name = "usergroup_id", nullable = false)
 	public long getUserGroup_id() {
-		return userGroup_id;
+		return this.userGroup_id;
 	}
 
 	public void setUserGroup_id(long userGroup_id) {
@@ -35,7 +35,7 @@ public class UserGroup implements Serializable {
 
 	@Column(name = "usergroupname", nullable = false, unique = true)
 	public String getUserGroup_name() {
-		return userGroup_name;
+		return this.userGroup_name;
 	}
 
 	public void setUserGroup_name(String userGroup_name) {

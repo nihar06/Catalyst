@@ -26,7 +26,7 @@ public class UserController {
 
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		UserImpl user = (UserImpl) auth.getPrincipal();
-		if (userServie.checkAssignemnt(contentID, user.getUser_id()))
+		if (this.userServie.checkAssignemnt(contentID, user.getUser_id()))
 			return "forward:/" + PHYSICAL_DIR_NAME + "/" + contentID + "/index.html";
 		else
 			return "redirect:/403";
@@ -44,7 +44,7 @@ public class UserController {
 
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		UserImpl user = (UserImpl) auth.getPrincipal();
-		if (userServie.checkAssignemnt(contentID, user.getUser_id()))
+		if (this.userServie.checkAssignemnt(contentID, user.getUser_id()))
 			return "forward:/" + PHYSICAL_DIR_NAME + "/" + contentID + "/" + path + ".js";
 		else
 			return "redirect:/403";

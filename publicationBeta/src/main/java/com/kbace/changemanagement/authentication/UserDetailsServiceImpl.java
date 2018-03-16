@@ -23,16 +23,16 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-		CatalystUser user = userService.findUser(username);
+		CatalystUser user = this.userService.findUser(username);
  		if (user == null) {
 			throw new UsernameNotFoundException("User " + username + " was not found in the database");
 		}
 		String role = user.getAccount_type().toUpperCase();
-		List<Content> contents= userService.getAssignedContent(user.getUser_id());
+		List<Content> contents= this.userService.getAssignedContent(user.getUser_id());
 		List<GrantedAuthority> grantList = new ArrayList<>();
 		grantList.add(new SimpleGrantedAuthority("ROLE_" + role));
 		UserDetails userDetails = (UserDetails) new UserImpl(user, grantList, contents);
-		userService.updateLastLogin(user.getUser_id());
+		this.userService.updateLastLogin(user.getUser_id());
 		return userDetails;
 	}
 }

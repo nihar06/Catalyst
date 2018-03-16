@@ -3,7 +3,6 @@ package com.kbace.changemanagement.dao.impl;
 import java.util.List;
 
 import org.hibernate.Query;
-import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
@@ -30,8 +29,8 @@ public class UserDAOImpl implements UserDAO {
 	@Override
 	public CatalystUser getUser(String username) {
 		String active = "yes";
-		Session session = this.sessionFactory.getCurrentSession();
-		Query finduser = session.createQuery(
+		//Session session = this.sessionFactory.getCurrentSession();
+		Query finduser = this.sessionFactory.getCurrentSession().createQuery(
 				"from CatalystUser where username = :username AND UPPER(active) = UPPER(:active) AND (end_date >= SYSDATE OR UPPER(account_type) =:account_type)");
 		finduser.setParameter("username", username);
 		finduser.setParameter("active", active.toUpperCase());
@@ -42,41 +41,36 @@ public class UserDAOImpl implements UserDAO {
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<CatalystUser> getAllUsers() {
-		Session session = this.sessionFactory.getCurrentSession();
-		return session.createQuery("from CatalystUser").list();
+	//	Session session = this.sessionFactory.getCurrentSession();
+		return this.sessionFactory.getCurrentSession().createQuery("from CatalystUser").list();
 	}
 
 	@Override
 	public void addUser(CatalystUser newUser) {
-		Session session = this.sessionFactory.getCurrentSession();
-		session.persist(newUser);
+		this.sessionFactory.getCurrentSession().persist(newUser);
 	}
 
 	@Override
 	public void deleteUser(long id) {
-		Session session = this.sessionFactory.getCurrentSession();
-		session.delete(session.load(CatalystUser.class, id));
+		this.sessionFactory.getCurrentSession().delete(this.sessionFactory.getCurrentSession().load(CatalystUser.class, id));
 	}
 
 	@Override
 	public void updateUser(CatalystUser updatedUser) {
-		Session session = this.sessionFactory.getCurrentSession();
-		session.update(updatedUser);
+		this.sessionFactory.getCurrentSession().update(updatedUser);
 	}
 
 	@Override
 	public CatalystUser getUserInfoByID(long userID) {
-		Session session = this.sessionFactory.getCurrentSession();
-		Query finduser = session.createQuery("from CatalystUser where user_id=" + userID);
+		Query finduser = this.sessionFactory.getCurrentSession().createQuery("from CatalystUser where user_id=" + userID);
 		return (CatalystUser) finduser.uniqueResult();
 	}
 
 	@Override
 	public void resetPassword(long id, String password) {
-		Session session = this.sessionFactory.getCurrentSession();
-		CatalystUser user = session.load(CatalystUser.class, id);
+		CatalystUser user = this.sessionFactory.getCurrentSession().load(CatalystUser.class, id);
 		user.setPassword(password);
-		session.update(user);
+		this.sessionFactory.getCurrentSession().update(user);
 	}
 
 }

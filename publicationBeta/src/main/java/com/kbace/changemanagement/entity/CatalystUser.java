@@ -51,7 +51,7 @@ public class CatalystUser implements Serializable {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "UserID_seq")
 	@SequenceGenerator(name = "UserID_seq", sequenceName = "UserID_seq")
 	public long getUser_id() {
-		return user_id;
+		return this.user_id;
 	}
 
 	public void setUser_id(long user_id) {
@@ -60,7 +60,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "username", length = 50, nullable = false, unique = true)
 	public String getUsername() {
-		return username;
+		return this.username;
 	}
 
 	public void setUsername(String username) {
@@ -69,7 +69,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "password", length = 2000, nullable = false)
 	public String getPassword() {
-		return password;
+		return this.password;
 	}
 
 	public void setPassword(String password) {
@@ -78,7 +78,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "firstname", length = 20)
 	public String getFirstname() {
-		return firstname;
+		return this.firstname;
 	}
 
 	public void setFirstname(String firstname) {
@@ -87,7 +87,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "lastname", length = 20)
 	public String getLastname() {
-		return lastname;
+		return this.lastname;
 	}
 
 	public void setLastname(String lastname) {
@@ -96,7 +96,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "active", length = 3, nullable = false)
 	public String getActive() {
-		return active;
+		return this.active;
 	}
 
 	public void setActive(String active) {
@@ -105,7 +105,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "customer_name", length = 20)
 	public String getCustomerName() {
-		return customerName;
+		return this.customerName;
 	}
 
 	public void setCustomerName(String customerName) {
@@ -114,7 +114,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "email", length = 50)
 	public String getEmail() {
-		return email;
+		return this.email;
 	}
 
 	public void setEmail(String email) {
@@ -123,7 +123,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "account_type")
 	public String getAccount_type() {
-		return account_type;
+		return this.account_type;
 	}
 
 	public void setAccount_type(String account_type) {
@@ -132,7 +132,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "start_date", nullable = true)
 	public Date getStart_date() {
-		return start_date;
+		return this.start_date;
 	}
 
 	public void setStart_date(Date start_date) {
@@ -141,7 +141,7 @@ public class CatalystUser implements Serializable {
 
 	@Column(name = "end_date", nullable = true)
 	public Date getEnd_date() {
-		return end_date;
+		return this.end_date;
 	}
 
 	public void setEnd_date(Date end_date) {

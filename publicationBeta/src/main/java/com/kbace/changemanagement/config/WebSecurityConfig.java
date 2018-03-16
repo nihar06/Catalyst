@@ -38,23 +38,23 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.inMemoryAuthentication().withUser("admin1").password("12345").roles("ADMIN");
 
 		// For User in database.
-		auth.userDetailsService(userDetailsServiceimpl);
+		auth.userDetailsService(this.userDetailsServiceimpl);
 		auth.authenticationProvider(authProvider());
 	}
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 		
-		random= new SecureRandom();
+		this.random= new SecureRandom();
 		byte[] seeds = new byte[20];
-		random.nextBytes(seeds);
-		return new EncryptPassword(random);
+		this.random.nextBytes(seeds);
+		return new EncryptPassword(this.random);
 	}
 
 	@Bean
 	public DaoAuthenticationProvider authProvider() {
 		DaoAuthenticationProvider authProvider = new DaoAuthenticationProvider();
-		authProvider.setUserDetailsService(userDetailsServiceimpl);
+		authProvider.setUserDetailsService(this.userDetailsServiceimpl);
 		authProvider.setPasswordEncoder(passwordEncoder());
 		return authProvider;
 	}

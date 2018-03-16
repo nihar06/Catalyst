@@ -24,7 +24,7 @@ public class Content implements Serializable {
 	@Id
 	@Column(name = "Content_id", nullable = false)
 	public String getContent_id() {
-		return content_id;
+		return this.content_id;
 	}
 
 	public void setContent_id(String content_id) {
@@ -33,7 +33,7 @@ public class Content implements Serializable {
 
 	@Column(name = "CONTENT_TITLE", nullable = false)
 	public String getTitle() {
-		return title;
+		return this.title;
 	}
 
 	public void setTitle(String title) {
@@ -42,7 +42,7 @@ public class Content implements Serializable {
 
 	@Column(name = "content_path", nullable = false)
 	public String getContent_path() {
-		return content_path;
+		return this.content_path;
 	}
 
 	public void setContent_path(String content_path) {
@@ -51,7 +51,7 @@ public class Content implements Serializable {
 
 	@Column(name = "content_type")
 	public String getContent_Type() {
-		return content_Type;
+		return this.content_Type;
 	}
 
 	public void setContent_Type(String content_Type) {
@@ -60,7 +60,7 @@ public class Content implements Serializable {
 
 	@Column(name = "last_updated")
 	public Timestamp getLast_updated() {
-		return last_updated;
+		return this.last_updated;
 	}
 
 	public void setLast_updated(Timestamp last_updated) {
@@ -69,7 +69,7 @@ public class Content implements Serializable {
 
 	@Column(name = "application")
 	public String getApplication() {
-		return application;
+		return this.application;
 	}
 
 	public void setApplication(String application) {

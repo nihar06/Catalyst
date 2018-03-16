@@ -20,7 +20,7 @@ public class UserProfile implements Serializable {
 	@Id
 	@Column(name = "user_id", nullable = false)
 	public long getUser_id() {
-		return user_id;
+		return this.user_id;
 	}
 
 	public void setUser_id(long user_id) {
@@ -29,7 +29,7 @@ public class UserProfile implements Serializable {
 
 	@Column(name = "last_date")
 	public Timestamp getLast_login() {
-		return last_login;
+		return this.last_login;
 	}
 
 	public void setLast_login(Timestamp last_login) {

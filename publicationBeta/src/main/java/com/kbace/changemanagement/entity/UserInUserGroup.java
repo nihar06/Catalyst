@@ -29,7 +29,7 @@ public class UserInUserGroup implements Serializable {
 
 	@Column(name = "usergroup_id")
 	public long getUsergroupID() {
-		return usergroup_ID;
+		return this.usergroup_ID;
 	}
 
 	public void setUsergroupID(long usergroupID) {
@@ -38,7 +38,7 @@ public class UserInUserGroup implements Serializable {
 
 	@Column(name = "user_id")
 	public long getUserID() {
-		return user_ID;
+		return this.user_ID;
 	}
 
 	public void setUserID(long userID) {
