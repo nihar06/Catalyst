@@ -204,7 +204,6 @@ public class ManagerController {
 
 		this.managerservice.updateUserGroup(usergroupID, this.userinUserGroupList, updatedUserIDList, this.contentinUserGroupList,
 				updatedContentIDList);
-		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			user.setContents(this.userService.getAssignedContent(user.getUser_id()));

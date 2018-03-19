@@ -75,8 +75,7 @@ public class ApplicationContextConfig {
 		factoryBean.setDataSource(dataSource);
 		factoryBean.setHibernateProperties(properties);
 		factoryBean.afterPropertiesSet();
-		SessionFactory sf = factoryBean.getObject();
-		return sf;
+		return factoryBean.getObject();
 	}
 
 	@Autowired
