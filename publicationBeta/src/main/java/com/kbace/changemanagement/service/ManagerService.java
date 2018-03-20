@@ -94,8 +94,10 @@ public class ManagerService {
 	// Info is stored in database too.
 	public void uploadContentModule(MultipartFile file) throws IOException, ParserConfigurationException, SAXException {
 		// String filename = fileUtilities.uploadFile(file);
-		if (this.unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + this.fileUtilities.uploadFile(file), UNZIP_DIRECTORY)) {
-			this.fileUtilities.replaceFile(this.contentDAO.saveModule(this.xmlReader.getContentInfo(UNZIP_DIRECTORY)).getContent_id());
+		if (this.unzipModule.unzip(UPLOAD_DIRECTORY + File.separator + this.fileUtilities.uploadFile(file),
+				UNZIP_DIRECTORY)) {
+			this.fileUtilities.replaceFile(
+					this.contentDAO.saveModule(this.xmlReader.getContentInfo(UNZIP_DIRECTORY)).getContent_id());
 		}
 	}
 
@@ -207,23 +209,22 @@ public class ManagerService {
 		this.contentDAO.updateContent(titleID, titleName, contentType, app);
 	}
 
+	// updates the content path.
 	public void updateContentPath(String contentID, String path) {
 		this.contentDAO.updatePath(path, contentID);
 	}
 
+	// import multiple users via csv file.
 	public void importUsers(MultipartFile file) throws IOException, ParseException {
 		try (CSVReader readFile = new CSVReader(
 				Files.newBufferedReader(Paths.get(UPLOAD_DIRECTORY, this.fileUtilities.uploadFile(file))))) {
 			String[] nextRecord;
 			while ((nextRecord = readFile.readNext()) != null) {
-
 				addNewUser(new CatalystUser(nextRecord[0], nextRecord[1], nextRecord[2], nextRecord[3], nextRecord[4],
 						nextRecord[5], nextRecord[6], nextRecord[7],
 						new Date(new SimpleDateFormat("MM/dd/yyyy").parse(nextRecord[8]).getTime()),
 						new Date(new SimpleDateFormat("MM/dd/yyyy").parse(nextRecord[9]).getTime())));
 			}
-			readFile.close();
 		}
 	}
-
 }

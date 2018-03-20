@@ -24,7 +24,6 @@ public class FileUtilities {
 			if (!uploadFile.exists()) {
 				uploadFile.mkdir();
 			}
-
 			BufferedOutputStream outputStrem = new BufferedOutputStream(new FileOutputStream(uploadFile));
 			outputStrem.write(file.getBytes());
 			outputStrem.flush();

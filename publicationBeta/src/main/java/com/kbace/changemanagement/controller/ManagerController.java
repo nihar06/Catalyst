@@ -169,7 +169,6 @@ public class ManagerController {
 	public ModelAndView deleteUserGroup(ModelAndView mav, @RequestParam("deleteID") long userGroupID) {
 		mav.setViewName("redirect:/manager/userGroup-management");
 		this.managerservice.deleteUserGroup(userGroupID);
-		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			user.setContents(this.userService.getAssignedContent(user.getUser_id()));

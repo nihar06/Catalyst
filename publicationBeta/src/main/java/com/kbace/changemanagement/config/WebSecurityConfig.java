@@ -27,7 +27,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private UserDetailsServiceImpl userDetailsServiceimpl;
-	
+
 	private SecureRandom random;
 
 	@Autowired
@@ -44,8 +44,8 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Bean
 	public PasswordEncoder passwordEncoder() {
-		
-		this.random= new SecureRandom();
+
+		this.random = new SecureRandom();
 		byte[] seeds = new byte[20];
 		this.random.nextBytes(seeds);
 		return new EncryptPassword(this.random);
@@ -64,7 +64,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.csrf().disable();
 		http.headers().frameOptions().sameOrigin().httpStrictTransportSecurity().disable();
-
+	
 		http.authorizeRequests().antMatchers("/login").permitAll();
 
 		// If no login, it will redirect to /login page.
@@ -84,6 +84,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	public void configure(WebSecurity web) throws Exception {
-		//web.ignoring().antMatchers("/KData/**");
+		// web.ignoring().antMatchers("/KData/**");
 	}
 }
