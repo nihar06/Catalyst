@@ -64,8 +64,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.csrf().disable();
 		http.headers().frameOptions().sameOrigin().httpStrictTransportSecurity().disable();
-	
+
 		http.authorizeRequests().antMatchers("/login").permitAll();
+
+		// http.requiresChannel().antMatchers("/login*").requiresSecure();
 
 		// If no login, it will redirect to /login page.
 		http.authorizeRequests().antMatchers("/", "/home", "/KData*/**").authenticated();

@@ -154,17 +154,14 @@ public class ManagerService {
 		if (newUserIds == null) {
 			newUserIds = new HashSet<>();
 		}
-
 		if (newContentIds == null) {
 			newContentIds = new HashSet<>();
 		}
-
 		// copying oldUser IDs
 		HashSet<Long> oldUserIds = new HashSet<>();
 		for (CatalystUser user : oldUserList) {
 			oldUserIds.add(user.getUser_id());
 		}
-
 		// copying old User Content
 		HashSet<String> oldContentIds = new HashSet<>();
 		for (Content content : oldContentList) {

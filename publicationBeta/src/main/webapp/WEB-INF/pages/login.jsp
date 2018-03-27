@@ -16,20 +16,19 @@
 					action="${pageContext.request.contextPath}/j_spring_security_check"
 					method='POST'>
 					<input type="text" name="username" id="username" class=""
-						placeholder="Username" style="line-height: 1"> <input
-						type="password" style="line-height: 1" name="password"
+						placeholder="Username" style="line-height: 1" required="required">
+					<input type="password" style="line-height: 1" name="password"
 						id="password" class="" placeholder="Password"
-						style="margin-bottom: 5px;"> <input type="submit"
+						style="margin-bottom: 5px;" required="required"> <input type="submit"
 						class="btn KBACE-btn-info btn-lg" value="Login">
 				</form>
 				<c:if test="${param.error == 'true'}">
 					<div style="color: red; margin: 10px 0px;">Login Invalid.
 						Please verify your Username and Password.</div>
-
 				</c:if>
 			</div>
-
 		</div>
+		
 		<div class="row">
 			<div class="col-md-1">&nbsp;</div>
 			<div class="col-md-5">
