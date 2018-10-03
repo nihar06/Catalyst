@@ -67,8 +67,6 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 		http.authorizeRequests().antMatchers("/login").permitAll();
 
-		// http.requiresChannel().antMatchers("/login*").requiresSecure();
-
 		// If no login, it will redirect to /login page.
 		http.authorizeRequests().antMatchers("/", "/home", "/KData*/**").authenticated();
 

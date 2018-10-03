@@ -97,8 +97,6 @@ public class ManagerController {
 		ModelAndView mav = new ModelAndView("redirect:/manager");
 		CatalystUser updatedUser = this.managerservice.getUserInfoByID(usrId);
 
-		// SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-
 		updatedUser.setUser_id(usrId);
 		updatedUser.setUsername(username);
 		updatedUser.setFirstname(firstname);
@@ -109,14 +107,7 @@ public class ManagerController {
 		updatedUser.setAccount_type(accounttype);
 		updatedUser.setStart_date(new Date(sdate.getTime()));
 		updatedUser.setEnd_date(new Date(edate.getTime()));
-		/*
-		 * if (sdate != "") { java.util.Date stemp = sdf.parse(sdate); Date startdate =
-		 * new Date(stemp.getTime()); updatedUser.setStart_date(startdate); }
-		 */
-		/*
-		 * if (edate != "") { java.util.Date etemp = sdf.parse(edate); Date enddate =
-		 * new Date(etemp.getTime()); updatedUser.setEnd_date(enddate); }
-		 */
+		
 		this.managerservice.updateUser(updatedUser);
 		return mav;
 	}

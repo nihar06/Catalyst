@@ -18,7 +18,6 @@ public class MainController {
 	public ModelAndView login(Model model, HttpSession session) {
 		ModelAndView mav = new ModelAndView("login");
 
-		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!(SecurityContextHolder.getContext().getAuthentication() instanceof AnonymousAuthenticationToken)) {
 			mav.setViewName("redirect:/");
 		}
@@ -29,7 +28,6 @@ public class MainController {
 	public ModelAndView home(Model model, HttpSession session) {
 		ModelAndView mav = new ModelAndView("Home");
 
-		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			mav.addObject("contents", user.getContents());
