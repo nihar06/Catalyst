@@ -37,12 +37,15 @@ import com.kbace.changemanagement.service.UserService;
 @Controller
 public class ManagerController {
 
-	@Autowired
-	private ManagerService managerservice;
+	private ManagerService managerService;
+	private UserService userService;
 
 	@Autowired
-	UserService userService;
-
+	public ManagerController(ManagerService managerService, UserService userService) {
+		this.managerService = managerService;
+		this.userService = userService;
+	}
+	
 	private List<CatalystUser> userinUserGroupList;
 	private List<Content> contentinUserGroupList;
 
@@ -50,7 +53,7 @@ public class ManagerController {
 	public ModelAndView manager(ModelAndView mav) {
 		// ModelAndView mav = new ModelAndView();
 		mav.setViewName("manager");
-		List<CatalystUser> users = this.managerservice.getUserList();
+		List<CatalystUser> users = this.managerService.getUserList();
 		mav.addObject("users", users);
 		return mav;
 	}
@@ -64,7 +67,7 @@ public class ManagerController {
 			@RequestParam("enddate") @DateTimeFormat(pattern = "yyyy-MM-dd") java.util.Date enddate) {
 		ModelAndView mav = new ModelAndView();
 
-		this.managerservice.addNewUser(new CatalystUser(username, password, firstname, lastname, active, customerName, email,
+		this.managerService.addNewUser(new CatalystUser(username, password, firstname, lastname, active, customerName, email,
 				accounttype, new Date(startdate.getTime()), new Date(enddate.getTime())));
 		mav.setViewName("redirect:/manager");
 		return mav;
@@ -73,7 +76,7 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/deleteUser" }, method = RequestMethod.POST)
 	public ModelAndView deleteUser(ModelAndView mav, @RequestParam("deleteID") long userID) {
 		mav.setViewName("redirect:/manager");
-		this.managerservice.deleteUser(userID);
+		this.managerService.deleteUser(userID);
 		return mav;
 	}
 
@@ -81,7 +84,7 @@ public class ManagerController {
 	public ModelAndView resetUserPassword(ModelAndView mav, @RequestParam("userID") long userID,
 			@RequestParam("password") String password) {
 		mav.setViewName("redirect:/manager");
-		this.managerservice.resetPassword(userID, password);
+		this.managerService.resetPassword(userID, password);
 		return mav;
 	}
 
@@ -95,7 +98,7 @@ public class ManagerController {
 			throws ParseException {
 
 		ModelAndView mav = new ModelAndView("redirect:/manager");
-		CatalystUser updatedUser = this.managerservice.getUserInfoByID(usrId);
+		CatalystUser updatedUser = this.managerService.getUserInfoByID(usrId);
 
 		updatedUser.setUser_id(usrId);
 		updatedUser.setUsername(username);
@@ -108,7 +111,7 @@ public class ManagerController {
 		updatedUser.setStart_date(new Date(sdate.getTime()));
 		updatedUser.setEnd_date(new Date(edate.getTime()));
 		
-		this.managerservice.updateUser(updatedUser);
+		this.managerService.updateUser(updatedUser);
 		return mav;
 	}
 
@@ -120,8 +123,7 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/importContent" }, method = RequestMethod.POST)
 	public ResponseEntity<Object> fileUpload(@RequestParam("file") MultipartFile file)
 			throws IOException, ParserConfigurationException, SAXException {
-		this.managerservice.uploadContentModule(file);
-		// Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		this.managerService.uploadContentModule(file);
 		UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		user.setContents(this.userService.getAssignedContent(user.getUser_id()));
 
@@ -131,35 +133,35 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/title-management" })
 	public ModelAndView titleManager(ModelAndView mav) {
 		mav.setViewName("Title_Management");
-		mav.addObject("titleList", this.managerservice.getContentInfo());
+		mav.addObject("titleList", this.managerService.getContentInfo());
 		return mav;
 	}
 
 	@RequestMapping(value = { "/manager/deleteTitle" }, method = RequestMethod.POST)
 	public ModelAndView deletetitle(ModelAndView mav, @RequestParam("deleteID") String deleteID) {
 		mav.setViewName("redirect:/manager/title-management");
-		this.managerservice.deleteTitle(deleteID);
+		this.managerService.deleteTitle(deleteID);
 		return mav;
 	}
 
 	@RequestMapping(value = { "/manager/userGroup-management" })
 	public ModelAndView userGroupManager(ModelAndView mav) {
 		mav.setViewName("userGroupManager");
-		mav.addObject("userGroupList", this.managerservice.getUserGroupList());
+		mav.addObject("userGroupList", this.managerService.getUserGroupList());
 		return mav;
 	}
 
 	@RequestMapping(value = { "/manager/addUserGroup" }, method = RequestMethod.POST)
 	public ModelAndView addUserGroup(ModelAndView mav, @RequestParam("usergroup") String usergroupname) {
 		mav.setViewName("redirect:/manager/userGroup-management");
-		this.managerservice.addUserGroup(new UserGroup(usergroupname));
+		this.managerService.addUserGroup(new UserGroup(usergroupname));
 		return mav;
 	}
 
 	@RequestMapping(value = { "/manager/deleteUserGroup" }, method = RequestMethod.POST)
 	public ModelAndView deleteUserGroup(ModelAndView mav, @RequestParam("deleteID") long userGroupID) {
 		mav.setViewName("redirect:/manager/userGroup-management");
-		this.managerservice.deleteUserGroup(userGroupID);
+		this.managerService.deleteUserGroup(userGroupID);
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			user.setContents(this.userService.getAssignedContent(user.getUser_id()));
@@ -170,13 +172,13 @@ public class ManagerController {
 	@RequestMapping(value = { "/manager/getUserGroupInfo" }, method = RequestMethod.POST)
 	public void getUserGroupInfo(HttpServletResponse response, @RequestParam("usergroupID") long id)
 			throws IOException {
-		this.userinUserGroupList = this.managerservice.getUsersInUserGroup(id);
-		this.contentinUserGroupList = this.managerservice.getContentInUserGroup(id);
+		this.userinUserGroupList = this.managerService.getUsersInUserGroup(id);
+		this.contentinUserGroupList = this.managerService.getContentInUserGroup(id);
 
 		ArrayList<Object> userGroupInfo = new ArrayList<>();
-		userGroupInfo.add(this.managerservice.getUsersNotInUserGroup(id));
+		userGroupInfo.add(this.managerService.getUsersNotInUserGroup(id));
 		userGroupInfo.add(this.userinUserGroupList);
-		userGroupInfo.add(this.managerservice.getContentNotInUserGroup(id));
+		userGroupInfo.add(this.managerService.getContentNotInUserGroup(id));
 		userGroupInfo.add(this.contentinUserGroupList);
 
 		Gson gson = new Gson();
@@ -192,7 +194,7 @@ public class ManagerController {
 			@RequestParam(required = false, name = "contentList") HashSet<String> updatedContentIDList,
 			@RequestParam(required = false, name = "userList") HashSet<Long> updatedUserIDList) {
 
-		this.managerservice.updateUserGroup(usergroupID, this.userinUserGroupList, updatedUserIDList, this.contentinUserGroupList,
+		this.managerService.updateUserGroup(usergroupID, this.userinUserGroupList, updatedUserIDList, this.contentinUserGroupList,
 				updatedContentIDList);
 		if (!SecurityContextHolder.getContext().getAuthentication().getName().equals("admin1")) {
 			UserImpl user = (UserImpl) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
@@ -204,13 +206,13 @@ public class ManagerController {
 	public void contentUpdate(HttpServletResponse response, @RequestParam("titleID") String titleID,
 			@RequestParam("titleName") String titleName, @RequestParam("contentType") String contentType,
 			@RequestParam("app") String app) {
-		this.managerservice.updateContent(titleID, titleName, contentType, app);
+		this.managerService.updateContent(titleID, titleName, contentType, app);
 	}
 
 	@RequestMapping(value = { "/manager/updatePath" }, method = RequestMethod.POST)
 	public ModelAndView updateContentPath(ModelAndView mav, HttpServletResponse response,
 			@RequestParam("titleID") String titleID, @RequestParam("contentPath") String path) {
-		this.managerservice.updateContentPath(titleID, path);
+		this.managerService.updateContentPath(titleID, path);
 		mav.setViewName("redirect:/manager/title-management");
 		return mav;
 	}

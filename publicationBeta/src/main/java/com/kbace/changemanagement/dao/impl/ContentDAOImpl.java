@@ -21,10 +21,6 @@ public class ContentDAOImpl implements ContentDAO {
 		this.sessionFactory = sessionFactory;
 	}
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
 	@Override
 	public Content saveModule(Content module) {
 		Content oldModule = module;

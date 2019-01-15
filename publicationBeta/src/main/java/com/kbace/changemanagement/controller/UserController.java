@@ -18,8 +18,12 @@ import javax.servlet.http.HttpServletResponse;
 @Controller
 public class UserController {
 
-	@Autowired
 	private UserService userServie;
+
+	@Autowired
+	public UserController(UserService userServie) {
+		this.userServie = userServie;
+	}
 
 	@RequestMapping(value = { "/" + VIRTUAL_DIR + "/{contentID}/**.html" }, method = RequestMethod.GET)
 	public String retriveContent(@PathVariable String contentID, HttpServletResponse httpServletResponse) {
@@ -36,8 +40,7 @@ public class UserController {
 	public String check(@PathVariable String contentID, HttpServletResponse httpServletResponse) {
 		return "/403";
 	}
-	
-	
+
 	@RequestMapping(value = { "/" + VIRTUAL_DIR + "/{contentID}/{path}.js",
 			"/" + VIRTUAL_DIR + "/{contentID}/{path}.js" }, method = RequestMethod.GET)
 	public String redirectJS(@PathVariable String contentID, @PathVariable String path) {

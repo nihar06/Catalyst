@@ -40,24 +40,31 @@ import static com.kbace.changemanagement.util.DirectoryConstants.*;
 @Service
 public class ManagerService {
 
-	@Autowired
 	private UserDAO userDAO;
-	@Autowired
 	private PasswordEncoder passwordEncroder;
-	@Autowired
 	private UnzipModule unzipModule;
-	@Autowired
 	private FileUtilities fileUtilities;
-	@Autowired
 	private XMLReader xmlReader;
-	@Autowired
 	private ContentDAO contentDAO;
-	@Autowired
 	private UserGroupDAO userGroupDAO;
-	@Autowired
 	private UsersInUserGroupDAO userInUserGroupDAO;
-	@Autowired
 	private ContentInUserGroupDAO contentInUserGroupDAO;
+
+	@Autowired
+	public ManagerService(UserDAO userDAO, ContentDAO contentDAO, UserGroupDAO userGroupDAO,
+			UsersInUserGroupDAO userInUserGroupDAO, ContentInUserGroupDAO contentInUserGroupDAO,
+			PasswordEncoder passwordEncroder, UnzipModule unzipModule, FileUtilities fileUtilities,
+			XMLReader xmlReader) {
+		this.userDAO = userDAO;
+		this.passwordEncroder = passwordEncroder;
+		this.unzipModule = unzipModule;
+		this.fileUtilities = fileUtilities;
+		this.xmlReader = xmlReader;
+		this.contentDAO = contentDAO;
+		this.userGroupDAO = userGroupDAO;
+		this.userInUserGroupDAO = userInUserGroupDAO;
+		this.contentInUserGroupDAO = contentInUserGroupDAO;
+	}
 
 	// add new user
 	public void addNewUser(CatalystUser newUser) {

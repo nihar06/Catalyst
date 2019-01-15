@@ -22,10 +22,6 @@ public class UsersInUserGroupDAOImpl implements UsersInUserGroupDAO {
 		this.sessionFactory = sessionFactory;
 	}
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<CatalystUser> usersNotInUserGroup(long id) {

@@ -20,17 +20,12 @@ public class ContentInUserGroupDAOImpl implements ContentInUserGroupDAO {
 		this.sessionFactory = sessionFactory;
 	}
 
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Content> contentNotInUserGroup(long id) {
 
 		return this.sessionFactory.getCurrentSession().createQuery("FROM Content WHERE Content_id NOT IN "
 				+ "( SELECT Content_id FROM ContentInUserGroup WHERE usergroup_ID =" + id + " )").list();
-
 	}
 
 	@SuppressWarnings("unchecked")

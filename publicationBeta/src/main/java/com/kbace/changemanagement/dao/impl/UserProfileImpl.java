@@ -17,11 +17,7 @@ public class UserProfileImpl implements UserProfileDAO {
 	public UserProfileImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
-
-	public void setSessionFactory(SessionFactory sessionFactory) {
-		this.sessionFactory = sessionFactory;
-	}
-
+	
 	@Override
 	public void updateLastlogin(long userID) {
 		Query updateTime = this.sessionFactory.getCurrentSession().createQuery("UPDATE UserProfile set Last_login=SYSDATE where user_id= :user_id");

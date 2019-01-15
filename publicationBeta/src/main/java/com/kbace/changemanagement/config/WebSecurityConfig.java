@@ -25,10 +25,12 @@ import com.kbace.changemanagement.util.EncryptPassword;
 
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
-	@Autowired
 	private UserDetailsServiceImpl userDetailsServiceimpl;
 
-	private SecureRandom random;
+	@Autowired
+	public WebSecurityConfig(UserDetailsServiceImpl userDetailsServiceimpl) {
+		this.userDetailsServiceimpl = userDetailsServiceimpl;
+	}
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -45,10 +47,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Bean
 	public PasswordEncoder passwordEncoder() {
 
-		this.random = new SecureRandom();
+		SecureRandom random = new SecureRandom();
 		byte[] seeds = new byte[20];
-		this.random.nextBytes(seeds);
-		return new EncryptPassword(this.random);
+		random.nextBytes(seeds);
+		return new EncryptPassword(random);
 	}
 
 	@Bean

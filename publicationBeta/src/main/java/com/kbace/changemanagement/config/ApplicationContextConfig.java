@@ -29,8 +29,12 @@ import com.kbace.changemanagement.dao.impl.UserDAOImpl;
 @PropertySource("classpath:datasource-cfg.properties")
 public class ApplicationContextConfig {
 
-	@Autowired
 	private Environment env;
+
+	@Autowired
+	public ApplicationContextConfig(Environment env) {
+		this.env = env;
+	}
 
 	@Bean
 	public ResourceBundleMessageSource messageSource() {
@@ -85,7 +89,6 @@ public class ApplicationContextConfig {
 		return transactionManager;
 	}
 
-	
 	@Bean(name = "userDAO")
 	public UserDAO getUserDAO() throws Exception {
 		return new UserDAOImpl(getSessionFactory(getDataSource()));

@@ -17,17 +17,23 @@ import com.kbace.changemanagement.entity.Content;
 @Service
 public class UserService {
 
-	@Autowired
+	// @Autowired
 	private UserDAO userDAO;
-
-	@Autowired
+	// @Autowired
 	private ContentDAO contentDAO;
-
-	@Autowired
+	// @Autowired
 	private UserProfileDAO userProfileDAO;
+	// @Autowired
+	private PasswordEncoder passwordEncroder;
 
 	@Autowired
-	private PasswordEncoder passwordEncroder;
+	public UserService(UserDAO userDAO, ContentDAO contentDAO, UserProfileDAO userProfileDAO,
+			PasswordEncoder passwordEncroder) {
+		this.userDAO = userDAO;
+		this.contentDAO = contentDAO;
+		this.userProfileDAO = userProfileDAO;
+		this.passwordEncroder = passwordEncroder;
+	}
 
 	public CatalystUser findUser(String username) {
 		return this.userDAO.getUser(username);

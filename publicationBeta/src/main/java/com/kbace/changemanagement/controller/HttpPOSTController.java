@@ -21,17 +21,21 @@ import com.kbace.changemanagement.service.UserService;
 @Controller
 public class HttpPOSTController {
 
+	private ManagerService managerService;
+	private UserService userService;
+
 	@Autowired
-	private ManagerService managerservice;
-	@Autowired
-	private UserService userservice;
+	public HttpPOSTController(ManagerService managerService, UserService userService) {
+		this.managerService = managerService;
+		this.userService = userService;
+	}
 
 	@RequestMapping(value = { "/importContent" }, method = RequestMethod.POST)
 	public ResponseEntity<Object> fileUpload(@RequestParam("file") MultipartFile file,
 			@RequestParam("username") String username, @RequestParam("password") String password)
 			throws IOException, ParserConfigurationException, SAXException {
-		if (this.userservice.isAdminUser(username, password)) {
-			this.managerservice.uploadContentModule(file);
+		if (this.userService.isAdminUser(username, password)) {
+			this.managerService.uploadContentModule(file);
 			return new ResponseEntity<>("Done!!", HttpStatus.OK);
 		}
 		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);
@@ -41,8 +45,8 @@ public class HttpPOSTController {
 	public ResponseEntity<Object> bulkLoad_UserList(@RequestParam("usersList") MultipartFile usersCsvFile,
 			@RequestParam("username") String username, @RequestParam("password") String password)
 			throws IOException, ParseException {
-		if (this.userservice.isAdminUser(username, password)) {
-			this.managerservice.importUsers(usersCsvFile);
+		if (this.userService.isAdminUser(username, password)) {
+			this.managerService.importUsers(usersCsvFile);
 			return new ResponseEntity<>("Done!!", HttpStatus.OK);
 		}
 		return new ResponseEntity<>("Fail!!", HttpStatus.FORBIDDEN);
