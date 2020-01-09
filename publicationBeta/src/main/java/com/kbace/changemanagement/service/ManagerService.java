@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import java.sql.Date;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.HashSet;
+import java.util.*;
 import java.util.List;
 
 import javax.xml.parsers.ParserConfigurationException;
