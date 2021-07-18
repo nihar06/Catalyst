@@ -39,7 +39,7 @@ public class fibo {
 		//System.out.println(getFibo(7, fibo));
 
 		System.out.println(getSum(3, fibo));
-		System.out.println(fibo);
+		//System.out.println(fibo);
 		System.out.println(getSum(5, fibo));
 		System.out.println(fibo);
 		System.out.println(getSum(4, fibo));
